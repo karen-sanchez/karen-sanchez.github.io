@@ -1,0 +1,131 @@
+body {
+	background-color: #FFFFFA;
+}
+
+.name {
+	font-size: 80px;
+	margin-left: 150px;
+	font-family: 'Passion One', cursive;
+	color: #EA526F;
+}
+
+.title {
+	font-size: 50px;
+	margin-left: 270px;
+	/*font-family: 'Passion One', cursive;*/
+}
+
+/*.photo {
+	width: 150px;
+	height: 150px;
+	border: 1px solid;
+	float: right;
+	margin-top: -125px;
+	margin-right: 250px;
+	margin-bottom: 15px;
+}*/
+
+.obj {
+	width: 1224px;
+	height: 200px;
+	/*border: solid;*/
+	margin-left: 170px;
+	font-size: 20px;
+	margin-bottom: -60px;
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.edu {
+	float: left;
+	width: 300px;
+	margin-left: 100px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.edu li {
+	font-size: 15px;
+	margin-top: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+.projects {
+	float: left;
+	width: 300px;
+	margin-left: 270px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.skills {
+	float: right;
+	width: 300px;
+	margin-right: 100px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.skills li {
+	font-size: 20px;
+	margin-top: 15px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.left-footer {
+	float: right;
+	/*margin-left: 200px;*/
+	/*margin-top: 75px;*/
+	font-family: 'Quicksand', sans-serif;
+	list-style-type: none;
+	margin-top: -105px;
+	margin-right: 155px;
+	margin-bottom: 15px;
+} 
+
+.left-footer li {
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 10px;
+	/*margin-top: 15px;*/
+}
+
+.left-footer li a {
+	text-decoration: none;
+	color: black;
+}
+
+.right-footer {
+	float: right;
+	margin-right: 200px;
+	margin-top: 100px;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 30px;
+	list-style-type: none;
+}
+
+.right-footer li {
+	font-size: 20px;
+	/*margin-top: 50px;*/
+	/*margin-top: 15px;*/
+	display: inline;
+	margin-right: 190px;
+	/*margin-bottom: -150px;*/
+}
+
+.right-footer li a {
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	border-top: solid;
+	height: 250px;
+}
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
