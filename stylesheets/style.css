@@ -1,3 +1,6 @@
+/*************************
+Resume
+*************************/
 body {
 	background-color: #FFFFFA;
 }
@@ -138,4 +141,86 @@ footer {
    display: block; 
    height: 0; 
    clear: both;
+}
+
+/*************************
+index/home
+*************************/
+nav {
+	border: solid;
+}
+nav ul {
+	text-align: center;
+}
+
+li {
+	display: inline;
+	margin: 0em 5em;
+}
+
+li a {
+	text-decoration: none;
+}
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	font-size: 1em;
+}
+
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 15em;
+}
+#sticky-social a {
+/*   background: #333;
+   color: #fff;*/
+   display: block;
+   height: 2.188em;
+   font: 1em "Open Sans", sans-serif;
+   line-height: 2.188em;
+   position: relative;
+   text-align: center;
+   width: 2.188em;
+}
+#sticky-social a span {
+   line-height: 2.188em;
+   left: -2.3em;
+   position: absolute;
+   text-align:center;
+   /*width:7.500em;*/
+}
+#sticky-social a:hover span {
+   left: 25%;
+}
+
+/*#sticky-social a[class*="facebook"] *//*span { background: #3b5998; }*/
+
+/*#sticky-social a[class*="github"] span { background: #dd4b39; }  */
+
+/*#sticky-social a[class*="linkedin"] /*span { background: #007bb6; }  */
+
+/*#sticky-social a[class*="instagram"] /*span { background: #517fa4; }*/  
+
+.intro .top {
+	margin-left: 15em;
+}
+
+.intro .middle {
+	margin-left: 20em;
+}
+
+.intro .bottom {
+	margin-left: 25em;
+}
+
+.intro {
+	margin-top: 5em;
+}
+
+#bio h3 {
+	display: none;
 }
