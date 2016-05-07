@@ -147,6 +147,8 @@ footer {
 index/home
 *************************/
 nav {
+	position: fixed;
+	width: 100%;
 	border: solid;
 }
 nav ul {
