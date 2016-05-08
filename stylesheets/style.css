@@ -150,6 +150,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	border: solid;
+	margin-top: -15em;
 }
 nav ul {
 	text-align: center;
@@ -172,10 +173,14 @@ header h1 {
 	font-size: 1em;
 }
 
+img {
+	margin-top: 5em;
+}
+
 #sticky-social {
    left: 0;
    position: fixed;
-   top: 15em;
+   top: 6em;
 }
 #sticky-social a {
 /*   background: #333;
@@ -196,7 +201,7 @@ header h1 {
    /*width:7.500em;*/
 }
 #sticky-social a:hover span {
-   left: 25%;
+   /*left: 25%;*/
 }
 
 /*#sticky-social a[class*="facebook"] *//*span { background: #3b5998; }*/
@@ -207,6 +212,10 @@ header h1 {
 
 /*#sticky-social a[class*="instagram"] /*span { background: #517fa4; }*/  
 
+.intro .hola {
+	margin-left: 13em;
+}
+
 .intro .top {
 	margin-left: 15em;
 }
@@ -216,13 +225,17 @@ header h1 {
 }
 
 .intro .bottom {
-	margin-left: 25em;
+	margin-left: 27em;
 }
 
 .intro {
-	margin-top: 5em;
+	margin-top: 15em;
 }
 
 #bio h3 {
+	width: 70em;
+	margin-left: 16em; 
+	font-size: 0.8em;
 	display: none;
+	/*display: none;*/
 }
