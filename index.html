@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/side_bar.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<title>Karen Sanchez</title>
@@ -17,7 +19,7 @@
 						<li><a href="#home">Home</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#skills">Skills</a></li>
-						<li><a href="#hireme">Hire me!</a></li>
+						<li><a href="#contact">Contact me!</a></li>
 					</ul>
 				</nav>
 				<div class="intro">
@@ -33,34 +35,47 @@
 				    </ul>
 				</aside>
 				<div id="bio">
-					<h3>Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me.</h3>
+					<h3>Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails. I wish to be part of a team that can both challenge and mentor me. Looking to put into practice my newly acquired web development skills. I am excited and passionate about creating apps that are both aesthetically pleasing and useful. My interests range from UI/UX design to back-end development, particularly with Ruby on Rails.</h3>
 				</div><!--bio-->
 			</div><!--home-->
 			<div id="projects">
 				<h1>Projects</h1>
-				<img src="stylesheets/images/fivethirteen.JPG" class="pro_one" style="width: 250px; height: 100px">
-				<img src="stylesheets/images/fivethirteen.JPG" class="pro_two" style="width: 250px; height: 100px">
-				<img src="stylesheets/images/fivethirteen.JPG" class="pro_three" style="width: 250px; height: 100px">
-				<div class="clearfix">
+					<figure class="pro_one">
+							<a href="#"><img src="stylesheets/images/fivethirteen.JPG" style="width: 250px; height: 100px"></a>
+							<figcaption>A view of York Minster from a side<br>A view of York Minster from a side<br>A view of York Minster from a side<br>A view of York Minster from a side<br></figcaption>
+					</figure>
+					<figure class="pro_two">
+							<a href="#"><img src="stylesheets/images/fivethirteen.JPG" style="width: 250px; height: 100px"></a>
+							<figcaption>A view of York Minster from a side<br>A view of York Minster from a side<br>A view of York Minster from a side<br>A view of York Minster from a side<br></figcaption>
+					</figure>
+	                <figure class="pro_three">
+	                		<a href="#"><img src="stylesheets/images/fivethirteen.JPG" style="width: 250px; height: 100px"></a>
+	                		<figcaption>A view of York Minster from a side<br>A view of York Minster from a side<br>A view of York Minster from a side<br>A view of York Minster from a side<br></figcaption>
+	                </figure> 
+				<div class="clearfix"></div>
 			</div><!--projects-->
 			<div id="skills">
 				<h1>Skills</h1>
 				<div class="chart"></div>
 			</div><!--skills-->
-			<div id=hireme"">
-				<h1>Hire me</h1>
-				<form action="MAILTO:karensanchez@gmail.com" method="post" enctype="text/plain">
+			<div id="contact">
+				<h1>Contact me</h1>
+				<form action="MAILTO:karensanchez0891@gmail.com" method="post" enctype="text/plain">
 					Name:<br>
-					<input type="text" name="name" value="your name"><br>
+					<input type="text" name="name" class="form_name" placeholder="Steve Jobs"><br>
 					E-mail:<br>
-					<input type="text" name="mail" value="your email"><br>
-					Here you can write something for me:<br>
-					<input type="text" name="comment" value="your comment" size="50"><br><br>
-					<input type="submit" value="Send">
-					<input type="reset" value="Reset">
+					<input type="text" name="mail" class="form_email" placeholder="jobs.steve@gmail.com"><br>
+					Here you can write something for me like:<br>
+					<input type="text" name="comment" size="50" class="form_comment" placeholder="Hi Karen do you want to work for me?"><br><br>
+					<input type="submit" value="Send" class="form_submit">
+					<input type="reset" value="Reset" class="form_reset">
 				</form>
 			</div>
 		</div><!--wrapper-->
+		<footer>
+			<h1>THANKS FOR VISITINGKWEJFNEJDFNJDFNDJKAFNJDAKFNJADKFNJADKF FBFNRJFNJADKFNJGNAJDK! <br>COME AGAIN!</h1>
+		</footer>
 	</body>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="d3.js"></script>
 </html>
