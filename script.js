@@ -7,19 +7,19 @@ $(document).ready(function() {
                 $('.bottom').hide().show(8000);
 
     setTimeout(function() {
-        $('.hola').css('color', '#f2f2f2');
+        $('.hola').css('color', '#A9A9A9');
     }, 3000);
 
     setTimeout(function() {
-        $('.top').css('color', '#f2f2f2');
+        $('.top').css('color', '#FF3B3F');
     }, 4000);
 
     setTimeout(function() {
-        $('.middle').css('color', '#f2f2f2');
+        $('.middle').css('color', '#A9A9A9');
     }, 6000);
 
     setTimeout(function() {
-        $('.bottom').css('color', '#f2f2f2');
+        $('.bottom').css('color', '#FF3B3F');
     }, 8000);
 
     $('#bio h3').css('display', 'block');

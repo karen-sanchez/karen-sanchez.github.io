@@ -65,7 +65,7 @@
                 'height': function(d) {  return height - yScale(d.level); }
 
 })
-           .style("fill", function(d,i) {  return 'rgb(100, 200, ' + ((i*30) + 100) +')'});
+           .style("fill", function(d,i) {  return 'rgb(200, 200, ' + ((i*30) + 100) +')'});
 
 // Label the bars
         svg.selectAll("text")
