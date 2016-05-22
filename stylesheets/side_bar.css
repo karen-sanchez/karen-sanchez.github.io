@@ -28,9 +28,10 @@
    position: absolute;
    text-align:center;
 }
-#sticky-social a:hover span {
-   /*left: 25%;*/
+#sticky-social .testhover:hover {
+   background-color: yellow;
 }
+
 .intro .hola {
 	margin-left: 13em;
 }

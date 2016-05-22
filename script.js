@@ -11,7 +11,7 @@ $(document).ready(function() {
     }, 3000);
 
     setTimeout(function() {
-        $('.top').css('color', '#FF3B3F');
+        $('.top').css('color', '#ff5050');
     }, 4000);
 
     setTimeout(function() {
@@ -19,15 +19,26 @@ $(document).ready(function() {
     }, 6000);
 
     setTimeout(function() {
-        $('.bottom').css('color', '#FF3B3F');
+        $('.bottom').css('color', '#ff5050');
     }, 8000);
 
     $('#bio h3').css('display', 'block');
 
-     // $('#skills').hover(function() {
-     //    $('#skills').css("background-color", "red");
-     // })
 })
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 800){
+            $('.scrollup').fadeIn(3000);
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function(){
+        $('html, body').animate({
+            scrollTop:0
+        }, 800);
+        return false;
+    });
 
 //     d3.csv("skills.csv", function (myArrayOfObjects) {
 //     myArrayOfObjects.forEach(function (d) {
