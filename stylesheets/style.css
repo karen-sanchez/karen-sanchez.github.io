@@ -42,6 +42,7 @@ li a:hover {
 	margin-top: 10em;
 	margin-bottom: 3em;
 	font-family: 'Arapey', serif;
+	color: grey;
 	/*background-color: #A9A9A9;*/
 	/*display: none;*/
 }
@@ -137,8 +138,7 @@ form {
 	background-color: white;
 }
 /*************************-svg-************************/
-svg {
-	/*background-color: aqua;*/
+/*svg {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -147,8 +147,27 @@ svg {
 .axis line {
 	fill: none;
 	stroke: red;
-	/*shape-rendering: crispEdges;*/
+}*/
+
+/*************************-CSS BAR_GRAPH-************************/
+
+.axis text {
+	font-family: 'Arapey', serif;
+	font-size: 16pt; 
 }
+.axis .label {
+	font-size: 26pt;
+}
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.y.axis path, .y.axis line {
+	stroke: none;
+}
+
+
 /*************************-CONTROLLING Z-INDEX-************************/
 .hola, .top, .middle, .bottom {
 	background-color: rgba(202, 235, 242, 0.7);

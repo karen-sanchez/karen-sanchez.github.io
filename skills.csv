@@ -1,11 +1,15 @@
-skills,level
-Javascript,8
-Ruby,7
-Ruby on Rails,9
-CSS,3
-SASS,5
-jQuery,8
-PostgreSQL,2
+level,skills
+2,CSS
+3,SASS
+4,jQuery
+5,Ruby
+6,Ruby on Rails
+7,Javascript
+8,Git
+9,PostgreSQL
+
+
+
 
 
 

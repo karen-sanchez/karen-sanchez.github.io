@@ -40,6 +40,13 @@ $(document).ready(function() {
         return false;
     });
 
+
+    // $('#skills').click(function(){
+    //     myBarGraph = setTimeout(function(){
+    //         $('.aflower').show(1000).hide(1000);
+    //     },1000);
+    // });
+
 //     d3.csv("skills.csv", function (myArrayOfObjects) {
 //     myArrayOfObjects.forEach(function (d) {
 //         console.log(d.skills + "," + d.level);
