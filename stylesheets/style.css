@@ -6,6 +6,7 @@ neutral: #EFEFEF;*/
 body {
 	/*background-image: url("images/fabric.png");*/
 	background-color: #EFEFEF;
+	margin: 0 auto;
 }
 .wrapper {
 	/*height: 1000px;                 WHAT DOES THIS EVEN DO?   */   
