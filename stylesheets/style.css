@@ -201,20 +201,28 @@ h5 {
  }
 
 @media only screen and (max-device-width: 480px) {
-	 body {
+	body {
 	 	background-color: lightgrey;
 	 	}
-	 nav ul {
+	nav ul {
 	 	float: left;
-	 	margin-left: -1em;
+	 	/*margin-left: -1em;*/
+	 	text-align: center;
 	 }	
-	 nav li {
+	nav li {
 		display: block;
 		margin-top: 1.5em;
 	} 	
 	#sticky-social {
 		display: none;
-}
+    }
+/*     h5 {
+		width: 0.1em;
+		height: 0.2em;
+		display: block;
+   }*/
+  } 
+
 /*	 #projects h1, #skills h1, #contact h1 {
 	 	margin-left: 1.5em;
 	 }
@@ -238,4 +246,4 @@ h5 {
 		/*background-color: #A9A9A9;*/
 		/*display: none;*/
 	/*}*/
- }
+ 
