@@ -7,7 +7,7 @@ $(document).ready(function() {
                 $('.bottom').hide().show(4000);
 
     setTimeout(function() {
-        $('.hola').css('color', '#A9A9A9');
+        $('.hola').css('color', '#ff5050');
     }, 3000);
 
     setTimeout(function() {
@@ -15,7 +15,8 @@ $(document).ready(function() {
     }, 3500);
 
     setTimeout(function() {
-        $('.middle').css('color', '#A9A9A9');
+        $('.middle').css('color', '#ff5050');
+
     }, 4000);
 
     setTimeout(function() {

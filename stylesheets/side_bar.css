@@ -31,19 +31,3 @@
 #sticky-social .testhover:hover {
    background-color: yellow;
 }
-
-.intro .hola {
-	margin-left: 13em;
-}
-.intro .top {
-	margin-left: 15em;
-}
-.intro .middle {
-	margin-left: 22em;
-}
-.intro .bottom {
-	margin-left: 33em;
-}
-.intro {
-	margin-top: 15em;
-}
