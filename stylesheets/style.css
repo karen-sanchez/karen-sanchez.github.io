@@ -8,9 +8,6 @@ body {
 	background-color: #EFEFEF;
 	margin: 0 auto;
 }
-.wrapper {
-	/*height: 1000px;                 WHAT DOES THIS EVEN DO?   */   
-}
 nav {
 	position: fixed;
 	width: 100%;
@@ -203,11 +200,16 @@ h5 {
 	background: url('./images/up_top.png');
  }
 
- @media screen and (max-width: 650px) {
+@media only screen and (max-device-width: 480px) {
 	 body {
 	 	background-color: lightgrey;
-	 	margin: auto;
 	 	}
+	 nav ul {
+	 	float: left;
+	 }	
+	 nav li {
+		display: block;
+	} 	
 /*	 #projects h1, #skills h1, #contact h1 {
 	 	margin-left: 1.5em;
 	 }
