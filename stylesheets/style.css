@@ -202,3 +202,17 @@ h5 {
 	margin-right: 2em;
 	background: url('./images/up_top.png');
  }
+
+ @media screen and (max-width: 500px) {
+ 	body {background-color: red;
+ 	}
+ 	.pro_one {
+ 		margin-right: 6em;
+ 	}
+ 	.pro_two {
+ 		margin-left: 5em;
+ 	}
+ 	.pro_three {
+ 		margin-left: 4em;
+ 	}
+ }
