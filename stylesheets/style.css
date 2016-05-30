@@ -1,137 +1,124 @@
+/*sky: #CAEBF2;
+carbon: #A9A9A9;
+watermelon: #FF3B3F;
+neutral: #EFEFEF;*/
+/*************************-PORTFOLIO PAGE CSS-************************/
 body {
-	background-color: #FFFFFA;
+	/*background-image: url("images/fabric.png");*/
+	background-color: #EFEFEF;
 }
-
-.container {
-	max-width: 1024px;
-	margin: 0 auto;
-	/*margin-left: 100px;*/
+.wrapper {
+	/*height: 1000px;                 WHAT DOES THIS EVEN DO?   */   
 }
-
-.name {
-	font-size: 80px;
-	margin-left: 80px;
-	font-family: 'Passion One', cursive;
-	color: #EA526F;
-}
-
-.title {
-	font-size: 50px;
-	margin-left: 200px;
-	/*font-family: 'Passion One', cursive;*/
-}
-
-/*.photo {
-	width: 150px;
-	height: 150px;
-	border: 1px solid;
-	float: right;
-	margin-top: -125px;
-	margin-right: 250px;
-	margin-bottom: 15px;
-}*/
-
-.obj {
-	width: 900px;
-	height: 200px;
+nav {
+	position: fixed;
+	width: 100%;
 	/*border: solid;*/
-	margin-left: 100px;
-	font-size: 20px;
-	margin-bottom: -60px;
-    margin-top: 40px;
-    font-family: 'Quicksand', sans-serif;
+	margin-top: -15em;
+	/*background-color: #EFEFEF;*/
+	background-color: rgba(255, 80, 80, 0.8);
+	z-index: 2;
 }
-
-.edu {
-	float: left;
-	width: 250px;
-	margin-left: 100px;
-	font-family: 'Quicksand', sans-serif;
+nav ul {
+	text-align: center;
 }
-
-.edu li {
-	font-size: 15px;
-	margin-top: 10px;
-	font-family: 'Quicksand', sans-serif;
-	font-weight: bold;
-}
-
-.projects {
-	float: left;
-	width: 250px;
-	margin-left: 90px;
-	font-family: 'Quicksand', sans-serif;
-}
-
-.skills {
-	float: right;
-	width: 250px;
-	/*margin-right: 100px;*/
-	/*margin-left: 10px;*/
-	font-family: 'Quicksand', sans-serif;
-}
-
-.skills li {
-	font-size: 20px;
-	margin-top: 15px;
-	font-family: 'Quicksand', sans-serif;
-}
-
-/* up top replacing photo*/
-
-.left-footer {
-	float: right;
-	/*margin-left: 200px;*/
-	/*margin-top: 75px;*/
-	font-family: 'Quicksand', sans-serif;
-	list-style-type: none;
-	margin-top: -105px;
-	/*margin-right: 70px;*/
-	margin-bottom: 15px;
-} 
-
-.left-footer li {
-	font-size: 20px;
-	font-family: 'Quicksand', sans-serif;
-	margin-top: 10px;
-	/*margin-top: 15px;*/
-}
-
-.left-footer li a {
-	text-decoration: none;
-	color: black;
-}
-
-.right-footer {
-	float: right;
-	/*margin-right: 50px;*/
-	margin-top: 50px;
-	font-family: 'Quicksand', sans-serif;
-	/*margin-bottom: 30px;*/
-	list-style-type: none;
-}
-
-.right-footer li {
-	font-size: 18px;
-	/*margin-top: 50px;*/
-	/*margin-top: 15px;*/
+li {
 	display: inline;
-	margin-left: 45px;
-	/*margin-right: 100px;*/
-	/*margin-bottom: -150px;*/
+	margin: 0em 5em;
 }
-
-.right-footer li a {
+li a {
 	text-decoration: none;
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+li a:hover {
 	color: black;
 }
-
-footer {
-	border-top: solid;
-	height: 150px;
+#bio h3 {
+	width: 50em;
+	margin-left: 6em; 
+	font-size: 1.3em;
+	margin-top: 2em;
+	margin-bottom: 5em;
+	font-family: 'Arapey', serif;
+	color: grey;
+	/*background-color: #A9A9A9;*/
+	/*display: none;*/
 }
-
-
+.pro_one {
+	float: right;
+	margin-right: 30px;
+	margin-top: 5em;
+	/*margin-top: 350px;*/
+}
+.pro_two {
+	float: left;
+	margin-left: 30px;
+	margin-top: 5em;
+}
+.pro_three {
+	float: left;
+	margin-left: 165px;
+	margin-top: 5em;
+	/*margin-top: 200px;*/
+}
+#home {
+	/*background-color: blue;*/
+	/*margin-left: 3em;*/
+}
+#projects {
+	margin-left: 3em;
+	/*margin-top: 26em;*/
+	/*background-color: pink;*/
+}
+#projects h1 {
+	font-family: 'Poiret One', cursive;
+}
+#projects figcaption {
+	font-family: 'Arapey', serif;
+}
+#skills {
+	margin-left: 3em;
+	margin-top: 5em;
+	/*background-color: red;*/
+}
+#skills h1 {
+	font-family: 'Poiret One', cursive;
+}
+#skills h4 {
+	font-family: 'Poiret One', cursive;
+	float: right;
+	margin-right: 1em;
+}
+#skills figcaption {
+	font-family: 'Arapey', serif;
+}
+#contact {
+	margin-left: 3em;
+	margin-top: 9.5em;
+	margin-bottom: 6em;
+	/*background-color: green;*/
+}
+#contact h1 {
+	font-family: 'Poiret One', cursive;
+}
+#contact figcaption {
+	font-family: 'Arapey', serif;
+}
+footer {
+	/*border: solid;*/
+	margin-top: 3em;
+	background-color: black;
+	text-align: center;
+	height: 10em;
+	font-size: 0.7em;
+} 
+footer h1 {
+	color: #A9A9A9;
+	font-family: 'Poiret One', cursive;
+    padding-top: 2.5em;
+}
+/****** Projects are floated so they need clearfix *****/
 .clearfix:after { 
    content: "."; 
    visibility: hidden; 
@@ -139,3 +126,83 @@ footer {
    height: 0; 
    clear: both;
 }
+/*************************-FORM CSS-************************/
+form {
+	margin-left: 15em;
+	margin-top: 4em;
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+}
+.form_name {
+}
+.form_submit {
+	background-color: white;
+}
+.form_reset {
+	background-color: white;
+}
+/*************************-svg-************************/
+/*svg {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: red;
+}*/
+
+/*************************-CSS BAR_GRAPH-************************/
+
+.axis text {
+	font-family: 'Poiret One', cursive;
+	font-size: 16pt; 
+}
+.axis .label {
+	font-size: 26pt;
+}
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.y.axis path, .y.axis line {
+	stroke: none;
+}
+
+
+/*************************-CONTROLLING Z-INDEX-************************/
+.hola, .top, .middle, .bottom {
+	background-color: rgba(202, 235, 242, 0.7);
+	position: absolute;
+	z-index: 1;
+}
+.hola {
+	margin-top: -16.2em;
+	/*z-index: -1;*/
+}
+.top {
+	margin-top: -15em;
+}
+.middle {
+	margin-top: -13.8em;
+}
+.bottom {
+	margin-top: -12.5em;
+}
+h5 {
+	font-size: 9em;
+	z-index: -1;
+	color: #A9A9A9;
+	text-align: center;
+}
+/*************************-SCROLL UP-************************/
+ .scrollup {
+	width: 100px;
+	height: 100px;
+	float: right;
+	display: none;
+	margin-right: 2em;
+	background: url('./images/up_top.png');
+ }
