@@ -206,8 +206,8 @@ h5 {
 	 	}
 	nav ul {
 	 	float: left;
-	 	/*margin-left: -1em;*/
-	 	text-align: center;
+	 	margin-left: 2em;
+	 	/*text-align: center;*/
 	 }	
 	nav li {
 		display: block;
