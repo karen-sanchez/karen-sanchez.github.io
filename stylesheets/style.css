@@ -212,6 +212,7 @@ h5 {
 	nav li {
 		display: block;
 		margin-top: 1.5em;
+		font-size: 1.3em;
 	} 	
 	#sticky-social {
 		display: none;
