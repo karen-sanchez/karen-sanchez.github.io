@@ -204,15 +204,31 @@ h5 {
  }
 
  @media screen and (max-width: 650px) {
- 	body {background-color: red;
- 	}
- 	.pro_one {
- 		margin-right: 6em;
- 	}
- 	.pro_two {
- 		margin-left: 5em;
- 	}
- 	.pro_three {
- 		margin-left: 4em;
- 	}
+	 body {
+	 	background-color: red;
+	 	width: 100%;
+	 	}
+	 #projects h1, #skills h1, #contact h1 {
+	 	margin-left: 1.5em;
+	 }
+	 .pro_one {
+	 	margin-right: 6em;
+	 }
+	 .pro_two {
+	 	margin-left: -2em;
+	 }
+	 .pro_three {
+	 	margin-left: -2em;
+	 }
+	 #bio h3 {
+		width: 100%;
+	/*	margin-left: 6em; 
+		font-size: 1.3em;
+		margin-top: 2em;
+		margin-bottom: 5em;*/
+		font-family: 'Arapey', serif;
+		color: grey;
+		/*background-color: #A9A9A9;*/
+		/*display: none;*/
+	}
  }
