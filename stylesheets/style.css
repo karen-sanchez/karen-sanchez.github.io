@@ -38,9 +38,8 @@ li a:hover {
 	width: 50em;
 	margin-left: 6em; 
 	font-size: 1.3em;
-	display: none;
-	margin-top: 10em;
-	margin-bottom: 3em;
+	margin-top: 2em;
+	margin-bottom: 5em;
 	font-family: 'Arapey', serif;
 	color: grey;
 	/*background-color: #A9A9A9;*/
@@ -85,6 +84,11 @@ li a:hover {
 }
 #skills h1 {
 	font-family: 'Poiret One', cursive;
+}
+#skills h4 {
+	font-family: 'Poiret One', cursive;
+	float: right;
+	margin-right: 1em;
 }
 #skills figcaption {
 	font-family: 'Arapey', serif;
@@ -152,7 +156,7 @@ form {
 /*************************-CSS BAR_GRAPH-************************/
 
 .axis text {
-	font-family: 'Arapey', serif;
+	font-family: 'Poiret One', cursive;
 	font-size: 16pt; 
 }
 .axis .label {

@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 
     $('.hola').hide().show(1000);
-    	$('.top').hide().show(2000);
-            $('.middle').hide().show(4000);
-                $('.bottom').hide().show(8000);
+    	$('.top').hide().show(2300);
+            $('.middle').hide().show(3300);
+                $('.bottom').hide().show(4000);
 
     setTimeout(function() {
         $('.hola').css('color', '#A9A9A9');
@@ -12,15 +12,15 @@ $(document).ready(function() {
 
     setTimeout(function() {
         $('.top').css('color', '#ff5050');
-    }, 4000);
+    }, 3500);
 
     setTimeout(function() {
         $('.middle').css('color', '#A9A9A9');
-    }, 6000);
+    }, 4000);
 
     setTimeout(function() {
         $('.bottom').css('color', '#ff5050');
-    }, 8000);
+    }, 4500);
 
     $('#bio h3').css('display', 'block');
 
