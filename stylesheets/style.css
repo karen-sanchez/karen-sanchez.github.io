@@ -205,10 +205,11 @@ h5 {
 	 	background-color: lightgrey;
 	 	}
 	 nav ul {
-	 	float: left;
+	 	/*height: 10em;*/
 	 }	
 	 nav li {
 		display: block;
+		margin-top: 1.5em;
 	} 	
 /*	 #projects h1, #skills h1, #contact h1 {
 	 	margin-left: 1.5em;
