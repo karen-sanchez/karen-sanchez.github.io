@@ -203,7 +203,7 @@ h5 {
 	background: url('./images/up_top.png');
  }
 
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 650px) {
  	body {background-color: red;
  	}
  	.pro_one {
