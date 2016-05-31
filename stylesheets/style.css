@@ -222,7 +222,7 @@ h5 {
 	nav ul {
 	 	/*float: left;*/
 	 	text-align: center;
-	 	margin-left: -5em;
+	 	margin-left: -4em;
 	 }	
 	nav li {
 		display: block;
@@ -239,7 +239,7 @@ h5 {
    	width: 25em;
    	margin-left: 2.2em;
    	font-size: 1.5em;
-   	margin-top: 10em;
+   	margin-top: 11.5em;
     }
    .intro {
    		margin-left: 19em;
@@ -255,7 +255,7 @@ h5 {
 		/*display: inline;*/
 	}
 	.bottom {
-		margin: -1.5em 0em 0em -6em;
+		margin: -2em 0em 0em -6em;
 	}
    	#projects h1, #skills h1, #contact h1 {
 	 	margin-left: 7.5em;
