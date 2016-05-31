@@ -271,7 +271,10 @@ h5 {
 	 	margin-left: -1em;
 	 }
 	 .form_comment {
-	 	width: 18sem;
+	 	width: 16em;
+	 }
+	 .scrollup {
+	 	float: right;
 	 }
 	 footer {
 	 	width: 500px;
