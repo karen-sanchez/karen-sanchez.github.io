@@ -222,7 +222,7 @@ h5 {
 	nav ul {
 	 	/*float: left;*/
 	 	text-align: center;
-	 	/*margin-left: 6em;*/
+	 	margin-left: -2em;
 	 }	
 	nav li {
 		display: block;
@@ -237,7 +237,7 @@ h5 {
     }
    #bio h3 {
    	width: 25em;
-   	margin-left: 1.2em;
+   	margin-left: 2.2em;
    	font-size: 1.5em;
     }
    .intro {
@@ -257,7 +257,7 @@ h5 {
 		margin: -1.5em 0em 0em -6em;
 	}
    	#projects h1, #skills h1, #contact h1 {
-	 	margin-left: 4em;
+	 	margin-left: 7em;
 	 }
 	.pro_one {
 	 	margin-right: 1em;
