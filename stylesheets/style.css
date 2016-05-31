@@ -257,11 +257,11 @@ h5 {
 		margin: -1.5em 0em 0em -6em;
 	}
    	#projects h1, #skills h1, #contact h1 {
-	 	margin-left: 9em;
+	 	margin-left: 7.5em;
 	 }
 	.pro_one {
-	 	/*margin-right: 1em;*/
-	    width: 100%;
+	 	margin-left: 3em;
+	    width: 20em;
 	 }
 	.pro_two {
 	 	margin-left: 3em;
@@ -280,7 +280,7 @@ h5 {
 	 	width: 16.7em;
 	 }
 	 .scrollup {
-	 	margin-right: -20em;
+	 	margin-right: -22em;
 	 	float: right;
 	 }
 	 footer {
