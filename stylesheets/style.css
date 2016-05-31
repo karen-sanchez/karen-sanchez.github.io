@@ -256,16 +256,16 @@ h5 {
 	 	margin-left: 4em;
 	 }
 	.pro_one {
-	 	margin-right: 2em;
+	 	margin-right: 1em;
 	 }
 	.pro_two {
-	 	margin-left: 2em;
+	 	margin-left: 3em;
 	 }
 	.pro_three {
-	 	margin-left: 2em;
+	 	margin-left: 3em;
 	 }
 	#skills,.chart {
-	 	margin-left: -12em;
+	 	/*margin-left: -12em;*/
 	 }
 	 form {
 	 	margin-left: -1em;
