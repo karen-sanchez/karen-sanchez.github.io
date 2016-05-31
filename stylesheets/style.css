@@ -221,7 +221,7 @@ h5 {
 	nav ul {
 	 	float: left;
 	 	text-align: center;
-	 	margin-left: -2em;
+	 	margin-left: 2em;
 	 }	
 	nav li {
 		display: block;
@@ -232,7 +232,7 @@ h5 {
 		display: none;
     }
     #welcome h5 {
-    	display: none;
+
     }
    #bio h3 {
    	width: 25em;
