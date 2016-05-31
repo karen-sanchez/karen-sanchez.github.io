@@ -234,10 +234,10 @@ h5 {
    }
    #bio h3 {
    	width: 17em;
-   	margin-left: 2em;
+   	margin-left: 3em;
    }
    .intro {
-   	/*margin-left: 2em;*/
+   	margin-left: 2em;
    	/*margin-top: 3em;*/
    }
     .hola {
@@ -253,7 +253,7 @@ h5 {
 		margin: -3.5em 0em 0em 5em;
 	}
    	#projects h1, #skills h1, #contact h1 {
-	 	margin-left: 2.5em;
+	 	margin-left: 3.5em;
 	 }
 	.pro_one {
 	 	margin-right: 3em;
@@ -273,9 +273,9 @@ h5 {
 	 .form_comment {
 	 	width: 12em;
 	 }
-	 /*#home {
-	 	width: 100%;
-	 }*/
+	 footer {
+	 	width: 500px;
+	 }
   } 
 
 /*	 #bio h3 {
