@@ -217,6 +217,7 @@ h5 {
 	}*/
 	nav {
 		position: fixed;
+		padding-top: 2em;
 	} 		
 	nav ul {
 	 	/*float: left;*/
@@ -232,7 +233,7 @@ h5 {
 		display: none;
     }
     h5 {
-    	font-size: 8.5em;
+    	font-size: 7.5em;
     }
    #bio h3 {
    	width: 25em;
