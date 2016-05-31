@@ -261,12 +261,16 @@ h5 {
 	 }
 	.pro_one {
 	 	margin-right: 1em;
-	 	width: 15em;
-	    /*width: 20em;*/
+	 }
+	 .pro_one a {
+	 	width: 350px;
+	 	height: 250px;
+	 }
+	 .pro_one figcaption {
+	 	font-size: 2em;
 	 }
 	.pro_two {
 	 	margin-left: 3em;
-	 	width: 15em;
 	 }
 	.pro_three {
 	 	margin-left: 3em;
