@@ -230,7 +230,7 @@ h5 {
 		font-size: 1.3em;
 	} 	
 	#sticky-social {
-		display: none;
+		opacity: 0.3;
     }
     h5 {
     	font-size: 7.5em;
