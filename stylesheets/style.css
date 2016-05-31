@@ -260,11 +260,13 @@ h5 {
 	 	margin-left: 7.5em;
 	 }
 	.pro_one {
-	 	margin-left: 3em;
-	    width: 20em;
+	 	margin-right: 1em;
+	 	width: 15em;
+	    /*width: 20em;*/
 	 }
 	.pro_two {
 	 	margin-left: 3em;
+	 	width: 15em;
 	 }
 	.pro_three {
 	 	margin-left: 3em;
