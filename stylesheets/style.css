@@ -264,8 +264,8 @@ h5 {
 	.pro_three {
 	 	margin-left: 3em;
 	 }
-	#skills,.chart {
-	 	/*margin-left: -12em;*/
+	.chart {
+	 	margin-left: -7em;
 	 }
 	 form {
 	 	margin-left: -1em;
