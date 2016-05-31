@@ -234,7 +234,7 @@ h5 {
    }
    #bio h3 {
    	width: 33em;
-   	margin-left: -4em;
+   	/*margin-left: -4em;*/
    	/*font-size: 1.5em;*/
    }
    .intro {
