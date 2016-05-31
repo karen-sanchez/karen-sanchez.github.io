@@ -218,7 +218,7 @@ h5 {
 	nav ul {
 	 	float: left;
 	 	text-align: center;
-	 	/*margin-left: 1em;*/
+	 	margin-left: 2em;
 	 	/*margin-bottom: -5em;*/
 	 }	
 	nav li {
@@ -237,7 +237,7 @@ h5 {
    	margin: 0 auto;
    }
    .intro {
-   	/*margin-left: 5em;*/
+   	margin-left: 2em;
    	/*margin-top: 3em;*/
    }
     .hola {
