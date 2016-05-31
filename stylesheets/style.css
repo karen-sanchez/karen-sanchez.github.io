@@ -235,18 +235,45 @@ h5 {
    	width: 17em;
    	margin: 0 auto;
    }
+   .intro {
+   	margin-left: 5em;
+   }
+   .hola {
+	margin: -10em 0em 0em 0em;
+	}
+	.top {
+		margin: -8.5em 0em 0em 0em;
+	}
+	.middle {
+		margin: -7em 0em 0em 0em;
+	}
+	.bottom {
+		margin: -4.5em 0em 0em 0em;
+	}
    	#projects h1, #skills h1, #contact h1 {
-	 	margin-left: 3em;
+	 	margin-left: 2.5em;
 	 }
 	.pro_one {
-	 	margin-right: 6em;
+	 	margin-right: 3em;
 	 }
 	.pro_two {
-	 	margin-left: -2em;
+	 	margin-left: 1em;
 	 }
 	.pro_three {
-	 	margin-left: -2em;
+	 	margin-left: 1em;
 	 }
+	#skills,.chart {
+	 	margin-left: -12em;
+	 }
+	 form {
+	 	margin-left: -1em;
+	 }
+	 .form_comment {
+	 	width: 12em;
+	 }
+	 /*#home {
+	 	width: 100%;
+	 }*/
   } 
 
 /*	 #bio h3 {
