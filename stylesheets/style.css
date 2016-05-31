@@ -8,6 +8,9 @@ body {
 	background-color: #EFEFEF;
 	margin: 0 auto;
 }
+.wrapper {
+	width: 100%;
+}
 nav {
 	position: fixed;
 	width: 100%;
@@ -200,40 +203,52 @@ h5 {
 	background: url('./images/up_top.png');
  }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 400px) {
 	body {
 	 	background-color: lightgrey;
+/*	 	margin: 0 auto;
+	 	height: 100%;*/
 	 	}
+	.wrapper {
+		width: 100%;
+	}
+	nav {
+		position: fixed;
+	} 		
 	nav ul {
 	 	float: left;
-	 	margin-left: 2em;
-	 	margin-bottom: 3em;
+	 	margin: 0 auto;
+	 	/*margin-bottom: -5em;*/
 	 }	
 	nav li {
 		display: block;
-		margin-top: 1.5em;
+		margin-top: 1em;
 		font-size: 1.3em;
 	} 	
 	#sticky-social {
 		display: none;
     }
      h5 {
-     	margin-top: 100em;
+     	width: 100%;
    }
-  } 
-
-/*	 #projects h1, #skills h1, #contact h1 {
-	 	margin-left: 1.5em;
+   #bio h3 {
+   	width: 17em;
+   	margin: 0 auto;
+   }
+   	#projects h1, #skills h1, #contact h1 {
+	 	margin-left: 3em;
 	 }
-	 .pro_one {
+	.pro_one {
 	 	margin-right: 6em;
 	 }
-	 .pro_two {
+	.pro_two {
 	 	margin-left: -2em;
 	 }
-	 .pro_three {
+	.pro_three {
 	 	margin-left: -2em;
-	 }*/
+	 }
+  } 
+
 /*	 #bio h3 {
 		width: 100%;*/
 	/*	margin-left: 6em; 
