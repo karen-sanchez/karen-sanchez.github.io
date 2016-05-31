@@ -262,7 +262,7 @@ h5 {
 	.pro_one {
 	 	margin-right: -12em;
 	 }
-	 .pro_one img, .pro_two a, .pro_three a {
+	 .pro_one img, .pro_two img, .pro_three img {
 	 	width: 750px;
 	 	height: 450px;
 	 }
