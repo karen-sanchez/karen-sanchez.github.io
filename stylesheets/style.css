@@ -222,7 +222,7 @@ h5 {
 	nav ul {
 	 	/*float: left;*/
 	 	text-align: center;
-	 	margin-left: -2em;
+	 	margin-left: -3em;
 	 }	
 	nav li {
 		display: block;
@@ -239,7 +239,7 @@ h5 {
    	width: 25em;
    	margin-left: 2.2em;
    	font-size: 1.5em;
-   	margin-top: 15em;
+   	margin-top: 12em;
     }
    .intro {
    		margin-left: 19em;
