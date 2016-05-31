@@ -231,8 +231,8 @@ h5 {
 	#sticky-social {
 		display: none;
     }
-    #welcome h5 {
-    	width: 0.5em;
+    h5 {
+    	width: 0.1em;
     }
    #bio h3 {
    	width: 25em;
