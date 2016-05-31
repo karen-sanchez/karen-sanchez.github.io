@@ -188,7 +188,7 @@ h5 {
 	color: black;
 	text-align: center;
 	font-family: 'Cardo', serif;
-	opacity: 0.9;
+	opacity: 0.7;
 }
 /*************************-SCROLL UP-************************/
  .scrollup {
@@ -207,7 +207,7 @@ h5 {
 	nav ul {
 	 	float: left;
 	 	margin-left: 2em;
-	 	/*text-align: center;*/
+	 	margin-bottom: 3em;
 	 }	
 	nav li {
 		display: block;
@@ -217,11 +217,9 @@ h5 {
 	#sticky-social {
 		display: none;
     }
-/*     h5 {
-		width: 0.1em;
-		height: 0.2em;
-		display: block;
-   }*/
+     h5 {
+     	margin-top: 100em;
+   }
   } 
 
 /*	 #projects h1, #skills h1, #contact h1 {

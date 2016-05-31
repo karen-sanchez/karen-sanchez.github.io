@@ -25,9 +25,6 @@ $(document).ready(function() {
 
     $('#bio h3').css('display', 'block');
 
-    setTimeout(function() {
-        $('h5').css('opacity', '0.1');
-    }, 2500 );
 })
 
     $(window).scroll(function(){
