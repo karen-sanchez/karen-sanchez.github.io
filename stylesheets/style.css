@@ -268,13 +268,13 @@ h5 {
 	 }*/
 	 .pro_one figcaption, .pro_two figcaption, .pro_three figcaption {
 	 	font-size: 2em;
-	 	width: 600px;
+	 	width: 800px;
 	 }
 	.pro_two {
-	 	margin-left: 7em;
+	 	margin-left: 5em;
 	 }
 	.pro_three {
-	 	margin-left: 7em;
+	 	margin-left: 5em;
 	 }
     .chart {
 	 	margin-left: -14em;
