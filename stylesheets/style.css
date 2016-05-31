@@ -260,21 +260,21 @@ h5 {
 	 	margin-left: 7.5em;
 	 }
 	.pro_one {
-	 	margin-right: -5em;
+	 	margin-right: -12em;
 	 }
-	 .pro_one a {
+	 .pro_one a, .pro_two a, .pro_three a {
 	 	width: 550px;
 	 	height: 450px;
 	 }
-	 .pro_one figcaption {
+	 .pro_one figcaption, .pro_two figcaption, .pro_three figcaption {
 	 	font-size: 2em;
 	 	width: 400px;
 	 }
 	.pro_two {
-	 	margin-left: 3em;
+	 	margin-left: 7em;
 	 }
 	.pro_three {
-	 	margin-left: 3em;
+	 	margin-left: 7em;
 	 }
     .chart {
 	 	margin-left: -14em;
