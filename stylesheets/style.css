@@ -210,7 +210,7 @@ h5 {
 
 	body {
 	 	background-color: lightgrey;
-	 	width: 360px;
+	 	/*width: 360px;*/
 	}
 /*	.wrapper {
 		width: 100%;
@@ -232,7 +232,7 @@ h5 {
 		display: none;
     }
     #welcome h5 {
-    	width: 2em;
+    	width: 1em;
     }
    #bio h3 {
    	width: 25em;
@@ -254,7 +254,7 @@ h5 {
 		margin: -6em 0em 0em 6em;
 	}
 	.bottom {
-		margin: -5.3em 0em 0em 8em;
+		margin: -2.3em 0em 0em 12em;
 	}
    	#projects h1, #skills h1, #contact h1 {
 	 	margin-left: 4em;
