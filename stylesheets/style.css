@@ -219,9 +219,9 @@ h5 {
 		position: fixed;
 	} 		
 	nav ul {
-	 	float: left;
+	 	/*float: left;*/
 	 	text-align: center;
-	 	margin-left: 6em;
+	 	/*margin-left: 6em;*/
 	 }	
 	nav li {
 		display: block;
@@ -232,7 +232,7 @@ h5 {
 		display: none;
     }
     #welcome h5 {
-    	width: 4em;
+    	width: 2em;
     }
    #bio h3 {
    	width: 25em;
@@ -254,7 +254,7 @@ h5 {
 		margin: -6em 0em 0em 6em;
 	}
 	.bottom {
-		margin: -4.3em 0em 0em 8em;
+		margin: -5.3em 0em 0em 8em;
 	}
    	#projects h1, #skills h1, #contact h1 {
 	 	margin-left: 4em;
