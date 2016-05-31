@@ -12,7 +12,7 @@ var outerWidth = 900;
       var innerHeight = outerHeight - margin.top  - margin.bottom;
 
 // Defining svg var
-      var svg = d3.select("#skills").append("svg")
+      var svg = d3.select(".chart").append("svg")
         .attr("width",  outerWidth)
         .attr("height", outerHeight);
 

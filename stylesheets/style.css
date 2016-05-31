@@ -264,8 +264,9 @@ h5 {
 	.pro_three {
 	 	margin-left: 3em;
 	 }
-	.chart {
-	 	margin-left: -10em;
+    .chart {
+	 	margin-left: -14em;
+	 	/*width: 16px;*/
 	 }
 	 form {
 	 	margin-left: -1em;
