@@ -241,19 +241,19 @@ h5 {
    	font-size: 1.5em;
     }
    .intro {
-   		margin-left: 8em;
+   		margin-left: 15em;
     }
     .hola {
 	margin: -9em 0em 0em 0em;
 	}
 	.top {
-		margin: -7.5em 0em 0em 0em;
+		margin: -7em 0em 0em -5em;
 	}
 	.middle {
-		margin: -6em 0em 0em 0em;
+		margin: -5em 0em 0em -8em;
 	}
 	.bottom {
-		margin: -3.5em 0em 0em 0em;
+		margin: -2.5em 0em 0em -5em;
 	}
    	#projects h1, #skills h1, #contact h1 {
 	 	margin-left: 4em;
