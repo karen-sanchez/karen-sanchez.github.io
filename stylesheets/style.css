@@ -253,16 +253,16 @@ h5 {
 		margin: -3.5em 0em 0em 5em;
 	}
    	#projects h1, #skills h1, #contact h1 {
-	 	margin-left: 3.5em;
+	 	margin-left: 4.5em;
 	 }
 	.pro_one {
-	 	margin-right: 3em;
+	 	margin-right: 2em;
 	 }
 	.pro_two {
-	 	margin-left: 1em;
+	 	margin-left: 2em;
 	 }
 	.pro_three {
-	 	margin-left: 1em;
+	 	margin-left: 2em;
 	 }
 	#skills,.chart {
 	 	margin-left: -12em;
@@ -271,7 +271,7 @@ h5 {
 	 	margin-left: -1em;
 	 }
 	 .form_comment {
-	 	width: 12em;
+	 	width: 15em;
 	 }
 	 footer {
 	 	width: 500px;
