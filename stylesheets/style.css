@@ -217,7 +217,7 @@ h5 {
 	} 		
 	nav ul {
 	 	float: left;
-	 	margin: 0 auto;
+	 	margin-left: 1em;
 	 	/*margin-bottom: -5em;*/
 	 }	
 	nav li {
@@ -239,16 +239,16 @@ h5 {
    	margin-left: 5em;
    }
    .hola {
-	margin: -10em 0em 0em 0em;
+	margin: -12em 0em 0em 0em;
 	}
 	.top {
-		margin: -8.5em 0em 0em 0em;
+		margin: -10.5em 0em 0em 0em;
 	}
 	.middle {
-		margin: -7em 0em 0em 0em;
+		margin: -9em 0em 0em 0em;
 	}
 	.bottom {
-		margin: -4.5em 0em 0em 0em;
+		margin: -6.5em 0em 0em 0em;
 	}
    	#projects h1, #skills h1, #contact h1 {
 	 	margin-left: 2.5em;
