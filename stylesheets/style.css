@@ -229,11 +229,11 @@ h5 {
 	#sticky-social {
 		display: none;
     }
-     h5 {
+    h5 {
      	width: 100%;
    }
    #bio h3 {
-   	width: 17em;
+   	width: 100%;
    	margin-left: 3em;
    }
    .intro {
@@ -266,7 +266,7 @@ h5 {
 	 }
     .chart {
 	 	margin-left: -14em;
-	 	/*width: 16px;*/
+	 	/*width: 0.5em;*/
 	 }
 	 form {
 	 	margin-left: -1em;
@@ -278,7 +278,7 @@ h5 {
 	 	margin-right: -6.5em;
 	 }
 	 footer {
-	 	width: 500px;
+	 	/*width: 500px;*/
 	 }
   } 
 
