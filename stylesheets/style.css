@@ -216,9 +216,9 @@ h5 {
 		position: fixed;
 	} 		
 	nav ul {
-	 	float: left;
+	 	/*float: left;*/
 	 	text-align: center;
-	 	margin-left: 2em;
+	 	/*margin-left: 2em;*/
 	 	/*margin-bottom: -5em;*/
 	 }	
 	nav li {
