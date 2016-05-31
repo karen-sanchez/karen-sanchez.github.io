@@ -234,10 +234,10 @@ h5 {
    }
    #bio h3 {
    	width: 17em;
-   	margin: 0 auto;
+   	margin-left: 2em;
    }
    .intro {
-   	margin-left: 2em;
+   	/*margin-left: 2em;*/
    	/*margin-top: 3em;*/
    }
     .hola {
