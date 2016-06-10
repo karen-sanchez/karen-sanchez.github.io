@@ -24,7 +24,6 @@ $(document).ready(function() {
     }, 4500);
 
     $('#bio h3').css('display', 'block');
-
 })
 
     $(window).scroll(function(){
@@ -40,6 +39,3 @@ $(document).ready(function() {
         }, 800);
         return false;
     });
-
-
-    
