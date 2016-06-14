@@ -1,19 +1,16 @@
 level,skills
 4.5,SASS
+1,Angular
 4,jQuery
 3.5,Ruby
 3,Ruby on Rails
+1.5,Express
 2,Javascript
 4.5,Git
 1,PostgreSQL
 1.5,D3
 4,CSS
+2.5,MongoDB
 5,HTML
-
-
-
-
-
-
-
-
+2,Bootstrap
+1.2,Node.js

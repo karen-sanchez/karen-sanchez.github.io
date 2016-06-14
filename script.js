@@ -24,9 +24,23 @@ $(document).ready(function() {
     }, 4500);
 
     $('#bio h3').css('display', 'block');
-})
+}) // End document.ready
 
     $(window).scroll(function(){
+
+        var wScroll = $(this).scrollTop();
+
+				// console.log(wScroll);
+
+	// if($(window).scrollTop() > 1365){
+
+            //  console.log('hello');
+
+        //     $('#skills').
+        // };
+
+
+
         if($(this).scrollTop() > 800){
             $('.scrollup').fadeIn(3000);
         } else {
