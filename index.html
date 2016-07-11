@@ -20,6 +20,7 @@
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <!-- Navbar
@@ -44,13 +45,73 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
+        <h4>Projects</h4>
+		<figure class="three columns">
+				<a href="#"><img src="css/stylesheets/images/under_cons.png" style="width: 250px; height: 150px"></a>
+				<figcaption>Coming soon.<br>An app bult on D3.<br>After buiding my "skills bar graph"<br> on D3 I got very excited about the idea<br>of starting on my very first D3 project.<br>I am currently brainstorming to decide<br>what the project should be about.<br></figcaption>
+		</figure>
+		<figure class="three columns">
+				<a href="#"><img src="css/stylesheets/images/fivethirteen.JPG" style="width: 250px; height: 150px"></a>
+				<figcaption><strong>Flipside News</strong><br>This is an app that I built with the informed <br>consumer in mind.<br>By using Nokogiri I scraped information<br> from different news sources <br> and managed to generate the same news <br>on the same page as expressed by<br> two different newspapers.<br></figcaption>
+		</figure>
+		<figure class="three columns">
+				<a href="https://github.com/karen-sanchez/PlanMyMeal"><img src="css/stylesheets/images/Capture.JPG" style="width: 250px; height: 150px"></a>
+				<figcaption><strong>Plan My Meal</strong><br>An app buit on Node.js, Express, Angular,<br> Bootstrap and the Yelp search API.<br>Don't waste time wondering<br>where to eat today, just let the randomizer tell you!<br>Feel free to check out the code on Gthub.<br>Deployment coming soon!</figcaption>
+		</figure>
+	</div><!-- End projects row -->
+</div><!-- End projects container -->
+<div class="container">
+	<div class="row" id="skills">
+		<h4>Skills</h4>
+		<h7>1 = Practice makes perfect!<br>5 = I am pretty good</h7>
+		<div class="chart"></div>
+	</div><!-- End skills row -->
+</div><!-- End skills container --><br><br><br>
+<div class="container">
+	<h4 div id="contact">Contact me</h4>
+<form action="MAILTO:karensanchez0891@gmail.com" method="post" enctype="text/plain">
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="Matz.Yuki@gmail.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+		<option value="Option 2">Are you looking for a job?</option>
+        <option value="Option 3">Admiration</option>
+        <option value="Option 4">Can you make me a website?</option>
+      </select>
     </div>
   </div>
-
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Karen …" id="exampleMessage"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit">
+</form>
+</div><!--End form container --><hr>
+<div class="container">
+		<div class="five columns">
+			<h1></h1>
+		</div>
+		<div id="footer" class="seven columns">
+			<ul>
+				<li><a href="MAILTO:karensanchez0891@gmail.com" class="entypo-gmail" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" style="width: 40px;height:40px"></span></a></li>
+				<!-- <li><a href="https://www.facebook.com/karenss21" class="entypo-facebook" target="_blank"><span><img src="css/stylesheets/images/Facebook.png" style="width: 40px;height:40px"></span></a></li> -->
+				<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" style="width: 40px;height:40px"></span></a></li>
+				<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" style="width: 40px;height:40px"></span></a></li>
+				<li><a href="https://www.instagram.com/miss_sanchez91/" class="entypo-instagram" target="_blank"><span><img src="css/stylesheets/images/Instagram.png" style="width: 40px;height:40px"></span></a></li>
+			</ul>
+		</div>
+</div>
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript" src="bar_graph.js"></script>
+<script type="text/javascript" src="script.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
