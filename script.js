@@ -24,6 +24,7 @@ $(document).ready(function() {
     }, 4500);
 
     $('#bio h3').css('display', 'block');
+
 }) // End document.ready
 
     $(window).scroll(function(){
@@ -31,17 +32,12 @@ $(document).ready(function() {
         var wScroll = $(this).scrollTop();
 
 				// console.log(wScroll);
-
 	// if($(window).scrollTop() > 1365){
-
             //  console.log('hello');
-
         //     $('#skills').
         // };
 
-
-
-        if($(this).scrollTop() > 800){
+            if($(this).scrollTop() > 800){
             $('.scrollup').fadeIn(3000);
         } else {
             $('.scrollup').fadeOut();
@@ -52,4 +48,11 @@ $(document).ready(function() {
             scrollTop:0
         }, 800);
         return false;
+    });
+
+    $(function(){
+        $(".element").typed({
+          strings: ["Welcome,", "my name is...", "Karen", "Sanchez", "Karen Sanchez"],
+          typeSpeed: 0
+        });
     });

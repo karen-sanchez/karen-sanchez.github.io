@@ -2,64 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Karen Sanchez</title>
+  <title>KS|Web Developer</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- SKELETON FONT -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="css/stylesheets/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Scripts -->
   	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- <script src="jquery.js"></script> -->
+	<script src="typed.js-master/js/typed.js"></script>
 </head>
 <!-- Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
-    <div class="container">
-        <div class="six columns">
-        	<h1>KS</h1>
-        </div>
-        <div id="nav" class="six columns">
-        	<ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="KarenSanchez.pdf" target="_blank">Resume</a></li>
-                <li><a href="#contact">Contact me!</a></li>
-        	</ul>
-        </div>
-    </div><!-- container -->
+	<div class="navbar">
+	    <div class="container" id="custom-nav">
+	        <div class="six columns">
+	        	<h1 class="element"></h1>
+	        </div>
+	        <div id="nav" class="six columns">
+	        	<ul>
+	                <li><a href="#projects">Projects</a></li>
+	                <li><a href="#skills">Skills</a></li>
+	                <li><a href="KarenSanchez.pdf" target="_blank">Resume</a></li>
+	                <li><a href="#contact">Contact me!</a></li>
+	        	</ul>
+	        </div>
+	    </div><hr><!-- container -->
+	</div><!--End navbar-->
+	<!-- Primary Page Layout
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+	  <div class="row">
+		  <h4>Why I chose web development</h4>
+		  <p>Hi! I started coding about a year ago when I began by teaching myself HTML and CSS, I did some Ruby as well. After a couple of months I decided that I wanted to take coding more seriously, that's when I quit my job and started an intensive course at a coding bootcamp. It was a tough first weeks, but after the heart-attack that JavaScript gave me was over I decided I was going to stick with my decision of learning how to code. I am glad I didn't quit. I don't even dislike JavaScript anymore, and beyond that I've learned to work with many other frameworks and I couldn't be happier to be building my own apps with Rails and Node.js. 	</p>
+	  </div>
+  </div>
 
-  <!-- Primary Page Layout
+  <!-- Projects Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
         <h4>Projects</h4>
 		<figure class="three columns">
-				<a href="#"><img src="css/stylesheets/images/under_cons.png" style="width: 250px; height: 150px"></a>
+				<a href="#"><img src="css/stylesheets/images/under_cons.png" style="width: 150px; height: 150px"></a>
 				<figcaption>Coming soon.<br>An app bult on D3.<br>After buiding my "skills bar graph"<br> on D3 I got very excited about the idea<br>of starting on my very first D3 project.<br>I am currently brainstorming to decide<br>what the project should be about.<br></figcaption>
 		</figure>
 		<figure class="three columns">
-				<a href="#"><img src="css/stylesheets/images/fivethirteen.JPG" style="width: 250px; height: 150px"></a>
+				<a href="#"><img src="css/stylesheets/images/fivethirteen.JPG" style="width: 150px; height: 150px"></a>
 				<figcaption><strong>Flipside News</strong><br>This is an app that I built with the informed <br>consumer in mind.<br>By using Nokogiri I scraped information<br> from different news sources <br> and managed to generate the same news <br>on the same page as expressed by<br> two different newspapers.<br></figcaption>
 		</figure>
 		<figure class="three columns">
-				<a href="https://github.com/karen-sanchez/PlanMyMeal"><img src="css/stylesheets/images/Capture.JPG" style="width: 250px; height: 150px"></a>
+				<a href="https://github.com/karen-sanchez/PlanMyMeal"><img src="css/stylesheets/images/Capture.JPG" style="width: 150px; height: 150px"></a>
 				<figcaption><strong>Plan My Meal</strong><br>An app buit on Node.js, Express, Angular,<br> Bootstrap and the Yelp search API.<br>Don't waste time wondering<br>where to eat today, just let the randomizer tell you!<br>Feel free to check out the code on Gthub.<br>Deployment coming soon!</figcaption>
 		</figure>
 	</div><!-- End projects row -->
 </div><!-- End projects container -->
+
+<!-- Skills Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
 	<div class="row" id="skills">
 		<h4>Skills</h4>
@@ -67,6 +74,9 @@
 		<div class="chart"></div>
 	</div><!-- End skills row -->
 </div><!-- End skills container --><br><br><br>
+
+<!-- Contact Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
 	<h4 div id="contact">Contact me</h4>
 <form action="MAILTO:karensanchez0891@gmail.com" method="post" enctype="text/plain">
@@ -93,7 +103,8 @@
   </label>
   <input class="button-primary" type="submit" value="Submit">
 </form>
-</div><!--End form container --><hr>
+</div><!--End form container -->
+<div id="custom-footer">
 <div class="container">
 		<div class="five columns">
 			<h1></h1>
@@ -107,6 +118,7 @@
 				<li><a href="https://www.instagram.com/miss_sanchez91/" class="entypo-instagram" target="_blank"><span><img src="css/stylesheets/images/Instagram.png" style="width: 40px;height:40px"></span></a></li>
 			</ul>
 		</div>
+</div>
 </div>
 <!-- Scripts
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
