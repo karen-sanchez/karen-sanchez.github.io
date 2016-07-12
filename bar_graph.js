@@ -1,7 +1,7 @@
 // Setting the general space for the graph
-var outerWidth = 900;
+var outerWidth = 700;
       var outerHeight = 450;
-      var margin = { left: 300, top: 60, right: 20, bottom: 30 };
+      var margin = { left: 100, top: 60, right: 20, bottom: 30 };
       var barPadding = 0.1; // The higher the #, the thinner the bars
       var xColumn = "level";
       var yColumn = "skills";
@@ -13,16 +13,20 @@ var outerWidth = 900;
 
 // Defining svg var
       var svg = d3.select(".chart").append("svg")
-        .attr("width",  outerWidth)
-        .attr("height", outerHeight);
+      .attr("width", '100%')
+      .attr("height", '100%')
+      .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+      .attr('preserveAspectRatio','xMinYMin')
+      .append("g")
+      .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
 
-// Appending the SVG group element, as represented by "g"     
+// Appending the SVG group element, as represented by "g"
 // This is used to group all SVG elements together, it is an element container that contains all child SVG
-//  elements defined inside of it    
+//  elements defined inside of it
       var g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-      var xAxisG = g.append("g")  
-        .attr("class", "x axis")     
+      var xAxisG = g.append("g")
+        .attr("class", "x axis")
         .attr("transform", "translate(0," + innerHeight + ")")
       var yAxisG = g.append("g")
         .attr("class", "y axis");
@@ -57,8 +61,8 @@ var outerWidth = 900;
           .attr("height", yScale.rangeBand())
           .ease("exp")
           .duration(200)
-          .delay(function(d, i) {  return i * 200;} )            
-        
+          .delay(function(d, i) {  return i * 200;} )
+
         bars
           .attr("x", 0)
           .attr("y",     function (d){ return yScale(d[yColumn]); })
@@ -67,11 +71,10 @@ var outerWidth = 900;
         bars.exit().remove();
       }
 
-
       function type(d){
         d.level = +d.level;
         return d;
         console.log(d.level);
       }
 
-        d3.csv("skills.csv", type, render);
+    d3.csv("skills.csv", type, render);
