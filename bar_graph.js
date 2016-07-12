@@ -1,7 +1,7 @@
 // Setting the general space for the graph
-var outerWidth = 700;
+var outerWidth = 900;
       var outerHeight = 450;
-      var margin = { left: 100, top: 60, right: 20, bottom: 30 };
+      var margin = { left: 300, top: 60, right: 20, bottom: 30 };
       var barPadding = 0.1; // The higher the #, the thinner the bars
       var xColumn = "level";
       var yColumn = "skills";
@@ -13,12 +13,8 @@ var outerWidth = 700;
 
 // Defining svg var
       var svg = d3.select(".chart").append("svg")
-      .attr("width", '100%')
-      .attr("height", '100%')
-      .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
-      .attr('preserveAspectRatio','xMinYMin')
-      .append("g")
-      .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
+        .attr("width",  outerWidth)
+        .attr("height", outerHeight);
 
 // Appending the SVG group element, as represented by "g"
 // This is used to group all SVG elements together, it is an element container that contains all child SVG
@@ -71,10 +67,11 @@ var outerWidth = 700;
         bars.exit().remove();
       }
 
+
       function type(d){
         d.level = +d.level;
         return d;
         console.log(d.level);
       }
 
-    d3.csv("skills.csv", type, render);
+        d3.csv("skills.csv", type, render);
