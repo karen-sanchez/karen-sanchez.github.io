@@ -1,7 +1,7 @@
 // Setting the general space for the graph
 var outerWidth = 900;
-      var outerHeight = 450;
-      var margin = { left: 300, top: 60, right: 20, bottom: 30 };
+      var outerHeight = 650;
+      var margin = { left: 150, top: 60, right: 20, bottom: 175 };
       var barPadding = 0.1; // The higher the #, the thinner the bars
       var xColumn = "level";
       var yColumn = "skills";
