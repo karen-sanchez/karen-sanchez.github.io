@@ -1,6 +1,6 @@
-.container {
+/*.container {
     margin-top: 50px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px; }*/
 
 #custom-nav h1{
     color: #22194e;
@@ -48,3 +48,4 @@ strong, h4{
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
     }
+@media (max-width: 1136px) { .column, .columns {margin:0;} }  
