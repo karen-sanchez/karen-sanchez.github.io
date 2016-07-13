@@ -38,9 +38,9 @@ strong, h4{
     background-color: black; }
 
 .social-roll {
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    -ms-transition: -ms-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 .social-roll:hover {
