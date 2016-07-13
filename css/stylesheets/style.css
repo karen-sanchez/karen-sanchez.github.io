@@ -46,8 +46,8 @@ strong, h4{
 .social-roll:hover {
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
-    }
+    -webkit-transform:rotate(360deg); }
+
 @media (max-width: 1136px) {
     .column, .columns {margin:0;}
     .social-roll {margin-left: 35px;}
