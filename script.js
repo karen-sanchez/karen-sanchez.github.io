@@ -8,7 +8,7 @@ $(window).scroll(function(){
         if (wScroll == 0) {
             $(function(){
                 $(".element").typed({
-                  strings: ["Welcome,", "my name is...", "Karen", "Sanchez", "Karen Sanchez"],
+                  strings: ["Karen Sanchez"],
                   typeSpeed: 0
                 });
             });
@@ -17,7 +17,7 @@ $(window).scroll(function(){
 
     $(function(){
         $(".element").typed({
-          strings: ["Welcome,", "my name is...", "Karen", "Sanchez", "Karen Sanchez"],
+          strings: ["Karen Sanchez"],
           typeSpeed: 0
         });
     });
