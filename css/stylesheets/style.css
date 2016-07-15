@@ -3,7 +3,7 @@
     margin-bottom: 50px; }*/
 
 #custom-nav h1{
-    color: #22194e;
+    color: #FFF8F0;
     font-weight: bold; }
 
 strong, h4{
@@ -13,7 +13,14 @@ strong, h4{
     margin: 35px 0 0 0; }
 
 .navbar {
-    background-color: rgba(26, 188, 156, 0.8); }
+    /*background-color: #7EBDC2; */
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #007b80, #00afb5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #007b80, #00afb5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #007b80, #00afb5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #007b80, #00afb5); /* Standard syntax */
+
+}
 
 #nav ul li {
     display: inline;
@@ -35,7 +42,7 @@ strong, h4{
     text-decoration: none; }
 
 #custom-footer {
-    background-color: black; }
+    background-color: #59656F; }
 
 .social-roll {
     -webkit-transition: -webkit-transform .4s ease-in-out;
@@ -44,6 +51,8 @@ strong, h4{
 }
 
 .social-roll:hover {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg); }
@@ -51,4 +60,10 @@ strong, h4{
 @media (max-width: 1136px) {
     .column, .columns {margin:0;}
     .social-roll {margin-left: 35px;}
+}
+
+h6 {
+    text-align: center;
+    color: #FFF8F0;
+    margin-left: -15px;
 }
