@@ -67,3 +67,7 @@ h6 {
     color: #FFF8F0;
     margin-left: -15px;
 }
+
+#nav a:hover {
+    color: rgba(0,0,0,0.5);
+}
