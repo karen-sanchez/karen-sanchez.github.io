@@ -1,23 +1,23 @@
 $(document).ready(function() {
 }) // End document.ready
 
-$(window).scroll(function(){
+// $(window).scroll(function(){
 
-    var wScroll = $(this).scrollTop();
-    // console.log(wScroll);
-        if (wScroll == 0) {
-            $(function(){
-                $(".element").typed({
-                  strings: ["Karen Sanchez"],
-                  typeSpeed: 0
-                });
-            });
-        }
-    });
+//     var wScroll = $(this).scrollTop();
+//     // console.log(wScroll);
+//         if (wScroll == 0) {
+//             $(function(){
+//                 $(".element").typed({
+//                   strings: ["KS"],
+//                   typeSpeed: 0
+//                 });
+//             });
+//         }
+//     });
 
-    $(function(){
-        $(".element").typed({
-          strings: ["Karen Sanchez"],
-          typeSpeed: 0
-        });
-    });
+//     $(function(){
+//         $(".element").typed({
+//           strings: ["KS"],
+//           typeSpeed: 0
+//         });
+//     });

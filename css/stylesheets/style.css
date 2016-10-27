@@ -1,22 +1,24 @@
-.custom-nav {
-
-} 
+body{
+    background-color: #fff;
+}
 
 #custom-nav h1{
-    color: #FFF8F0;
+    color: #22194e;
     font-weight: bold; }
 
 strong, h4{
     color: #22194e; }
 
 .navbar {
-    background-color: #363946;
+    /*background-color:#545453;*/
 }
 
 #nav ul li {
     font-family: 'Lato', sans-serif;
     display: inline;
-    margin: 0 20px 0 0; }
+    margin: 0px 20px 0 0; 
+
+}
 
 #nav a {
     text-decoration: none;
@@ -34,8 +36,8 @@ strong, h4{
     text-decoration: none; }
 
 #custom-footer {
-    background-color: #59656F; }
-
+    /*background-color: #59656F; }*/
+}
 .social-roll {
     -webkit-transition: -webkit-transform .4s ease-in-out;
     -ms-transition: -ms-transform .4s ease-in-out;
@@ -59,4 +61,3 @@ h6 {
     color: #FFF8F0;
     margin-left: -15px;
 }
-

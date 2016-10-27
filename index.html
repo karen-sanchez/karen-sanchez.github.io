@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheets/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="icon" type="image/png" href="css/stylesheets/images/blue.png">
+  <link rel="icon" type="image/png" href="css/stylesheets/images/kslogo.png">
   <!-- Scripts -->
   	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -22,53 +22,73 @@
 <!-- Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
-	<div class="navbar">
-	    <div class="container" id="custom-nav">
-	        <div class="six columns">
-	        	<h1 class="element"></h1>
-	        </div>
-	        <div id="nav" class="six columns">
-	        	<ul>
-	                <li><a href="#projects">Projects</a></li>
-	                <li><a href="#skills">Skills</a></li>
-	                <li><a href="sanchezkarenpdf.pdf" target="_blank">Resume</a></li>
-	                <li><a href="#contact">Contact</a></li>
-	        	</ul>
-	        </div>
-	    </div><!-- container -->
-	</div><!--End navbar-->
-	<!-- Primary Page Layout
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" id="one">
-	  <div class="row">
-		  <h4>Why I chose web development</h4>
-		  <p>I started coding about a year ago, I began by teaching myself HTML and CSS, I did some Ruby as well. After a couple of months I decided that I wanted to take coding more seriously, that's when I quit my job and started an intensive course at a coding bootcamp. It was a tough first weeks, but after the heart-attack that JavaScript gave me was over I decided I was going to stick with my decision of learning how to program. I am glad I didn't quit. I don't even dislike JavaScript anymore, and now I am confident that I can learn anything I want, just like I did with Bootstrap, Skeleton, d3, Node.js, and Jade. Today, I couldn't be happier to be building my own apps with Rails and Node.js.</p>
+		<div class="navbar">
+		    <div class="container" id="custom-nav">
+		        <div class="six columns">
+		        	<img src="css/stylesheets/images/kslogo.png" width="130px" height="90px">
+		        </div>
+		        <div id="nav" class="six columns">
+		        	<ul>
+		                <li><a href="#projects">Projects</a></li>
+		                <li><a href="#skills">Skills</a></li>
+		                <li><a href="sanchezkarenpdf.pdf" target="_blank">Resume</a></li>
+		                <li><a href="#contact">Contact</a></li>
+		        	</ul>
+		        </div>
+		    </div><!-- container -->
+		</div><!--End navbar-->
+		<!-- Primary Page Layout
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <div class="container" id="one">
+		  <div class="row">
+			  <h4>Why I chose web development</h4>
+			  <p>I started coding about a year ago, I began by teaching myself HTML and CSS, I did some Ruby as well. After a couple of months I decided that I wanted to take coding more seriously, that's when I quit my job and started an intensive course at a coding bootcamp. It was a tough first weeks, but after the heart-attack that JavaScript gave me was over I decided I was going to stick with my decision of learning how to program. I am glad I didn't quit. I don't even dislike JavaScript anymore, and now I am confident that I can learn anything I want, just like I did with Bootstrap, Skeleton, d3, Node.js, and Jade. Today, I couldn't be happier to be building my own apps with Rails and Node.js.</p>
+		  </div>
 	  </div>
-  </div>
 
-  <!-- Projects Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row" id="projects">
-        <h4>Projects</h4>
-		<figure class="three columns">
-				<a href="https://eztutorial-javascript.herokuapp.com/"><img src="css/stylesheets/images/javascript.svg" style="width: 150px; height: 150px"></a>
-				<figcaption><strong>JavaScript Tutorial.</strong><br>Webpage for JS beginners.<br>I built this page using Sinatra <br>(to brush up on my Ruby skills) and Bootstrap.<br>I never dreamed of ever going back to JS,<br>but now I actually find it to be very fun and useful.<br>I hope that my tutorial can shed some light on those who like me, are having a hard time with JS.<br></figcaption>
-		</figure>
-		<figure class="three columns">
-				<a href="#"><img src="css/stylesheets/images/myflip.JPG" style="width: 150px; height: 150px"></a>
-				<figcaption><strong>Flipside News</strong><br>This is an app that I built with the informed <br>consumer in mind.<br>By using Nokogiri I scraped information<br> from different news sources <br> and managed to generate the same news <br>on the same page as expressed by<br> two different newspapers.<br></figcaption>
-		</figure>
-		<figure class="three columns">
-				<a href="https://cinch-app.herokuapp.com/"><img src="css/stylesheets/images/favicon_trans.png" style="width: 150px; height: 150px"></a>
-                <figcaption><strong>Cinch</strong><br>An app built with Node.js, Express<br> Bootstrap and the Yelp search API.<br>Don't waste time wondering<br>where to eat today, just let Cinch tell you!</figcaption>
-		</figure>
-	</div><!-- End projects row -->
-</div><!-- End projects container -->
+	  <!-- Projects Layout
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <div class="container">
+	    <div class="row" id="projects">
+	        <h4>Projects</h4>
+			<figure class="three columns">
+					<a href="https://eztutorial-javascript.herokuapp.com/"><img src="css/stylesheets/images/javascript.svg" style="width: 150px; height: 150px"></a>
+					<figcaption><strong>JavaScript Tutorial.</strong><br>Webpage for JS beginners.<br>I built this page using Sinatra <br>(to brush up on my Ruby skills) and Bootstrap.<br>I never dreamed of ever going back to JS,<br>but now I actually find it to be very fun and useful.<br></figcaption>
+			</figure>
+			<figure class="three columns">
+					<a href="#"><img src="css/stylesheets/images/myflip.JPG" style="width: 150px; height: 150px"></a>
+					<figcaption><strong>Flipside News</strong><br>This is an app that I built with the informed <br>consumer in mind.<br>By using Nokogiri I scraped information<br> from different news sources <br> and managed to generate the same news <br>on the same page as expressed by<br> two different newspapers.<br></figcaption>
+			</figure>
+			<figure class="three columns">
+					<a href="https://cinch-app.herokuapp.com/"><img src="css/stylesheets/images/main-logo.png" style="width: 170px; height: 170px"></a>
+	                <figcaption><strong>Cinch</strong><br>An app built with Node.js, Express<br> Bootstrap and the Yelp search API.<br>Don't waste time wondering<br>where to eat today, just let Cinch tell you!</figcaption>
+			</figure>
+		</div><!-- End projects row -->
+	</div><!-- End projects container -->
+	<div id="custom-footer">
+		<div class="container">
+				<div class="five columns">
+					<h1></h1>
+				</div>
+				<div id="footer" class="seven columns">
+					<ul>
+						<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll" style="width: 40px;height:40px"></span></a></li>
+		                <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll" style="width: 40px;height:40px"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll" style="width: 40px;height:40px"></span></a></li>
+					</ul>
+				</div>
+		        <!-- <h6>All rights reserved 2016</h6> -->
+		</div>
+	</div>
 
-<!-- Skills Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
+		<script type="text/javascript" src="bar_graph.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	
+</body>
+</html>
+
+
+<!-- <div class="container">
 	<div class="row" id="skills">
 		<h4>Skills</h4>
 		<h7>1 = Practice makes perfect!<br>5 = I am pretty good</h7>
@@ -76,58 +96,32 @@
             viewBox="0 0 960 500"
             preserveAspectRatio="xMidYMid meet">
         </svg>
-	</div><!-- End skills row -->
-</div><!-- End skills container --><br><br><br>
-
-<!-- Contact Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
+	</div><! End skills row -->
+<!-- </div>End skills container<br><br><br> -->
+<!--<div class="container">
 	<h4 div id="contact">Contact me</h4>
-<form action="MAILTO:karensanchez0891@gmail.com" method="post" enctype="text/plain">
-  <div class="row">
-    <div class="six columns">
-      <label for="exampleEmailInput">Your email</label>
-      <input class="u-full-width" type="email" placeholder="Matz.Yuki@gmail.com" id="exampleEmailInput">
-    </div>
-    <div class="six columns">
-      <label for="exampleRecipientInput">Reason for contacting</label>
-      <select class="u-full-width" id="exampleRecipientInput">
-        <option value="Option 1">Questions</option>
-		<option value="Option 2">Are you looking for a job?</option>
-        <option value="Option 3">Admiration</option>
-        <option value="Option 4">Can you make me a website?</option>
-      </select>
-    </div>
-  </div>
-  <label for="exampleMessage">Message</label>
-  <textarea class="u-full-width" placeholder="Hi Karen …" id="exampleMessage"></textarea>
-  <label class="example-send-yourself-copy">
-    <input type="checkbox">
-    <span class="label-body">Send a copy to yourself</span>
-  </label>
-  <input class="button-primary" type="submit" value="Submit">
-</form>
-</div><!--End form container -->
-<div id="custom-footer">
-<div class="container">
-		<div class="five columns">
-			<h1></h1>
-		</div>
-		<div id="footer" class="seven columns">
-			<ul>
-				<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll" style="width: 40px;height:40px"></span></a></li>
-                <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll" style="width: 40px;height:40px"></span></a></li>
-				<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll" style="width: 40px;height:40px"></span></a></li>
-			</ul>
-		</div>
-        <!-- <h6>All rights reserved 2016</h6> -->
-</div>
-</div>
-<!-- Scripts
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script type="text/javascript" src="bar_graph.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+	<form action="MAILTO:karensanchez0891@gmail.com" method="post" enctype="text/plain">
+	  <div class="row">
+	    <div class="six columns">
+	     	<label for="exampleEmailInput">Your email</label>
+	     	<input class="u-full-width" type="email" placeholder="Matz.Yuki@gmail.com" id="exampleEmailInput">
+	    </div>
+	    <div class="six columns">
+	      <label for="exampleRecipientInput">Reason for contacting</label>
+	      <select class="u-full-width" id="exampleRecipientInput">
+	        <option value="Option 1">Questions</option>
+			<option value="Option 2">Are you looking for a job?</option>
+	        <option value="Option 3">Admiration</option>
+	        <option value="Option 4">Can you make me a website?</option>
+	      </select>
+	    </div>
+	  </div>
+	  <label for="exampleMessage">Message</label>
+	  <textarea class="u-full-width" placeholder="Hi Karen …" id="exampleMessage"></textarea>
+	  <label class="example-send-yourself-copy">
+	    <input type="checkbox">
+	    <span class="label-body">Send a copy to yourself</span>
+	  </label>
+	  <input class="button-primary" type="submit" value="Submit">
+	</form>
+</div><!End form container -->
