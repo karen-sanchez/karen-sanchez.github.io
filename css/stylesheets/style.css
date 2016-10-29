@@ -1,20 +1,11 @@
 body{
-    background-color:  ;
-}
 
-#intro-section{
-    height: 84vh;
-    margin-top: -2.3em;
-    max-width: 100%;
-    background-color: #6accd7;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 }
 
 .navbar {
-    background-color: #f6f9fa;
-    margin-bottom: -2em;
+    background-color: ;
 }
+
 #nav ul{
     margin-top: 2.5em;
 }
@@ -23,16 +14,47 @@ body{
     display: inline;
     letter-spacing: .07em;
     margin: 0px 20px 0 0; 
-
 }
 
 #nav a {
     text-decoration: none;
-    color: black; 
+    color: ; 
 }
 
+#intro-section{
+    height: 84vh;
+    max-width: 100%;
+    position: relative;
+    background-color: #6accd7;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+}
 
+.hello-box{
+    position: absolute;
+    border: 2px red solid;
+    top: 30%;
+    left: 40%;
+}
 
+h1{
+    color: white;
+    /*text-align: center;*/
+}
+
+.project-container{
+    background-color: #f1d965;
+    border: 1px red solid;
+    text-align: center;
+    height: 330px;
+    padding-top: 0.5em;
+    margin-right: -1em;
+}
+
+.project-container > figcaption{
+    text-align: left;
+    margin-left: 0.5em;
+}
 
 
 #footer {
