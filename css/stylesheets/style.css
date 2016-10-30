@@ -1,5 +1,6 @@
 body{
-
+    background-color: #f7f7f7;
+    /*background-color: #faebcc;*/
 }
 
 .navbar {
@@ -43,12 +44,13 @@ h1{
 }
 
 .project-container{
-    background-color: #f1d965;
-    border: 1px grey solid;
+    background-color: #6accd7;
+    border: 1px #f7f7f7 solid;
     text-align: center;
     height: 330px;
     padding-top: 0.5em;
     margin-right: -1em;
+    margin-top: 2em;
 }
 
 .project-container > figcaption{
@@ -65,7 +67,20 @@ h1{
     margin: 0 10px 0 10px;
 }
 
+.skills-container{
+
+}
+
+.projects-container{
+    height: 100vh;
+}
+
+.contact-container{
+
+}
+
 .footer-container{
+    /*background-color: white;*/
 }
 
 #footer-icons > ul{
@@ -116,6 +131,8 @@ h1{
   clear: both;
   padding: 0;
   width: 100%;
+  margin-top: 4em;
+  margin-bottom: 7em;
 }
 
 @media (min-width: 700px) {
@@ -238,7 +255,7 @@ h1{
   border: 1px solid #f1c40f;    
 }
 
-.chart .aqua {
+.chart .pinkish {
   background: #d44f8a;
   border: 1px solid #d44f8a;    
 }
