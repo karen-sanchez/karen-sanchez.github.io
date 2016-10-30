@@ -1,8 +1,6 @@
 level,skills
 4.5,SASS
-1,Angular
 4,jQuery
-3.5,Ruby
 3,Ruby on Rails
 1.5,Express
 2,Javascript
@@ -13,6 +11,5 @@ level,skills
 2.5,MongoDB
 5,HTML
 2,Bootstrap
-1.2,Node.js
-7, Node
-7, Express
+7.2,Node.js
+
