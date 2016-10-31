@@ -27,6 +27,11 @@ body{
     color: #2c3e50; 
 }
 
+#nav a:hover {
+    text-decoration: none;
+    color: rgba(106,204,215,0.6); 
+}
+
 #intro-section{
     height: 84vh;
     max-width: 100%;
@@ -38,23 +43,53 @@ body{
 
 .hello-box{
     position: absolute;
-    border: 2px red solid;
-    top: 30%;
-    left: 30%;
+    /*border: 1px pink solid;*/
+    top: 15%;
+    left: 10%;
+    /*width: 90%;*/
 }
 
-.hello-box > h1{
+.hello-box > h2{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #f7f7f7;
     font-weight: bold;
-    /*text-align: center;*/
+    font-size: 3em;
+}
+
+/* ----------- GALAXY S5 ----------- */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .hello-box > h2{
+        font-size: 2.3em;
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hello-box > h2{
+        font-size: 2em;
+    }
+}
+
+.hello-box > h2 > span {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
 }
 
 .project-container{
-    background-color: #6accd7;
-    border: 1px #f7f7f7 solid;
+    background-color: rgba(106,204,215,0.6);
+    border: 1em #f7f7f7 solid;
     text-align: center;
-    height: 330px;
+    height: 360px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
     padding-top: 0.5em;
     margin-right: -1em;
     margin-top: 2em;
