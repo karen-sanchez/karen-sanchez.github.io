@@ -1,62 +1,321 @@
-.custom-nav {
+*{
+    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
+}
 
-} 
-
-#custom-nav h1{
-    color: #FFF8F0;
-    font-weight: bold; }
-
-strong, h4{
-    color: #22194e; }
+body{
+    background-color: #f7f7f7;
+    /*background-color: #faebcc;*/
+}
 
 .navbar {
-    background-color: #363946;
+    background-color: ;
+}
+
+#nav ul{
+    margin-top: 2.5em;
 }
 
 #nav ul li {
-    font-family: 'Lato', sans-serif;
     display: inline;
-    margin: 0 20px 0 0; }
+    letter-spacing: .07em;
+    margin: 0px 20px 0 0; 
+}
 
 #nav a {
     text-decoration: none;
-    color: white; }
+    color: #2c3e50; 
+}
 
-#footer {
-    margin: 38px 0 0 0; }
+#nav a:hover {
+    text-decoration: none;
+    color: rgba(106,204,215,0.6); 
+}
 
-#footer ul li {
+#intro-section{
+    height: 84vh;
+    max-width: 100%;
+    position: relative;
+    background-color: #6accd7;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+}
+
+.hello-box{
+    position: absolute;
+    /*border: 1px pink solid;*/
+    top: 15%;
+    left: 10%;
+    /*width: 90%;*/
+}
+
+.hello-box > h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+/* ----------- GALAXY S5 ----------- */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .hello-box > h2{
+        font-size: 2.3em;
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hello-box > h2{
+        font-size: 2em;
+    }
+}
+
+.hello-box > h2 > span {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+}
+
+.project-container{
+    background-color: rgba(106,204,215,0.6);
+    border: 1em #f7f7f7 solid;
+    text-align: center;
+    height: 360px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    padding-top: 0.5em;
+    margin-right: -1em;
+    margin-top: 2em;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.project-container > figcaption{
+    text-align: left;
+    margin-left: 0.5em;
+}
+
+#navbar-icon-position{
+    margin: 2.3em 0em 0em 0em; 
+}
+
+#navbar-icon-position ul li {
     display: inline;
     margin: 0 10px 0 10px;
-    margin-bottom: 130px; }
+}
 
-#footer a {
-    text-decoration: none; }
+.about-box > p {
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+    line-height: 2;
+    color: #2c3e50; 
+}
 
-#custom-footer {
-    background-color: #59656F; }
+.about-box > p > span {
+    color: #6accd7;
+    font-weight: 700;
+}
+
+.skills-container{
+    margin-top: 14em;
+}
+
+.projects-container{
+    height: 100vh;
+}
+
+#footer-icons > ul{
+    text-align: center;
+}
+
+.credits, .copyright{
+    text-align: center;
+}
+
+#footer-icons > ul > li {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+#footer-icons > a {
+    text-decoration: none; 
+}
 
 .social-roll {
+    margin-top: 0.5em;
+    margin-bottom: -1.5em;
     -webkit-transition: -webkit-transform .4s ease-in-out;
     -ms-transition: -ms-transform .4s ease-in-out;
     transition: transform .4s ease-in-out;
 }
 
-.social-roll:hover {
+.social-roll-navbar {
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    -ms-transition: -ms-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+.social-roll-navbar:hover {
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg); }
+    -webkit-transform:rotate(360deg); 
+}
+
+.social-roll:hover{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg); 
+}
+
 
 @media (max-width: 1136px) {
     .column, .columns {margin:0;}
-    .social-roll {margin-left: 35px;}
+    .social-roll {margin-left: 15px;}
 }
 
-h6 {
-    text-align: center;
-    color: #FFF8F0;
-    margin-left: -15px;
+.chart {
+  clear: both;
+  padding: 0;
+  width: 100%;
+  margin-top: 4em;
+  margin-bottom: 7em;
 }
 
+@media (min-width: 700px) {
+  .chart {
+    background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;
+    height: 425px;
+    margin: 0 auto emCalc(-32px);
+  }
+}
+
+.chart li {
+  display: block;
+  height: 125px;
+  padding: emCalc(25px) 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+@media (min-width: 700px) {
+  .chart li {
+    display: inline-block;
+    height: 425px;
+    margin: 0 1.8% 0 0;
+    width: 6.7%;
+  }
+}
+
+.chart .axis {
+  display: none;
+  top: emCalc(-45px);
+}
+
+@media (min-width: 700px) {
+  .chart .axis {
+    display: inline-block;
+  }
+}
+
+.chart .label {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    margin: -10px 0 71px 0;
+}
+
+.chart .exp-lvl {
+    letter-spacing: 0.5px;
+    opacity: .4;
+    width: 100%;
+    font-size: 30px;
+    font-size: 1.875rem;
+}
+
+@media (min-width: 700px) {
+  .chart .percent {
+    letter-spacing: 0.5px;
+/*    position: absolute;
+    font-size: 62px;
+    font-size: 3.875rem;*/
+  }
+}
+
+.chart .percent span {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.chart .skill {
+  font-weight: 800;
+  opacity: .5;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .chart .skill {
+    bottom: 20px;
+    position: absolute;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+.chart .teal {
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+}
+
+.chart .salmon {
+  background: #ff6b6b;
+  border: 1px solid #ff6b6b;
+}
+
+.chart .lime {
+  background: #97f464;
+  border: 1px solid #97f464;
+}
+
+.chart .peach {
+  background: #ffcd92;
+  border: 1px solid #ffcd92;
+}
+
+.chart .grape {
+  background: #ab64f4;
+  border: 1px solid #ab64f4;    
+}
+
+.chart .blue {
+  background: #86BBD8;
+  border: 1px solid #86BBD8;    
+}
+
+.chart .org {
+  background: #ff8c00;
+  border: 1px solid #ff8c00;    
+}
+
+.chart .yellow {
+  background: #f1c40f;
+  border: 1px solid #f1c40f;    
+}
+
+.chart .pinkish {
+  background: #d44f8a;
+  border: 1px solid #d44f8a;    
+}
+
+.chart .khaki{
+  background: #b8c66f;
+  border: 1px solid #b8c66f;    
+}
