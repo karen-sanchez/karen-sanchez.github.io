@@ -93,7 +93,7 @@ body{
     padding-top: 0.5em;
     margin-right: -1em;
     margin-top: 2em;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 50px;
 }
 
 .project-container > figcaption{
@@ -181,13 +181,13 @@ body{
   clear: both;
   padding: 0;
   width: 100%;
-  margin-top: 4em;
-  margin-bottom: 7em;
+  /*margin-top: -5em;*/
+  /*margin-bottom: 7em;*/
 }
 
 @media (min-width: 700px) {
   .chart {
-    background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;
+    /*background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;*/
     height: 425px;
     margin: 0 auto emCalc(-32px);
   }
@@ -233,15 +233,22 @@ body{
     opacity: .4;
     width: 100%;
     font-size: 30px;
+    /*margin-top: 5em;*/
     font-size: 1.875rem;
+    /*margin-top: 8em;*/
+    -webkit-transform: rotate(-75deg);    
+    -moz-transform: rotate(-75deg);
+    -ms-transform: rotate(-75deg);
+    -o-transform: rotate(-75deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 @media (min-width: 700px) {
   .chart .percent {
     letter-spacing: 0.5px;
-/*    position: absolute;
+    position: absolute;
     font-size: 62px;
-    font-size: 3.875rem;*/
+    font-size: 3.875rem;
   }
 }
 
@@ -315,3 +322,9 @@ body{
   background: #b8c66f;
   border: 1px solid #b8c66f;    
 }
+.chart .lightseagreen{
+  background: #1abc9c;
+  border: 1px solid #1abc9c;    
+}
+
+
