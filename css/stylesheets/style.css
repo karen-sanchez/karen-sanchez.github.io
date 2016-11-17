@@ -43,10 +43,8 @@ body{
 
 .hello-box{
     position: absolute;
-    /*border: 1px pink solid;*/
     top: 15%;
     left: 10%;
-    /*width: 90%;*/
 }
 
 .hello-box > h2{
@@ -54,6 +52,19 @@ body{
     color: #f7f7f7;
     font-weight: bold;
     font-size: 3em;
+}
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .slide{
+      position: relative;
+      margin-left: 20em;
+    }
 }
 
 /* ----------- GALAXY S5 ----------- */
@@ -84,15 +95,17 @@ body{
 }
 
 .project-container{
-    background-color: rgba(106,204,215,0.6);
-    border: 1em #f7f7f7 solid;
+    background-color: #fff;
     text-align: center;
-    height: 360px;
+    height: 395px;
+    border: 2px #f7f7f7 solid;
     line-height: 1.7;
     letter-spacing: 0.5px;
     padding-top: 0.5em;
     margin-right: -1em;
     margin-top: 2em;
+    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .project-container > figcaption{
@@ -176,154 +189,14 @@ body{
     .social-roll {margin-left: 15px;}
 }
 
-.chart {
-  clear: both;
-  padding: 0;
-  width: 100%;
-  /*margin-top: -5em;*/
-  /*margin-bottom: 7em;*/
+.chart > li {
+  display: inline-block;
+  font-family: 'Bangers', cursive;
+  padding: 1.5em;
+  font-size: 22px;
+  background-color: #404040;
+  color: #6accd7;
+  box-shadow: 10px 10px 5px #888888;
+  margin-top: 0.5em;
+  margin-left: 0.3em;
 }
-
-@media (min-width: 700px) {
-  .chart {
-    /*background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;*/
-    height: 425px;
-    margin: 0 auto emCalc(-32px);
-  }
-}
-
-.chart li {
-  display: block;
-  height: 125px;
-  padding: emCalc(25px) 0;
-  position: relative;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-@media (min-width: 700px) {
-  .chart li {
-    display: inline-block;
-    height: 425px;
-    margin: 0 1.8% 0 0;
-    width: 6.7%;
-  }
-}
-
-.chart .axis {
-  display: none;
-  top: emCalc(-45px);
-}
-
-@media (min-width: 700px) {
-  .chart .axis {
-    display: inline-block;
-  }
-}
-
-.chart .label {
-    background-color: #f7f7f7;
-    font-weight: 600;
-    margin: -10px 0 71px 0;
-}
-
-.chart .exp-lvl {
-    letter-spacing: 0.5px;
-    opacity: .4;
-    width: 100%;
-    font-size: 30px;
-    /*margin-top: 5em;*/
-    font-size: 1.875rem;
-    /*margin-top: 8em;*/
-    -webkit-transform: rotate(-75deg);    
-    -moz-transform: rotate(-75deg);
-    -ms-transform: rotate(-75deg);
-    -o-transform: rotate(-75deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-@media (min-width: 700px) {
-  .chart .percent {
-    letter-spacing: 0.5px;
-    position: absolute;
-    font-size: 62px;
-    font-size: 3.875rem;
-  }
-}
-
-.chart .percent span {
-  font-size: 30px;
-  font-size: 1.875rem;
-}
-
-.chart .skill {
-  font-weight: 800;
-  opacity: .5;
-  overflow: hidden;
-  width: 100%;
-}
-
-@media (min-width: 700px) {
-  .chart .skill {
-    bottom: 20px;
-    position: absolute;
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-
-.chart .teal {
-  background: #4ecdc4;
-  border: 1px solid #4ecdc4;
-}
-
-.chart .salmon {
-  background: #ff6b6b;
-  border: 1px solid #ff6b6b;
-}
-
-.chart .lime {
-  background: #97f464;
-  border: 1px solid #97f464;
-}
-
-.chart .peach {
-  background: #ffcd92;
-  border: 1px solid #ffcd92;
-}
-
-.chart .grape {
-  background: #ab64f4;
-  border: 1px solid #ab64f4;    
-}
-
-.chart .blue {
-  background: #86BBD8;
-  border: 1px solid #86BBD8;    
-}
-
-.chart .org {
-  background: #ff8c00;
-  border: 1px solid #ff8c00;    
-}
-
-.chart .yellow {
-  background: #f1c40f;
-  border: 1px solid #f1c40f;    
-}
-
-.chart .pinkish {
-  background: #d44f8a;
-  border: 1px solid #d44f8a;    
-}
-
-.chart .khaki{
-  background: #b8c66f;
-  border: 1px solid #b8c66f;    
-}
-.chart .lightseagreen{
-  background: #1abc9c;
-  border: 1px solid #1abc9c;    
-}
-
-
