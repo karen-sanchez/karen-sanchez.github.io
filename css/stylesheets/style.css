@@ -1,17 +1,16 @@
 *{
     font-family: 'Raleway', sans-serif;
-    /*font-family: 'Poppins', sans-serif;*/
 }
-
 body{
     background-color: #f7f7f7;
     /*background-color: #faebcc;*/
 }
 
-.navbar {
-    background-color: ;
+#custom-nav{
+    background-color: white;
+    z-index: 1;
+    width: 100%;
 }
-
 #nav ul{
     margin-top: 2.5em;
 }
@@ -54,17 +53,9 @@ body{
     font-size: 3em;
 }
 
-
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .slide{
-      position: relative;
-      margin-left: 20em;
-    }
+.slide{
+  position: relative;
+  display: none;
 }
 
 /* ----------- GALAXY S5 ----------- */
@@ -77,24 +68,12 @@ body{
     }
 }
 
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .hello-box > h2{
-        font-size: 2em;
-    }
-}
-
 .hello-box > h2 > span {
     font-family: 'Montserrat', sans-serif;
     color: #2c3e50;
 }
 
-.project-container{
+.project-columns{
     background-color: #fff;
     text-align: center;
     height: 395px;
@@ -104,8 +83,6 @@ body{
     padding-top: 0.5em;
     margin-right: -1em;
     margin-top: 2em;
-    overflow-y: scroll;
-    overflow-y: auto;
 }
 
 .project-container > figcaption{
@@ -192,11 +169,49 @@ body{
 .chart > li {
   display: inline-block;
   font-family: 'Bangers', cursive;
-  padding: 1.5em;
-  font-size: 22px;
+  /*padding-left: 0.3em;*/
+  font-size: 25px;
   background-color: #404040;
   color: #6accd7;
-  box-shadow: 10px 10px 5px #888888;
-  margin-top: 0.5em;
+  box-shadow: 9px 5px 7px #888888;
+  margin-top: 2.2em;
   margin-left: 0.3em;
+}
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background: #404040;
+    position: relative;
+}
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #404040;
+}
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #404040;
+}
+
+#hidden{
+    visibility: hidden;
+}
+
+@media (max-width: 700px) {
+    #custom-nav{
+        /*position: absolute !important;*/
+    }
 }

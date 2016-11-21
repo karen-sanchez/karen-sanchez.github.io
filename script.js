@@ -23,12 +23,15 @@ $(document).ready(function(){
 	});
 
 	function startAnimation($this) {
-	  $this.animate({
-	    right: '720px'
-	  }, 1000, function() {
-	    // Animation complete.
-	  });
+		$(".slide").fadeIn(1500)
 	}
 
+	$(window).scroll(function(){
+		var wScroll = $(this).scrollTop();
+		// console.log(wScroll);
+		if($(window).scrollTop() > 0){ 
+			// $('#custom-nav').css("position", "fixed");
+		 }
+	});
 });
 	

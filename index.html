@@ -11,8 +11,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Raleway|Bangers" rel="stylesheet">
 </head>
 <body>	
-	<div class="navbar">
-	    <div class="container" id="custom-nav">
+	<div class="navbar" id="custom-nav">
+	    <div class="container">
 	        <div class="three columns">
 	        	<img src="css/stylesheets/images/official-logo.png" width="125px" height="85px">
 	        </div>
@@ -47,28 +47,29 @@
 	<div class="container about-container" id="about">
 		<div class="about-box">
 		  <h3 class="slide">About me</h3>
-		  <p>Hello, my name is <span>Karen Sanchez</span>. I am a <span>full stack web developer</span> based in New York City. I like to build useful and good-looking websites. Both front-end and back-end development appeal to me, because I believe that knowing how something works down to the smallest detail is important in order to make beautiful & useful websites. Check out my projects below! Email me if you have any questions or suggestions. Thanks for visiting! </p>
+		  <p>Hello, my name is <span>Karen Sanchez</span>. I am a <span>full stack web developer</span> based in New York City. I like to build useful and good-looking websites. Both front-end and back-end development appeal to me, because I believe that knowing how something works down to the smallest detail is important in order to make beautiful & useful websites. When I'm not coding I'm either watching "West World", drinking tea, or walking in the park.</p>
 		</div>
 	</div>
-
 	<!-- SKILLS -->
 	<div class="container skills-container" id="skills">
 		<h3 class="slide">My Skills</h3>
 		<ul class="chart">
-			<li>HTML5</li>	
-			<li>CSS3</li>
-			<li>Sass</li>	
-			<li>JavaScript</li>
-			<li>jQuery</li>
-			<li>Node.js</li>
-			<li>Express.js</li>	
-			<li>Ruby</li>
-			<li>Sinatra</li>
-			<li>Rails</li>
-			<li>SQLite3</li>	
-			<li>Git</li>
-			<li>Bootstrap</li>	
-			<li>Photoshop</li>
+			<li class="hexagon">HTML5</li>	
+			<li class="hexagon">CSS3</li>
+			<li class="hexagon">Sass</li>	
+			<li class="hexagon">JavaScript</li>
+			<li class="hexagon">jQuery</li>
+			<li class="hexagon">Node.js</li>
+			<li class="hexagon">Express.js</li>	
+			<li class="hexagon">Ruby</li>
+			<li class="hexagon" id="hidden"></li>
+			<li class="hexagon">Sinatra</li>
+
+			<li class="hexagon">Rails</li>
+			<li class="hexagon">SQLite3</li>	
+			<li class="hexagon">Git</li>
+			<li class="hexagon">Bootstrap</li>	
+			<li class="hexagon">Photoshop</li>
 		</ul>
 	</div>
 
@@ -76,33 +77,19 @@
 	<div class="container projects-container" id="projects">
 		<div class="row">
 			<h3 class="slide">My projects</h3>
-		    <div class="project-container twelve columns">
-		    	<div class="three columns">
+		    <div class="twelve columns">
+		    	<div class="four columns project-columns">
 					<a href="https://cinch-app.herokuapp.com/"><img src="css/stylesheets/images/main-logo.png" style="width: 150px; height: 150px"></a> 
 					<figcaption><strong>Cinch</strong><br>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</figcaption>
 				</div>
-				<div class="four columns">
-					<img src="css/stylesheets/images/cinch-bf.JPG" style="width: 200px; height: 250px">
-					<figcaption>Ready for breakfast?<figcaption>
-				</div>	
-				<div class="four columns">
-					<img src="css/stylesheets/images/cinch-bf-result.JPG" style="width: 200px; height: 250px">
-					<figcaption>Randomize your results and go!<figcaption>
-				</div>	
-			</div>
-		    <div class="project-container twelve columns">
-		    	<div class="three columns">
+		    	<div class="four columns project-columns">
+					<a href="https://webdeveloperjourney.herokuapp.com/"><img src="css/stylesheets/images/dev.jpg" style="width: 150px; height: 150px"></a>
+					<figcaption><strong>Developer Journey</strong><br>In this website I show how I went from hosting to becoming a web developer. It was a fun ride, now animated! I used JavaScript and the jQuery library to achieve the effects.</figcaption>
+				</div>
+		    	<div class="four columns project-columns">
 					<a href="https://eztutorial-javascript.herokuapp.com/"><img src="css/stylesheets/images/javascript.svg" style="width: 150px; height: 150px"></a>
 					<figcaption><strong>JavaScript Tutorial.</strong><br>Tutorial for JavaScript beginners.Built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</figcaption>
 				</div>
-				<div class="four columns">
-					<img src="css/stylesheets/images/ez-js.JPG" style="width: 300px; height: 250px">
-					<figcaption>Let's learn JavaScript together!<figcaption>
-				</div>	
-				<div class="four columns">
-					<img src="css/stylesheets/images/ez-js-1.JPG" style="width: 300px; height: 250px">
-					<figcaption>Conditional statements are very useful in programming.<figcaption>
-				</div>	
 			</div>
 		</div>
 	</div>
