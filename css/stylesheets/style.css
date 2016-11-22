@@ -1,46 +1,21 @@
 *{
     font-family: 'Raleway', sans-serif;
 }
+
 body{
     background-color: #f7f7f7;
     /*background-color: #faebcc;*/
 }
 
-#custom-nav{
-    background-color: white;
-    z-index: 1;
-    width: 100%;
-}
-#nav ul{
-    margin-top: 2.5em;
-}
-
-#nav ul li {
-    display: inline;
-    letter-spacing: .07em;
-    margin: 0px 20px 0 0; 
-}
-
-#nav a {
-    text-decoration: none;
-    color: #2c3e50; 
-}
-
-#nav a:hover {
-    text-decoration: none;
-    color: rgba(106,204,215,0.6); 
-}
-
 #intro-section{
-    height: 84vh;
-    max-width: 100%;
-    position: relative;
-    background-color: #6accd7;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+    height: 100vh;
+    background-size: cover;
+    background-image: url(images/blurred.jpg);
+    background-attachment: fixed;
 }
 
 .hello-box{
+    padding-top: 4em;
     position: absolute;
     top: 15%;
     left: 10%;
@@ -48,96 +23,31 @@ body{
 
 .hello-box > h2{
     font-family: 'Montserrat', sans-serif;
-    color: #f7f7f7;
+    color: #fff;
     font-weight: bold;
     font-size: 3em;
 }
 
 .slide{
-  position: relative;
+  /*position: relative;*/
   display: none;
-}
-
-/* ----------- GALAXY S5 ----------- */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    .hello-box > h2{
-        font-size: 2.3em;
-    }
 }
 
 .hello-box > h2 > span {
     font-family: 'Montserrat', sans-serif;
-    color: #2c3e50;
+    color: #b3b3b3;
 }
-
-.project-columns{
-    background-color: #fff;
-    text-align: center;
-    height: 395px;
-    border: 2px #f7f7f7 solid;
-    line-height: 1.7;
-    letter-spacing: 0.5px;
-    padding-top: 0.5em;
-    margin-right: -1em;
-    margin-top: 2em;
-}
-
-.project-container > figcaption{
-    text-align: left;
-    margin-left: 0.5em;
-}
-
-#navbar-icon-position{
-    margin: 2.3em 0em 0em 0em; 
-}
-
-#navbar-icon-position ul li {
-    display: inline;
-    margin: 0 10px 0 10px;
-}
-
 .about-box > p {
     font-size: 1.3em;
     letter-spacing: 1.5px;
     line-height: 2;
-    color: #2c3e50; 
+    color: #2c3e50;
+    /*padding: 2em 3em; */
 }
 
 .about-box > p > span {
-    color: #6accd7;
+    color: #ffcc66;
     font-weight: 700;
-}
-
-.skills-container{
-    margin-top: 14em;
-}
-
-#footer-icons > ul{
-    text-align: center;
-}
-
-.credits, .copyright{
-    text-align: center;
-}
-
-#footer-icons > ul > li {
-    display: inline;
-    margin: 0 10px 0 10px;
-}
-
-#footer-icons > a {
-    text-decoration: none; 
-}
-
-.social-roll {
-    margin-top: 0.5em;
-    margin-bottom: -1.5em;
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-    -ms-transition: -ms-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
 }
 
 .social-roll-navbar {
@@ -154,64 +64,13 @@ body{
     -webkit-transform:rotate(360deg); 
 }
 
-.social-roll:hover{
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg); 
+#contact > ul > li {
+    display: inline-block;
+    margin-left: 0.5em;
 }
 
+ul.nav a:hover { background-color: #ccc!important; }
 
-@media (max-width: 1136px) {
-    .column, .columns {margin:0;}
-    .social-roll {margin-left: 15px;}
-}
-
-.chart > li {
-  display: inline-block;
-  font-family: 'Bangers', cursive;
-  /*padding-left: 0.3em;*/
-  font-size: 25px;
-  background-color: #404040;
-  color: #6accd7;
-  box-shadow: 9px 5px 7px #888888;
-  margin-top: 2.2em;
-  margin-left: 0.3em;
-}
-.hexagon {
-    width: 100px;
-    height: 55px;
-    background: #404040;
-    position: relative;
-}
-.hexagon:before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #404040;
-}
-.hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #404040;
-}
-
-#hidden{
-    visibility: hidden;
-}
-
-@media (max-width: 700px) {
-    #custom-nav{
-        /*position: absolute !important;*/
-    }
+#skills, #about, #projects, #contact{
+    padding: 2em 3em; 
 }

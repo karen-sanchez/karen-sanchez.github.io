@@ -6,34 +6,41 @@
 	<link rel="icon" type="image/png" href="css/stylesheets/images/official-logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/stylesheets/style.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/skeleton.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width; initial-scale = 1; 
+	maximum-scale=1.0; user-scalable=no" /> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Raleway|Bangers" rel="stylesheet">
 </head>
 <body>	
-	<div class="navbar" id="custom-nav">
-	    <div class="container">
-	        <div class="three columns">
-	        	<img src="css/stylesheets/images/official-logo.png" width="125px" height="85px">
-	        </div>
-	        <div id="nav" class="six columns">
-	        	<ul>
-	        		<li><a href="#about">About</a></li>
-	        		<li><a href="#skills">Skills</a></li>
-	                <li><a href="#projects">Projects</a></li>
-	                <li><a href="karen-sanchez.pdf" target="_blank">Resume</a></li>
-	                <li><a href="#contact">Contact</a></li>
-	        	</ul>
-	        </div>
-	        <div id="navbar-icon-position" class="three columns">
-				<ul>
-					<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll-navbar" style="width: 25px;height:25px"></span></a></li>
-	                <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll-navbar" style="width: 25px;height:25px"></span></a></li>
-					<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll-navbar" style="width: 25px;height:25px"></span></a></li>
-				</ul>
-	        </div>
-	    </div>
-	</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		    <span class="sr-only">Toggle navigation</span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">KAREN SANCHEZ</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		    <li><a href="#about">About<span class="sr-only">(current)</span></a></li>
+		    <li><a href="#skills">Skills</a></li>
+		    <li><a href="#projects">Projects</a></li>
+		    <li><a href="karen-sanchez.pdf" target="_blank">Resume</a></li>
+		    <li><a href="#contact">Contact</a></li>
+		  </ul>
+		</div>
+		</div>
+	</nav>
+
 	<!-- INTRO SECTION -->
 	<div id="intro-section">
 		<div class="hello-box">
@@ -44,96 +51,86 @@
 	</div>
 
 	<!-- ABOUT SECTION -->
-	<div class="container about-container" id="about">
+	<div class="container" id="about">
 		<div class="about-box">
 		  <h3 class="slide">About me</h3>
-		  <p>Hello, my name is <span>Karen Sanchez</span>. I am a <span>full stack web developer</span> based in New York City. I like to build useful and good-looking websites. Both front-end and back-end development appeal to me, because I believe that knowing how something works down to the smallest detail is important in order to make beautiful & useful websites. When I'm not coding I'm either watching "West World", drinking tea, or walking in the park.</p>
+		  <p>Hello, my name is <span>Karen Sanchez</span>. I am a <span>full stack web developer</span> based in New York City. I like to build useful and good-looking websites. Both front-end and back-end development appeal to me, because I believe that knowing how something works down to the smallest detail is important in order to make beautiful & useful websites. When I'm not coding I'm either watching "West World", drinking tea at a coffee shop or watching videos on Youtube.</p>
 		</div>
 	</div>
 	<!-- SKILLS -->
-	<div class="container skills-container" id="skills">
-		<h3 class="slide">My Skills</h3>
-		<ul class="chart">
-			<li class="hexagon">HTML5</li>	
-			<li class="hexagon">CSS3</li>
-			<li class="hexagon">Sass</li>	
-			<li class="hexagon">JavaScript</li>
-			<li class="hexagon">jQuery</li>
-			<li class="hexagon">Node.js</li>
-			<li class="hexagon">Express.js</li>	
-			<li class="hexagon">Ruby</li>
-			<li class="hexagon" id="hidden"></li>
-			<li class="hexagon">Sinatra</li>
-
-			<li class="hexagon">Rails</li>
-			<li class="hexagon">SQLite3</li>	
-			<li class="hexagon">Git</li>
-			<li class="hexagon">Bootstrap</li>	
-			<li class="hexagon">Photoshop</li>
-		</ul>
+	<div class="container" id="skills">
+		<h3 class="slide">My Stack</h3>
+			<div class="col-md-1 col-xs-4"><img src="css/stylesheets/images/html5.png"></div>
+			<div class="col-md-1 col-xs-4"><img src="css/stylesheets/images/css3.png"></div>
+			<div class="col-md-1 col-xs-4"><img src="css/stylesheets/images/js1.JPG"></div>
+			<div class="col-md-1"><img src="css/stylesheets/images/boot.png"></div>
+			<div class="col-md-2"><img src="css/stylesheets/images/jquery.png"></div>
+			<div class="col-md-2 col-xs-6"><img src="css/stylesheets/images/ruby.jpg"></div>
+			<div class="col-md-2 col-xs-6"><img src="css/stylesheets/images/node.png"></div>
+	</div>		
+	<div class="container">
+		<div class="col-md-1 col-xs-6"><img src="css/stylesheets/images/rails.png"></div>
+		<div class="col-md-2 col-xs-6"><img src="css/stylesheets/images/ajax.jpg"></div>
+		<div class="col-md-3"><img src="css/stylesheets/images/ps.JPG"></div>
+		<div class="col-md-2"><img src="css/stylesheets/images/exp.png"></div>
+		<div class="col-md-2"><img src="css/stylesheets/images/sass.svg" width="200px" height="100px"></div>
 	</div>
 
 	<!-- PROJECTS -->
-	<div class="container projects-container" id="projects">
-		<div class="row">
-			<h3 class="slide">My projects</h3>
-		    <div class="twelve columns">
-		    	<div class="four columns project-columns">
-					<a href="https://cinch-app.herokuapp.com/"><img src="css/stylesheets/images/main-logo.png" style="width: 150px; height: 150px"></a> 
-					<figcaption><strong>Cinch</strong><br>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</figcaption>
-				</div>
-		    	<div class="four columns project-columns">
-					<a href="https://webdeveloperjourney.herokuapp.com/"><img src="css/stylesheets/images/dev.jpg" style="width: 150px; height: 150px"></a>
-					<figcaption><strong>Developer Journey</strong><br>This was a weekend challenge that I took and enjoyed a lot. In this website I show how I went from hosting to becoming a web developer. I used JavaScript and the jQuery library to achieve the effects.</figcaption>
-				</div>
-		    	<div class="four columns project-columns">
-					<a href="https://eztutorial-javascript.herokuapp.com/"><img src="css/stylesheets/images/javascript.svg" style="width: 150px; height: 150px"></a>
-					<figcaption><strong>JavaScript Tutorial.</strong><br>Tutorial for JavaScript beginners.Built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</figcaption>
-				</div>
-			</div>
-		</div>
+	<div class="container" id="projects">
+		<h3 class="slide" >My projects</h3>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="css/stylesheets/images/cinchimg.JPG">
+		      <div class="caption">
+		        <h3>Cinch</h3>
+		        <p>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</p>
+		        <p><a href="https://cinch-app.herokuapp.com/" class="btn btn-warning" role="button">Website</a> <a href="https://github.com/cmora09/Cinch" class="btn btn-default" role="button">Code</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="css/stylesheets/images/dev.jpg">
+		      <div class="caption">
+		        <h3>Sample Website</h3>
+		        <p>Experimental site done over the weekend. Built on my favorite programming language: JavaScript, and one of my favorite libraries: jQuery.</p><a href="" class="btn btn-warning" role="button">Website</a> <a href="https://github.com/karen-sanchez/showcase" class="btn btn-default" role="button">Code</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="css/stylesheets/images/learnjs.jpg">
+		      <div class="caption">
+		        <h3>JavaScript Tutorial</h3>
+		        <p>Tutorial for JavaScript beginners built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</p>
+		        <p><a href="https://eztutorial-javascript.herokuapp.com/" class="btn btn-warning" role="button">Website</a> <a href="https://github.com/karen-sanchez/JavaScriptTutorial" class="btn btn-default" role="button">Code</a></p>
+		      </div>
+		    </div>
+		  </div>
 	</div>
 
 	<!-- CONTACT -->
-	<div class="container contact-container" id="contact">
-		<h3 id="contact" class="slide">Contact me</h3>
-		<form action="MAILTO:karensanchez0891@gmail.com" method="post" enctype="text/plain">
-		  <div class="row">
-		    <div class="six columns">
-		     	<label for="exampleEmailInput">Your email</label>
-		     	<input class="u-full-width" type="email" placeholder="first.last@gmail.com" id="exampleEmailInput">
-		    </div>
-		    <div class="six columns">
-		      <label for="exampleRecipientInput">Reason for contacting</label>
-		      <select class="u-full-width" id="exampleRecipientInput">
-		        <option value="Option 1">Questions</option>
-				<option value="Option 2">Agency inquiry</option>
-		        <option value="Option 3">Freelancing inquiry</option>
-		      </select>
-		    </div>
-		  </div>
-		  <label for="exampleMessage">Message</label>
-		  <textarea class="u-full-width" placeholder="Hi Karen …" id="exampleMessage"></textarea>
-		  <input class="button-primary" type="submit" value="Submit">
-		</form>
+	<div class="container" id="contact">
+		<h3  class="slide">Contact me</h3>
+			<ul class="col-md-offset-4">
+				<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll-navbar" style="width: 75px;height:75px"></span></a></li>
+		        <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll-navbar" style="width: 75px;height:75px"></span></a></li>
+				<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll-navbar" style="width: 75px;height:75px"></span></a></li>
+			</ul>
 	</div>
 
 	<!-- FOOTER -->
-	<hr>
-	<div class="container footer-container">
-		<h6 class="credits three columns"> Designed by Karen Sanchez</h6>
-		<div id="footer-icons" class="six columns">
-			<ul>
-				<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github-grey.png" class="social-roll" style="width: 25px;height:25px"></span></a></li>
-                <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmail-grey.png" class="social-roll" style="width: 25px;height:25px"></span></a></li>
-				<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin-grey.png" class="social-roll" style="width: 25px;height:25px"></span></a></li>
-			</ul>
-		</div>
-		<h6 class=" copyright three columns"> &copy; 2016 All rights reserved </h6>
-	</div>
+	<hr><footer>
+		<p class="col-xs-12 col-md-6 text-center footer-font">Created by Karen Sanchez</p>
+		<p class="col-xs-12 col-md-6 text-center footer-font"> &copy; 2016 All rights reserved </p>
+	</footer>
+
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> -->
 	<script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
 	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

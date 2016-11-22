@@ -26,11 +26,23 @@ $(document).ready(function(){
 		$(".slide").fadeIn(1500)
 	}
 
+// $(window).scroll(function(){
+
+// 	var wScroll = $(this).scrollTop();
+
+// 			// console.log(wScroll);
+
+// $('.text, .second-gradient-overlay.button-group').css({
+
+//   	'transform' : 'translate(0px, '+ wScroll /6 + '%)'
+//  })
+
 	$(window).scroll(function(){
-		var wScroll = $(this).scrollTop();
+		if($(window).scrollTop() == 0){ 
+			$('#custom-nav').css("background-color", "white");
 		// console.log(wScroll);
-		if($(window).scrollTop() > 0){ 
-			// $('#custom-nav').css("position", "fixed");
+		}else if($(window).scrollTop() >= 1){ 
+			$('#custom-nav').css("position", "fixed", "background-color", "white");
 		 }
 	});
 });
