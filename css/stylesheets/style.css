@@ -51,7 +51,7 @@ ul.nav a:hover { background-color: #ccc!important; }
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg); 
-
+    -webkit-transition-duration: 1s;
     -webkit-transition-timing-function: ease-in-out;
 }
 
