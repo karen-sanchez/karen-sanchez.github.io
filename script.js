@@ -12,38 +12,46 @@ $(document).ready(function(){
 	}
 
 	$(window).scroll(function () {
-	    $( ".slide" ).each(function() {
-	        $this = $(this);
+	    $( ".slide").each(function() {
+	        // $this = $(this);
 	        isOnView = isElementVisible($(this));
-	        if(isOnView && !$(this).hasClass('Starting')){
-	            $(this).addClass('Starting');
-	            startAnimation($(this));
+	        if(isOnView){
+	            $(".slide").fadeIn(1500);
+	            // startAnimation();
 	        }
 	    });
 	});
 
-	function startAnimation($this) {
-		$(".slide").fadeIn(1500)
-	}
-
-// $(window).scroll(function(){
-
-// 	var wScroll = $(this).scrollTop();
-
-// 			// console.log(wScroll);
-
-// $('.text, .second-gradient-overlay.button-group').css({
-
-//   	'transform' : 'translate(0px, '+ wScroll /6 + '%)'
-//  })
-
-	$(window).scroll(function(){
-		if($(window).scrollTop() == 0){ 
-			$('#custom-nav').css("background-color", "white");
-		// console.log(wScroll);
-		}else if($(window).scrollTop() >= 1){ 
-			$('#custom-nav').css("position", "fixed", "background-color", "white");
-		 }
-	});
+	// function startAnimation() {
+	// 	$(".slide").fadeIn(1500);
+	// }
 });
 	
+	// $(window).scroll(function () {
+	//     $(".img-1, .img-2, .img-3, .slider").each(function() {
+	//         $this = $(this);
+	//         isOnView = isElementVisible($(this));
+	//         if(isOnView && !$(this).hasClass('Starting')){
+	//             $(this).addClass('Starting');
+	//             startAnimation($(this));
+	//         }
+	//     });
+	// });
+
+	// function startAnimation($this) {
+	//   $this.animate({
+	//     right: '420px'
+	//   }, 1000, function() {
+	//     // Animation complete.
+	//   });
+
+	  // $(window).scroll(function(){
+
+	  // 	var wScroll = $(this).scrollTop();
+
+	  // 			// console.log(wScroll);
+
+	  // $('.text, .second-gradient-overlay.button-group').css({
+
+	  //   	'transform' : 'translate(0px, '+ wScroll /6 + '%)'
+	  //  })
