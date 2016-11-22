@@ -61,3 +61,15 @@ ul.nav a:hover { background-color: #ccc!important; }
 }
 
 #skills, #about, #projects, #contact{  padding: 2em 3em; }
+
+.logo-padding {
+     margin-left: 4em;
+     margin-top: 1em;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 500px) { 
+    .logo-padding {
+         margin-left: 2em;
+         margin-top: 1em;
+    }
+}
