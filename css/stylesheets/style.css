@@ -26,7 +26,7 @@ ul.nav a:hover { background-color: #ccc!important; }
 }
 
 .slide{
-  display: none;
+  /*display: none;*/
 }
 
 .hello-box > h2 > span {
@@ -73,3 +73,6 @@ ul.nav a:hover { background-color: #ccc!important; }
          margin-top: 1em;
     }
 }
+/*#skills{
+    visibility: hidden;
+}*/
