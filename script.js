@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	$('#about').on('inview', function(event, isInView) {
 	  if (isInView) {
-	  	$('#about').hide().fadeIn(2000);
+	  	$('#about').addClass('animated fadeInUp');
 	    console.log("inview works")
 	  } else {
 	    $('#about').off('inview');
@@ -21,25 +21,26 @@ $(document).ready(function(){
 	});
 	$('#skills').on('inview', function(event, isInView) {
 	  if (isInView) {
-	  	$('#skills').hide().show(2000);
+	  	$('#skills').addClass('animated fadeInUp');
 	    console.log("inview works")
 	  } else {
 	    $('#skills').off('inview');
 	  }
 	});
-
-	// $(window).scroll(function () {
-	//     $( ".slide").each(function() {
-	//         // $this = $(this);
-	//         isOnView = isElementVisible($(this));
-	//         if(isOnView){
-	//             $(".slide").fadeIn(1500);
-	//             // startAnimation();
-	//         }
-	//     });
-	// });
-
-	// function startAnimation() {
-	// 	$(".slide").fadeIn(1500);
-	// }
+	$('#projects').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#projects').addClass('animated fadeInUp');
+	    console.log("inview works")
+	  } else {
+	    $('#projects').off('inview');
+	  }
+	});
+	$('#contact').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#contact').addClass('animated fadeInUp');
+	    console.log("inview works")
+	  } else {
+	    $('#contact').off('inview');
+	  }
+	});
 });

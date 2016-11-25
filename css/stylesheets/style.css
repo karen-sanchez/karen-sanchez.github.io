@@ -25,10 +25,6 @@ ul.nav a:hover { background-color: #ccc!important; }
     font-size: 3em;
 }
 
-.slide{
-  /*display: none;*/
-}
-
 .hello-box > h2 > span {
     font-family: 'Montserrat', sans-serif;
     color: #b3b3b3;
@@ -73,6 +69,3 @@ ul.nav a:hover { background-color: #ccc!important; }
          margin-top: 1em;
     }
 }
-/*#skills{
-    visibility: hidden;
-}*/
