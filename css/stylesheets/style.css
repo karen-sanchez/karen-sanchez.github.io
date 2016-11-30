@@ -69,3 +69,6 @@ ul.nav a:hover { background-color: #ccc!important; }
          margin-top: 1em;
     }
 }
+.todo-img{
+    height: 156px !important;
+}
