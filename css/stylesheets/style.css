@@ -55,6 +55,9 @@ ul.nav a:hover { background-color: #ccc!important; }
     display: inline-block;
     margin-left: 0.5em;
 }
+.todo-img{
+    height: 156px !important;
+}
 
 #skills, #about, #projects, #contact{  padding: 2em 3em; }
 
@@ -68,7 +71,4 @@ ul.nav a:hover { background-color: #ccc!important; }
          margin-left: 2em;
          margin-top: 1em;
     }
-}
-.todo-img{
-    height: 156px !important;
 }
