@@ -55,16 +55,23 @@ ul.nav a:hover { background-color: #ccc!important; }
     display: inline-block;
     margin-left: 0.5em;
 }
-.todo-img{
+.todo-img, .css3-img{
     height: 335px !important;
 }
-test{}
 #skills, #about, #projects, #contact{  padding: 2em 3em; }
 
 .logo-padding {
      margin-left: 4em;
      margin-top: 1em;
 }
+.btn{
+    width: 200px;
+}
+.btn-custom{
+    background-color: #00A185;
+    color: #fff;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 500px) { 
     .logo-padding {
