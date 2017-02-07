@@ -11,18 +11,31 @@ $(document).ready(function(){
 	    return ((BotElement <= BotView) && (TopElement >= TopView));
 	}
 
+	$(function() {
+	   $(window).scroll(function () {
+	      if ($(this).scrollTop() > 50) {
+	         $(".navbar-custom").css("background-color", "white")
+	      }
+	      if ($(this).scrollTop() < 50) {
+	         $(".navbar-custom").css("background-color", "transparent")
+	      }
+	   });
+	});
+
 	$('#about').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#about').addClass('animated fadeInUp');
-	    console.log("inview works")
-	  } else {
-	    $('#about').off('inview');
+	    // console.log("inview works")
+	   } else {
+	  	$('#about').off('inview');
 	  }
 	});
+
+
 	$('#skills').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#skills').addClass('animated fadeInUp');
-	    console.log("inview works")
+	    // console.log("inview works")
 	  } else {
 	    $('#skills').off('inview');
 	  }
@@ -30,17 +43,9 @@ $(document).ready(function(){
 	$('#projects').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#projects').addClass('animated fadeInUp');
-	    console.log("inview works")
+	    // console.log("inview works")
 	  } else {
 	    $('#projects').off('inview');
-	  }
-	});
-	$('#contact').on('inview', function(event, isInView) {
-	  if (isInView) {
-	  	$('#contact').addClass('animated fadeInUp');
-	    console.log("inview works")
-	  } else {
-	    $('#contact').off('inview');
 	  }
 	});
 });

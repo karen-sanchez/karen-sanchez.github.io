@@ -9,14 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins" rel="stylesheet">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width; initial-scale = 1; 
 	maximum-scale=1.0; user-scalable=no" /> 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Raleway|Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Raleway|Lato|Bangers" rel="stylesheet">
 </head>
 <body>	
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-custom navbar-fixed-top">
 		<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -44,20 +45,20 @@
 	<!-- INTRO SECTION -->
 	<div id="intro-section">
 		<div class="hello-box">
-		  <h2 class="fe">KAREN <span>SANCHEZ</span></h2>
-		  <h2 class="be"><span>FRONT-</span> END</h2>
-		  <h2 class="end">WEB DEVELOPER</h2>
+		  <h2 class="fe">KAREN SANCHEZ</h2>
+		  <h2 class="be"><span> WEB DEVELOPER</span></h2>
+		  <h2 class="be"><button type="button" class="btn main-btn-custom">CONTACT ME!</button></h2>
 		</div>
 	</div>
 
 	<!-- ABOUT SECTION -->
-	<div class="container" id="about">
+	<div class="container" id="about" class="startchange">
 		<div class="about-box">
 		  <h2>About Me</h2>
-		  <p>Hi, I'm <span>Karen Sanchez</span> and I am a <span>front end web developer</span> based in New York City. I specialize in JavaScript and I am always happy to learn anything related to it. I am also working towards improving my knowledge of CSS3 animations, SASS, and responsive web design. But my interests go far beyond that, I'm also looking forward to learning React, Angular, and another programming language, perhaps Python.</p>
-		  <p>In my free time I enjoy watching the latest HBO series, listening to music, or reading Julio Cort&#225;zar books and short stories.</p>
+		  <p>Hi, I'm <span>Karen</span> a <span>full stack web developer</span> based in New York City. I am an extremely motivated person looking to exapand my knowledge of web development in a place that highly values attention to detail, hard work, and commitment. I have been developing websites with Rails and JavaScript for over a year and I enjoy it a lot, but I've also taught myself other programming languages and frameworks such as Node.js and Express.js.</p>
 		</div>
 	</div>
+
 	<!-- SKILLS -->
 	<div class="container" id="skills">
 		<h2>My Skills</h2>
@@ -81,68 +82,74 @@
 	<!-- PROJECTS -->
 	<div class="container" id="projects">
 		<h2>My Projects</h2>
+
 		<div class="row">
-			<div class="col-sm-6 col-md-6">
-			<div class="thumbnail">
-			  <img src="css/stylesheets/images/cinchimg.JPG">
-			  <div class="caption">
-			    <h3>Cinch</h3>
-			    <p>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</p>
-			    <p><a href="https://cinch-app.herokuapp.com/" class="btn btn-custom" role="button">Website</a></p>
-			  </div>
-			</div>
-			</div>
-			<div class="col-sm-6 col-md-6">
-			<div class="thumbnail">
-			  <img src="css/stylesheets/images/spring.png" class="css3-img">
-			  <div class="caption">
-			    <h3>CSS3 Animations</h3>
-			    <p>Summer, Fall, Winter, and Spring all displayed by manipulating images with CSS3. </p><a href="https://css3animations.herokuapp.com/index.html" class="btn btn-custom" role="button">Website</a></p>
-			  </div>
-			</div>
-			</div>
-		</div><!-- ends row-->
-		<div class="row"><!-- start second row -->
-			<div class="col-sm-6 col-md-6">
-			<div class="thumbnail">
-			  <img src="css/stylesheets/images/learnjs.jpg">
-			  <div class="caption">
-			    <h3>JavaScript Tutorial</h3>
-			    <p>Tutorial for JavaScript beginners built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</p>
-			    <p><a href="https://eztutorial-javascript.herokuapp.com/" class="btn btn-custom" role="button">Website</a></p>
-			  </div>
-			</div>
-			</div>
 
-			<div class="clearfix visible-md"></div>
-
-			<div class="col-sm-6 col-md-6">
-			<div class="thumbnail">
-				<img src="css/stylesheets/images/todoapp.JPG" class="todo-img">
-				<div class="caption">
-				<h3>Todo app</h3>
-				<p>Simple website to practice my MongoDB and Mongoose CRUD knowledge. Other technologies used were Node.js, Express.js, JavaScript, and Bootstrap.</p>
-				<p><a href="https://simpletodowithnode.herokuapp.com/todo" class="btn btn-custom" role="button">Website</a></p>
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img src="css/stylesheets/images/cinchimg.JPG" class="cinch-img">
+				  <div class="caption">
+				    <h3>Cinch</h3>
+				    <p>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</p>
+				    <p><a href="https://cinch-app.herokuapp.com/" class="btn btn-custom" role="button">Website</a></p>
+				  </div>
 				</div>
 			</div>
-			</div>
-			</div><!-- ends row -->  
-	</div>
 
-	<!-- CONTACT -->
-	<div class="container" id="contact">
-		<h2>Contact Me</h2>
-			<ul class="col-md-offset-4">
-				<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll-navbar" style="width: 75px;height:75px"></span></a></li>
-		        <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll-navbar" style="width: 75px;height:75px"></span></a></li>
-				<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll-navbar" style="width: 75px;height:75px"></span></a></li>
-			</ul>
-	</div>
+
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img src="css/stylesheets/images/spring.png" class="css3-img">
+				  <div class="caption">
+				    <h3>CSS3 Animations</h3>
+				    <p>Summer, Fall, Winter, and Spring all displayed by manipulating images with CSS3.</p><a href="https://css3animations.herokuapp.com/index.html" class="btn btn-custom" role="button">Website</a></p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img src="css/stylesheets/images/learnjs.jpg" class="js-img">
+				  <div class="caption">
+				  <h3>JavaScript Tutorial</h3>
+				  <p>Tutorial for JavaScript beginners built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</p>
+				  <p><a href="https://eztutorial-javascript.herokuapp.com/" class="btn btn-custom" role="button">Website</a></p>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+				  <img src="css/stylesheets/images/todoapp.JPG" class="todo-img">
+				  <div class="caption">
+				  <h3>Todo app</h3>
+				  <p>Simple website to practice my MongoDB and Mongoose CRUD knowledge. Other technologies used were Node.js, Express.js, JavaScript, and Bootstrap.</p>
+				  <p><a href="https://simpletodowithnode.herokuapp.com/todo" class="btn btn-custom" role="button">Website</a></p>
+				  </div>
+				</div>
+			</div>
+
+			</div>
+	</div>	
+
+
+	<form action="https://formspree.io/karensanchez0891@gmail.com"
+	      method="POST">
+	    <input type="text" name="name">
+	    <input type="email" name="_replyto">
+	    <input type="submit" value="Send">
+	</form>
 
 	<!-- FOOTER -->
 	<hr><footer>
-		<p class="col-xs-12 col-md-6 text-center footer-font">Created by Karen Sanchez</p>
-		<p class="col-xs-12 col-md-6 text-center footer-font"> &copy; 2016 All rights reserved </p>
+		<p class="col-xs-12 col-md-5 text-center footer-font">Created by Karen Sanchez</p>
+		<ul class="col-md-3 col-md-offset-0 col-xs-offset-3">
+			<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
+	        <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
+			<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
+		</ul>
+		<p class="col-xs-12 col-md-3 text-center footer-font"> &copy; 2017 All rights reserved </p>
 	</footer>
 
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> -->
