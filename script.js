@@ -10,16 +10,6 @@ $(document).ready(function(){
 	    var BotElement = TopElement + $elementToBeChecked.height();
 	    return ((BotElement <= BotView) && (TopElement >= TopView));
 	}
-
-	// $(function() {
-	//    $(window).scroll(function () {
-	//       if ($(this).scrollTop() > 50) {
-	//       	// console.log('hi')
-	//          $(".navbar-custom").addclass("bottom-hadow")
-	//       }
-	//    });
-	// });
-
 	$('#about').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#about').addClass('animated fadeInUp');
