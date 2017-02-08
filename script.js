@@ -11,16 +11,14 @@ $(document).ready(function(){
 	    return ((BotElement <= BotView) && (TopElement >= TopView));
 	}
 
-	$(function() {
-	   $(window).scroll(function () {
-	      if ($(this).scrollTop() > 50) {
-	         $(".navbar-custom").css("background-color", "white")
-	      }
-	      if ($(this).scrollTop() < 50) {
-	         $(".navbar-custom").css("background-color", "transparent")
-	      }
-	   });
-	});
+	// $(function() {
+	//    $(window).scroll(function () {
+	//       if ($(this).scrollTop() > 50) {
+	//       	// console.log('hi')
+	//          $(".navbar-custom").addclass("bottom-hadow")
+	//       }
+	//    });
+	// });
 
 	$('#about').on('inview', function(event, isInView) {
 	  if (isInView) {

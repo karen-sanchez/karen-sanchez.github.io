@@ -1,50 +1,63 @@
 *{ font-family: 'Poiret One', cursive;}
 
 body{ 
-    background-color: #f7f7f7; 
+    background-color: white !important; 
 }
-
-ul.nav a:hover { background-color: #ccc!important; }
-
-#intro-section{
-    height: 100vh;
-    background-size: cover;
-    background-image: url(images/sky1.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+ul.nav a:hover { 
+    background-color: rgba(247,247,247, 0.8)!important; 
 }
-.navbar-custom .navbar-nav>li>a{
-    font-family: 'Lato', sans-serif;
-    color: white !important;
-    font-size: 1.3em;
+.navbar-custom .navbar-nav > li >a{    
+    font-family: 'Nunito', sans-serif;
+    color:  #888888 !important;
+    font-size: 1em;
     letter-spacing: 4px;
     font-weight: 100;
 }
 .navbar-custom{
+    background-color: white;
    transition: 0.5s all;
 }
-.hello-box{
-    padding-top: 4em;
-    text-align: center;
+#intro-section{
+    height: 100vh;
+    background-size: cover;
+    background-image: url(images/skyblue.png);
+    background-attachment: fixed;
     position: relative;
-    top: 25%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.navbar-toggle{
-    background-color: #E0607E !important;
-}
-.navbar-toggle > span{
-    background-color: white !important;
+.hello-box{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    min-width: 60%;
+    height: 25%;
+    min-height: 27%;
+    background-color: white;
+    border-radius: 3px;
 }
 .hello-box > h2{
     font-family: 'Poiret One', cursive;
-    color: #fff;
+    color: #86dde9;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
+    min-width: 100% !important;
 }
 .hello-box > h2 > span {
     font-family: 'Montserrat', sans-serif;
-    color: #E0607E;
+    font-size: 1.1em;
+    min-width: 100% !important;
+    color: #aee577;
+}
+.navbar-toggle{
+    background-color: #aee577 !important;
+}
+.navbar-toggle > span{
+    background-color: white !important;
 }
 .navbar-brand {
     float: left;
@@ -53,7 +66,10 @@ ul.nav a:hover { background-color: #ccc!important; }
     font-size: 30px !important;
     line-height: 20px;
     letter-spacing: 2px;
-    color: #E0607E;
+    color: #aee577 ;
+}
+.navbar-brand:hover {
+    color: rgba(174,229,119, 0.6);
 }
 .main-btn-custom{
     font-family: 'Montserrat', sans-serif;
@@ -72,7 +88,6 @@ ul.nav a:hover { background-color: #ccc!important; }
     line-height: 2;
     color: #2c3e50;
 }
-
 .about-box > p > span {
     color: #3F729B;
     font-weight: 900;
@@ -116,8 +131,9 @@ footer > ul > li {
     width: 200px;
 }
 .btn-custom{
-    background-color: #3F729B;
+    background-color: #86dde9;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -127,6 +143,47 @@ footer > ul > li {
          margin-top: 1em;
     }
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .hello-box{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 40%;
+        min-width: 61%;
+        height: 25%;
+        min-height: 28%;
+        background-color: white;
+        border-radius: 3px;
+    }
+    .hello-box > h2{
+        font-size: 2.3em;
+        min-width: 100% !important;
+    }
+    .hello-box > h2 > span {
+        font-size: 1em;
+        min-width: 100% !important;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
