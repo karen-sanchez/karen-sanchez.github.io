@@ -12,15 +12,40 @@ ul.nav a:hover {
     font-size: 1em;
     letter-spacing: 4px;
     font-weight: 100;
+    cursor: pointer; 
+}
+.navbar-toggle{
+    background-color: #c40000 !important;
+}
+.navbar-toggle > span{
+    background-color: white !important;
 }
 .navbar-custom{
     background-color: white;
-   transition: 0.5s all;
+    transition: 0.5s all;
 }
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: none !important;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 30px !important;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #888888;
+}
+.navbar-brand:hover {
+    color: #18306e;
+}
+
+/**************   INTRO *******************/
+
 #intro-section{
     height: 100vh;
     background-size: cover;
-    background-image: url(images/skyblue.png);
+    background-image: url(images/red1.jpg);
     background-attachment: fixed;
     position: relative;
     background-repeat: no-repeat;
@@ -33,11 +58,11 @@ ul.nav a:hover {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 40%;
-    min-width: 60%;
-    height: 25%;
-    min-height: 27%;
-    background-color: white;
+    width: 100%;
+    /*min-width: 60%;*/
+    height: 100%;
+    /*min-height: 27%;*/
+    background-color: rgba(0,0,0, 0.3);
     border-radius: 3px;
 }
 .hello-box > h2{
@@ -45,43 +70,17 @@ ul.nav a:hover {
     color: #86dde9;
     font-weight: bold;
     font-size: 3em;
+    position: relative;
+    top: 40%;
     min-width: 100% !important;
 }
 .hello-box > h2 > span {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     min-width: 100% !important;
-    color: #aee577;
+    color: #86dde9;
 }
-.navbar-toggle{
-    background-color: #aee577 !important;
-}
-.navbar-toggle > span{
-    background-color: white !important;
-}
-.navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 30px !important;
-    line-height: 20px;
-    letter-spacing: 2px;
-    color: #aee577 ;
-}
-.navbar-brand:hover {
-    color: rgba(174,229,119, 0.6);
-}
-.main-btn-custom{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.4em !important;
-    color: white!important;
-    background-color: rgba(224, 96, 126, 0.8) !important;
-    border: 2px #E0607E solid !important;
-    margin-top: 3.5em !important;
-}
-.main-btn-custom:hover {
-    background-color: #E0607E!important;
-}
+/**************   ABOUT *******************/
 .about-box > p {
     font-size: 1.3em;
     letter-spacing: 1.5px;
@@ -89,13 +88,77 @@ ul.nav a:hover {
     color: #2c3e50;
 }
 .about-box > p > span {
-    color: #3F729B;
+    color: #d32f2f ;
     font-weight: 900;
 }
-.navbar-brand, .navbar-nav>li>a {
-    text-shadow: none !important;
+/**************   PERSONAL PROJECTS  *******************/
+#skills, #about, #projects, #experience{  
+    padding: 2em 3em; 
 }
-.social-roll-navbar:hover {
+#projects a{
+    cursor: pointer; 
+    text-decoration: none;
+}
+.todo-img{
+    height: 183px !important;
+}
+.css3-img{
+    height: 187px !important;
+}
+#projects .col-md-3{
+    padding-left:0 !important;
+    padding-right: 0 !important;
+}
+#cinch-id:hover{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+#css3-id:hover{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+#js-id:hover{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+#todo-id:hover{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.carousel-caption{
+    visibility: hidden;
+}
+.carousel-caption:hover{
+    visibility: visible;
+}
+.carousel-caption h3{
+    background-color: #c40000;
+    width: 100%;
+}
+.carousel-caption p{
+    background-color: #c40000;
+    width: 100%;
+}
+.carousel-caption{
+    padding-bottom: 0px !important;
+    top: 1% !important;
+    width: 80%;
+    left: 10% !important;
+}
+.carousel-caption p{
+    width: 100%;
+}
+.logo-padding {
+     margin-left: 4em;
+     margin-top: 1em;
+}
+
+/**************   FOOTER   *******************/
+footer > ul > li {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+/*.social-roll-navbar:hover {
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
     transform:rotate(360deg);
@@ -103,38 +166,7 @@ ul.nav a:hover {
     -webkit-transform:rotate(360deg); 
     -webkit-transition-duration: 1s;
     -webkit-transition-timing-function: ease-in-out;
-}
-
-footer > ul > li {
-    display: inline-block;
-    margin-left: 0.5em;
-}
-.cinch-img{
-    height: 205px !important;
-}
-.css3-img{
-    height: 225px !important;
-}
-.js-img{
-    height: 185px !important;
-}
-.todo-img{
-    height: 185px !important;
-}
-#skills, #about, #projects, #contact{  padding: 2em 3em; }
-
-.logo-padding {
-     margin-left: 4em;
-     margin-top: 1em;
-}
-.btn{
-    width: 200px;
-}
-.btn-custom{
-    background-color: #86dde9;
-    color: #fff;
-    letter-spacing: 2px;
-}
+}*/
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 500px) { 

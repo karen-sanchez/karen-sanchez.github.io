@@ -18,7 +18,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Raleway|Lato|Bangers" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid">	
 	<nav class="navbar navbar-custom navbar-fixed-top">
 		<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -51,11 +50,12 @@
 		</div>
 	</div>
 
+
 	<!-- ABOUT SECTION -->
-	<div class="container" id="about" class="startchange">
+	<div class="jumbotron" id="about">
 		<div class="about-box">
 		  <h2>About Me</h2>
-		  <p>Hi, I'm <span>Karen</span> a <span>full stack web developer</span> based in New York City. I am an extremely motivated person looking to exapand my knowledge of web development in a place that highly values attention to detail, hard work, and commitment. I have been developing websites with Rails and JavaScript for over a year and I enjoy it a lot, but I've also taught myself other programming languages and frameworks such as Node.js and Express.js.</p>
+		  <p>Hi, I'm <span>Karen</span> a <span>full stack web developer</span> based in New York City. Before deciding to become a web developer, I was in college for Political Science, here I  My skills are a combination of school, self-taught work, and a lot of perseverance. Why persevere? My experience with web development has taught me that coding can be fun, creative, and absolutely rewarding - this is why I continue to pursue excellence in my work.</p>
 		</div>
 	</div>
 
@@ -79,51 +79,85 @@
 			<div class="col-md-1 col-xs-4 logo-padding"><img src="css/stylesheets/images/git.gif"></div>
 	</div>
 
+
+	<!-- EXPERIENCE -->
+	<div class="jumbotron" id="experience">
+	<h2>Professional Experience</h2>
+		<!-- Project One -->
+		<div class="row">
+		    <div class="col-md-6">
+		        <a href="#">
+		            <img class="img-responsive" src="css/stylesheets/images/todoapp.JPG" >
+		        </a>
+		    </div>
+		    <div class="col-md-6">
+		        <h3>Project One</h3>
+		        <h4>Subheading</h4>
+		        <p>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</p>
+		        <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+		    </div>
+		</div>
+		<!-- /.row -->
+	</div><!-- container -->
+
+
 	<!-- PROJECTS -->
 	<div class="container" id="projects">
-		<h2>My Projects</h2>
-
-		<div class="row">
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img src="css/stylesheets/images/cinchimg.JPG" class="cinch-img">
-				  <div class="caption">
-				    <h3>Cinch</h3>
-				    <p>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</p>
-				    <p><a href="https://cinch-app.herokuapp.com/" class="btn btn-custom" role="button">Website</a></p>
-				  </div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img src="css/stylesheets/images/spring.png" class="css3-img">
-				  <div class="caption">
-				    <h3>CSS3 Animations</h3>
-				    <p>Summer, Fall, Winter, and Spring all displayed by manipulating images with CSS3.</p><p><a href="https://css3animations.herokuapp.com/index.html" class="btn btn-custom" role="button">Website</a></p>
-				  </div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img src="css/stylesheets/images/learnjs.jpg" class="js-img">
-				  <div class="caption">
-				  <h3>JavaScript Tutorial</h3>
-				  <p>Tutorial for JavaScript beginners built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</p>
-				  <p><a href="https://eztutorial-javascript.herokuapp.com/" class="btn btn-custom" role="button">Website</a></p>
-				  </div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail">
-				  <img src="css/stylesheets/images/todoapp.JPG" class="todo-img">
-				  <div class="caption">
-				  <h3>Todo app</h3>
-				  <p>Simple website to practice my MongoDB and Mongoose CRUD knowledge. Other technologies used were Node.js, Express.js, JavaScript, and Bootstrap.</p>
-				  <p><a href="https://simpletodowithnode.herokuapp.com/todo" class="btn btn-custom" role="button">Website</a></p>
-				  </div>
-				</div>
+		<h2>Personal Projects</h2>
+			<div class="col-md-3">
+				<a href="https://cinch-app.herokuapp.com/">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="css/stylesheets/images/cinchimg.JPG" id="cinch-id" class="img-responsive">
+				           <div class="carousel-caption">
+						    <h3>Cinch</h3>
+						    <p>App built with Node.js, Express, Bootstrap, and the Yelp search API. Don't waste time wondering where to eat today. Let Cinch do that for you!</p>
+				           </div>
+				        </div>
+				    </div>
+				</a>
 			</div>
 
+			<div class="col-md-3">
+				<a href="https://css3animations.herokuapp.com/index.html">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="css/stylesheets/images/spring.png" id="css3-id" class="img-responsive css3-img">
+				           <div class="carousel-caption">
+						    <h3>CSS3 Animations</h3>
+						    <p>Summer, Fall, Winter, and Spring all displayed by manipulating images with CSS3.</p>
+				           </div>
+				        </div>
+				    </div>
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="https://eztutorial-javascript.herokuapp.com/">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="css/stylesheets/images/learnjs.jpg" id="js-id" class="img-responsive">
+				           <div class="carousel-caption">
+					         <h3>JavaScript Tutorial</h3>
+					         <p>Tutorial for JavaScript beginners built on Sinatra and Bootstrap. How strong are your JS skills? We all need to go back to the basics once in a while.</p>
+				           </div>
+				        </div>
+				    </div>
+				</a>
+			</div>
+
+			<div class="col-md-3">
+				<a href="https://simpletodowithnode.herokuapp.com/todo">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="css/stylesheets/images/todoapp.JPG" id="todo-id" class="img-responsive todo-img">
+				           <div class="carousel-caption">
+				           <h3>Todo app</h3>
+						  <p>Simple website to practice my MongoDB and Mongoose CRUD knowledge. Other technologies used were Node.js, Express.js, JavaScript, and Bootstrap.</p>
+				           </div>
+				        </div>
+				    </div>
+				</a>
 			</div>
 	</div><!-- projects -->	
 
@@ -133,9 +167,9 @@
 	<hr><footer>
 		<p class="col-xs-12 col-md-5 text-center footer-font">Created by Karen Sanchez</p>
 		<ul class="col-md-3 col-md-offset-0 col-xs-offset-3">
-			<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/Github.png" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
-	        <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/gmailcol.png" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
-			<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/Linkedin.png" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
+			<li><a href="https://github.com/karen-sanchez" class="entypo-github" target="_blank"><span><img src="css/stylesheets/images/black-in-icon.svg" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
+	        <li><a href="MAILTO:karensanchez0891@gmail.com" target="_blank"><span><img src="css/stylesheets/images/black-in-icon.svg" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
+			<li><a href="https://www.linkedin.com/in/karensanchez08" class="entypo-linkedin" target="_blank"><span><img src="css/stylesheets/images/black-in-icon.svg" class="social-roll-navbar" style="width: 35px;height:35px"></span></a></li>
 		</ul>
 		<p class="col-xs-12 col-md-3 text-center footer-font"> &copy; 2017 All rights reserved </p>
 	</footer>
@@ -147,6 +181,5 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 	<script type="text/javascript" src="jquery.inview.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	</div>
 </body>
 </html>

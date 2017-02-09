@@ -18,8 +18,6 @@ $(document).ready(function(){
 	  	$('#about').off('inview');
 	  }
 	});
-
-
 	$('#skills').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#skills').addClass('animated fadeInUp');
@@ -36,4 +34,5 @@ $(document).ready(function(){
 	    $('#projects').off('inview');
 	  }
 	});
+
 });
