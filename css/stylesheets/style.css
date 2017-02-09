@@ -22,7 +22,7 @@ ul.nav a:hover {
 }
 .navbar-custom{
     background-color: white;
-    transition: 0.5s all;
+    /*transition: 0.5s all;*/
 }
 .navbar-brand, .navbar-nav>li>a {
     text-shadow: none !important;
@@ -64,6 +64,7 @@ ul.nav a:hover {
     /*min-height: 27%;*/
     background-color: rgba(0,0,0, 0.3);
     border-radius: 3px;
+    transition: 0.9s all;
 }
 .hello-box > h2{
     font-family: 'Poiret One', cursive;

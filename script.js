@@ -35,4 +35,10 @@ $(document).ready(function(){
 	  }
 	});
 
+	$('#cinch-id').hover(function(){
+		console.log('hover cinch')
+		$('#cinch-id').css('filter', 'grayscale(100%)');
+		$('.caption-cinch').css('visibility', 'visible');
+	})
+
 });
