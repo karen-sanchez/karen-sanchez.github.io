@@ -13,32 +13,15 @@ $(document).ready(function(){
 	$('#about').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#about').addClass('animated fadeInUp');
-	    // console.log("inview works")
 	   } else {
 	  	$('#about').off('inview');
 	  }
 	});
-	$('#skills').on('inview', function(event, isInView) {
+	$('#experience').on('inview', function(event, isInView) {
 	  if (isInView) {
-	  	$('#skills').addClass('animated fadeInUp');
-	    // console.log("inview works")
+	  	$('#experience').addClass('animated fadeInUp');
 	  } else {
-	    $('#skills').off('inview');
+	    $('#experience').off('inview');
 	  }
 	});
-	$('#projects').on('inview', function(event, isInView) {
-	  if (isInView) {
-	  	$('#projects').addClass('animated fadeInUp');
-	    // console.log("inview works")
-	  } else {
-	    $('#projects').off('inview');
-	  }
-	});
-
-	$('#cinch-id').hover(function(){
-		console.log('hover cinch')
-		$('#cinch-id').css('filter', 'grayscale(100%)');
-		$('.caption-cinch').css('visibility', 'visible');
-	})
-
 });

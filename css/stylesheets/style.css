@@ -68,7 +68,7 @@ ul.nav a:hover {
 }
 .hello-box > h2{
     font-family: 'Poiret One', cursive;
-    color: #86dde9;
+    color: #888888;
     font-weight: bold;
     font-size: 3em;
     position: relative;
@@ -79,11 +79,11 @@ ul.nav a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     min-width: 100% !important;
-    color: #86dde9;
+    color: #888888;
 }
 /**************   ABOUT *******************/
 .about-box > p {
-    font-size: 1.3em;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 1.5px;
     line-height: 2;
     color: #2c3e50;
@@ -92,66 +92,62 @@ ul.nav a:hover {
     color: #d32f2f ;
     font-weight: 900;
 }
+/**************   SKILLS  *******************/
+.logo-padding {
+     margin-left: 4em;
+     margin-top: 1em;
+}
+#skills{
+    margin-bottom: 5em;
+}
+/**************   EXPERIENCE  *******************/
+#experience h3,p{
+    font-family: 'Nunito', sans-serif;
+    color: #2c3e50;
+}
+#experience h4{
+    font-family: 'Nunito', sans-serif;
+    color: #2c3e50;
+}
+
 /**************   PERSONAL PROJECTS  *******************/
-#skills, #about, #projects, #experience{  
+#about, #projects, #experience{  
     padding: 2em 3em; 
 }
 #projects a{
     cursor: pointer; 
     text-decoration: none;
 }
-.todo-img{
-    height: 183px !important;
-}
-.css3-img{
-    height: 187px !important;
+.todo-img, .css3-img{
+    height: 199px !important;
 }
 #projects .col-md-3{
     padding-left:0 !important;
     padding-right: 0 !important;
 }
-#cinch-id:hover{
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+.img-container{
+    position: relative;
 }
-#css3-id:hover{
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-}
-#js-id:hover{
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-}
-#todo-id:hover{
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-}
-.carousel-caption{
-    visibility: hidden;
-}
-.carousel-caption:hover{
-    visibility: visible;
-}
-.carousel-caption h3{
-    background-color: #c40000;
+.img-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
 }
-.carousel-caption p{
-    background-color: #c40000;
-    width: 100%;
+.img-container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .8);
 }
-.carousel-caption{
-    padding-bottom: 0px !important;
-    top: 1% !important;
-    width: 80%;
-    left: 10% !important;
+.overlay h3{
+    text-align: center;
 }
-.carousel-caption p{
-    width: 100%;
-}
-.logo-padding {
-     margin-left: 4em;
-     margin-top: 1em;
+.overlay p{
+    font-size: 1.2em;
+    padding: 0px 10px;
+    color: #FFF;
 }
 
 /**************   FOOTER   *******************/
@@ -159,15 +155,13 @@ footer > ul > li {
     display: inline-block;
     margin-left: 0.5em;
 }
-/*.social-roll-navbar:hover {
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+.social-roll-navbar:hover {
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg); 
     -webkit-transition-duration: 1s;
     -webkit-transition-timing-function: ease-in-out;
-}*/
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 500px) { 
