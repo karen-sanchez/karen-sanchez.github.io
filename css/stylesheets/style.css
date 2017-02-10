@@ -15,7 +15,7 @@ ul.nav a:hover {
     cursor: pointer; 
 }
 .navbar-toggle{
-    background-color: #c40000 !important;
+    background-color: #932020 !important;
 }
 .navbar-toggle > span{
     background-color: white !important;
@@ -89,6 +89,7 @@ ul.nav a:hover {
     color: #2c3e50;
 }
 .about-box > p > span {
+    font-family: 'Nunito', sans-serif;
     color: #d32f2f ;
     font-weight: 900;
 }
