@@ -18,7 +18,7 @@ body{
      color: #ccc !important; 
 }
 .navbar-toggle{
-    background-color: #b1ffff !important;
+   background-image: url(images/bg-toggle.png) !important;
 }
 .navbar-toggle > span{
     background-color: #212121 !important;
