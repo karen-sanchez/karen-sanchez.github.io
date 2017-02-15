@@ -3,26 +3,35 @@
 body{ 
     background-color: white !important; 
 }
-ul.nav a:hover { 
-    background-color: rgba(247,247,247, 0.8)!important; 
+.jumbotron{
+    background-color: #f2f2f2 !important;
 }
 .navbar-custom .navbar-nav > li >a{    
     font-family: 'Nunito', sans-serif;
-    color:  #888888 !important;
+    color:  white !important;
     font-size: 1em;
     letter-spacing: 4px;
     font-weight: 100;
     cursor: pointer; 
 }
+.navbar-custom .navbar-nav > li >a:hover{    
+     color: #ccc !important; 
+}
 .navbar-toggle{
-    background-color: #932020 !important;
+    background-color: #b1ffff !important;
 }
 .navbar-toggle > span{
-    background-color: white !important;
+    background-color: #212121 !important;
 }
 .navbar-custom{
-    background-color: white;
-    /*transition: 0.5s all;*/
+    background-color: #212121;
+    height: 4em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+     background-color: transparent !important; 
 }
 .navbar-brand, .navbar-nav>li>a {
     text-shadow: none !important;
@@ -34,18 +43,20 @@ ul.nav a:hover {
     font-size: 30px !important;
     line-height: 20px;
     letter-spacing: 2px;
-    color: #888888;
+    color: white;
 }
 .navbar-brand:hover {
-    color: #18306e;
+    color: #888888;
 }
-
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: #212121;}
+}
 /**************   INTRO *******************/
 
 #intro-section{
     height: 100vh;
     background-size: cover;
-    background-image: url(images/red1.jpg);
+    background-image: url(images/gradient.png);
     background-attachment: fixed;
     position: relative;
     background-repeat: no-repeat;
@@ -62,7 +73,7 @@ ul.nav a:hover {
     /*min-width: 60%;*/
     height: 100%;
     /*min-height: 27%;*/
-    background-color: rgba(0,0,0, 0.3);
+    /*background-color: rgba(249, 249, 249, 0.3);*/
     border-radius: 3px;
     transition: 0.9s all;
 }
@@ -76,7 +87,7 @@ ul.nav a:hover {
     min-width: 100% !important;
 }
 .hello-box > h2 > span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.1em;
     min-width: 100% !important;
     color: #888888;
@@ -90,7 +101,7 @@ ul.nav a:hover {
 }
 .about-box > p > span {
     font-family: 'Nunito', sans-serif;
-    color: #d32f2f ;
+    color: darkslategrey ;
     font-weight: 900;
 }
 /**************   SKILLS  *******************/
@@ -153,9 +164,26 @@ ul.nav a:hover {
 }
 
 /**************   FOOTER   *******************/
-footer > ul > li {
+.footer {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #1b1b1b;
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+}
+.footer ul > li {
     display: inline-block;
     margin-left: 0.5em;
+    color: white;
+}
+.footer p{
+    color: #ccc;
 }
 .social-roll-navbar:hover {
     transform:rotate(360deg);
