@@ -10,6 +10,13 @@ $(document).ready(function(){
 	    var BotElement = TopElement + $elementToBeChecked.height();
 	    return ((BotElement <= BotView) && (TopElement >= TopView));
 	}
+	$('#circles').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#circles').addClass('animated fadeInUp');
+	   } else {
+	  	$('#circles').off('inview');
+	  }
+	});
 	$('#about').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#about').addClass('animated fadeInUp');
