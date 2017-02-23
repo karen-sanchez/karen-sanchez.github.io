@@ -110,7 +110,7 @@ body{
 }
 /**************   ABOUT *******************/
 #about{
-    height: 150vh;
+    height: 180vh;
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
