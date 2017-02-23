@@ -110,13 +110,13 @@ body{
 }
 /**************   ABOUT *******************/
 #about{
-    height: 190vh;
+    height: 180vh;
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
 .about-box{
     position: relative;
-    top: 10%;
+    top: 5%;
 }
 .about-box > p {
     font-family: 'Nunito', sans-serif;
