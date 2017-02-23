@@ -1,31 +1,30 @@
 *{ font-family: 'Poiret One', cursive;}
 
 body{ 
-    background-color: white !important; 
+    background-color: #f7f6f1 !important; 
 }
 .jumbotron{
-    background-color: #f2f2f2 !important;
+    background-color: #f7f6f1 !important;
 }
 .navbar-custom .navbar-nav > li >a{    
     font-family: 'Nunito', sans-serif;
     color:  #ffdd83 !important;
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 4px;
     font-weight: 100;
     cursor: pointer;
     border-top: 4px solid transparent;
-    margin-right: 1px; 
+    margin-right: 0.8px; 
 }
 .navbar-custom .navbar-nav > li >a:hover{    
-     /*color: #ff3399 !important; */
-     transform: scale(1.5);
+     color: #ff3399 !important; 
      border-top: 4px solid #ff3399;
 }
 .navbar-toggle{
-   background-image: url(images/bg-toggle.png) !important;
+   background-color: #66b9bf;
 }
 .navbar-toggle > span{
-    background-color: #212121 !important;
+    background-color: #333333 !important;
 }
 .navbar-custom{
     background-color: #66b9bf;
@@ -35,18 +34,18 @@ body{
 }
 .nav>li>a:hover {
     text-decoration: none;
-     background-color: transparent !important; 
+    background-color: transparent !important; 
 }
 .navbar-brand, .navbar-nav>li>a {
     text-shadow: none !important;
 }
 .navbar-brand>img {
-  padding: 30px;
+  padding: 38px;
   width: auto;
   margin-top: -2em;
 }
 @media only screen and (max-width: 766px) {
-.collapsing, .in {background-color: #212121;}
+.collapsing, .in {background-color: #333333;}
 }
 /**************   INTRO *******************/
 
@@ -102,7 +101,7 @@ body{
   margin-right: 10px;
   line-height: 300px;
   text-align: center;
-  background: #ffdd83 ;
+  background: #ffdd83;
   border: 2px solid #66b9bf;
 }
 .circle span{
@@ -110,6 +109,15 @@ body{
     letter-spacing: 2px;
 }
 /**************   ABOUT *******************/
+#about{
+    height: 150vh;
+    position: relative;
+    border-left: 1.5em solid #ff3399;
+}
+.about-box{
+    position: relative;
+    top: 10%;
+}
 .about-box > p {
     font-family: 'Nunito', sans-serif;
     letter-spacing: 1.5px;
@@ -122,14 +130,25 @@ body{
     font-weight: 900;
 }
 /**************   SKILLS  *******************/
-.logo-padding {
-     margin-left: 4em;
-     margin-top: 1em;
-}
 #skills{
-    margin-bottom: 5em;
+    height: 125vh;
+    position: relative;
+    border-left: 1.5em solid #ff3399;
+}
+.logo-padding {
+    margin-top: 2px;
+}
+.skills-box{
+    margin-left: 1.5em;
+    /*position: relative;*/
+/*    top: 25%;*/
 }
 /**************   EXPERIENCE  *******************/
+#experience{
+    height: 115vh;
+/*    position: relative;*/
+    border-left: 1.5em solid #ff3399;
+}
 #experience h3,p{
     font-family: 'Nunito', sans-serif;
     color: #2c3e50;
@@ -138,14 +157,25 @@ body{
     font-family: 'Nunito', sans-serif;
     color: #2c3e50;
 }
-
+.exp-box{
+/*    position: relative;
+    top: 10%;*/
+}
 /**************   PERSONAL PROJECTS  *******************/
 #about, #projects, #experience{  
     padding: 2em 3em; 
 }
+#projects{
+    height: 140vh;
+    border-left: 1.5em solid #ff3399;
+}
 #projects a{
     cursor: pointer; 
     text-decoration: none;
+}
+.projects-box{
+/*   position: relative;
+   top: 20%;*/
 }
 .todo-img, .css3-img{
     height: 199px !important;
@@ -164,7 +194,7 @@ body{
     width: 100%;
     height: 100%;
     display: none;
-    color: #FFF;
+    color: #ff3399;
 }
 .img-container:hover .overlay {
     display: block;
@@ -177,7 +207,7 @@ body{
 .overlay p{
     font-size: 1.1em;
     padding: 0px 10px;
-    color: #FFF;
+    color: #66b9bf;
 }
 
 /**************   FOOTER   *******************/
@@ -211,10 +241,47 @@ body{
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 500px) { 
+@media (min-width: 600px) { 
+    #skills{
+        height: 80vh;
+        border-left: 1.5em solid #ff3399;
+    }
+    .skills-box{
+        position: relative;
+        top: 20%;
+    }
+    #projects{
+        height: 80vh;
+        border-left: 1.5em solid #ff3399;
+    }
+    .projects-box{
+        position: relative;
+        top: 20%;
+    }
+    #experience{
+        height: 80vh;
+        border-left: 1.5em solid #ff3399;
+    }
+    .exp-box{
+        position: relative;
+        top: 7%;
+    }
+    #about{
+        height: 90vh;
+        border-left: 1.5em solid #ff3399;
+    }
+    .about-box{
+        position: relative;
+        top: 15%;
+    }
     .logo-padding {
-         margin-left: 2em;
-         margin-top: 1em;
+        margin-top: 2px;
+        margin-right: 4em;
+    }
+    .navbar-custom .navbar-nav > li >a:hover{    
+         color: #ffdd83 !important; 
+         transform: scale(1.4);
+         border-top: 4px solid #ff3399;
     }
 }
 @media only screen 
