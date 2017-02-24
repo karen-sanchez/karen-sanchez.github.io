@@ -128,15 +128,20 @@ body{
 }
 /**************   SKILLS  *******************/
 #skills{
-    height: 125vh;
+    height: 135vh;
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
 .logo-padding {
     margin-top: 2px;
+    margin-bottom: 1em;
 }
 .skills-box{
     margin-left: 1.5em;
+}
+.node{
+    /*margin-top: -1em !important;*/
+    margin-bottom: 1em;
 }
 /**************   EXPERIENCE  *******************/
 #experience{
@@ -360,6 +365,10 @@ body{
         margin: 350px;
         left: 20% !important;
         display: inline-block;
+    }
+    .node{
+        margin-top: -1em !important;
+        margin-bottom: 1em;
     }
 }
 
