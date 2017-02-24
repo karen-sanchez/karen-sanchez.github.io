@@ -17,18 +17,18 @@ $(document).ready(function(){
 	  	$('#circles').off('inview');
 	  }
 	});
-	$('#about').on('inview', function(event, isInView) {
+	$('#skills').on('inview', function(event, isInView) {
 	  if (isInView) {
-	  	$('#about').addClass('animated fadeInUp');
+	  	$('#skills').addClass('animated fadeInUp');
 	   } else {
-	  	$('#about').off('inview');
+	  	$('#skills').off('inview');
 	  }
 	});
-	$('#experience').on('inview', function(event, isInView) {
+	$('#projects').on('inview', function(event, isInView) {
 	  if (isInView) {
-	  	$('#experience').addClass('animated fadeInUp');
+	  	$('#projects').addClass('animated fadeInUp');
 	  } else {
-	    $('#experience').off('inview');
+	    $('#projects').off('inview');
 	  }
 	});
 	$('.spinner').delay(6000).fadeOut(400);
