@@ -285,6 +285,10 @@ body{
          -o-animation: bouncey 1s ease-in-out 0.66s 5;
     animation: bouncey 1s ease-in-out 0.66s 5;
 }
+.holder{                          //keeps footer on bottom when content changes
+  min-height: 100%;
+  position: relative;
+}
 
 @keyframes bouncey {
     0%, 100%{transform: translateY(10px);
