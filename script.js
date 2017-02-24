@@ -9,7 +9,7 @@ $(document).ready(function(){
 	    var TopElement = $elementToBeChecked.offset().top;
 	    var BotElement = TopElement + $elementToBeChecked.height();
 	    return ((BotElement <= BotView) && (TopElement >= TopView));
-	}
+	}	
 	$('#circles').on('inview', function(event, isInView) {
 	  if (isInView) {
 	  	$('#circles').addClass('animated fadeInUp');
@@ -31,4 +31,7 @@ $(document).ready(function(){
 	    $('#experience').off('inview');
 	  }
 	});
+	$('.spinner').delay(6000).fadeOut(400);
+	$('.main-logo').delay(7000).fadeIn(500);
 });
+
