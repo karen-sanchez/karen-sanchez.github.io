@@ -108,7 +108,6 @@ body{
 /**************   ABOUT *******************/
 #about{
     height: 180vh;
-    min-height: 180vh;
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
@@ -130,7 +129,6 @@ body{
 /**************   SKILLS  *******************/
 #skills{
     height: 135vh;
-    min-height: 135vh;
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
@@ -148,7 +146,6 @@ body{
 /**************   EXPERIENCE  *******************/
 #experience{
     height: 115vh;
-    min-height: 115vh;
 /*    position: relative;*/
     border-left: 1.5em solid #ff3399;
 }
@@ -170,7 +167,6 @@ body{
 }
 #projects{
     height: 140vh;
-    min-height: 140vh;
     border-left: 1.5em solid #ff3399;
 }
 #projects a{
