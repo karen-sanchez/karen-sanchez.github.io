@@ -108,6 +108,7 @@ body{
 /**************   ABOUT *******************/
 #about{
     height: 180vh;
+    min-height: 180vh;
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
@@ -289,10 +290,6 @@ body{
         -ms-animation: bouncey 1s ease-in-out 0.66s 5;
          -o-animation: bouncey 1s ease-in-out 0.66s 5;
     animation: bouncey 1s ease-in-out 0.66s 5;
-}
-.holder{                          //keeps footer on bottom when content changes
-  min-height: 100%;
-  position: relative;
 }
 
 @keyframes bouncey {
