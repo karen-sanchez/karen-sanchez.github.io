@@ -37,9 +37,10 @@ body{
     text-shadow: none !important;
 }
 .navbar-brand>img {
-  padding: 39px;
-  width: auto;
-  margin-top: -2em;
+  /*padding: 30px;*/
+  width: 190px;
+  height: 45px;
+  margin-top: -1em;
 }
 @media only screen and (max-width: 766px) {
 .collapsing, .in {background-color: #333333;}
@@ -54,55 +55,22 @@ body{
     position: relative;
     background-repeat: no-repeat;
 }
-.main-logo{
-    display: none;
+.slide-show{
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    height: 100px;
-    background-repeat: no-repeat;
+    height: 10px;
 }
-/**************   CIRCLES  *******************/
-#circles{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
-.circleBase {
-    border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-}
-.type3 {
-    width: 280px;
-    height: 280px;
-    background: white;
-    border: 2px solid #66b9bf;
-}
-.circles{
-    position: relative;
-    top: 30%;
-}
-.circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  font-size: 25px;
-  margin-right: 10px;
-  line-height: 300px;
-  text-align: center;
-  background: #ffdd83;
-  border: 2px solid #66b9bf;
-}
-.circle span{
+.first, .second, .third{
     color: #66b9bf;
-    letter-spacing: 2px;
+    display: inline-block;
+    margin: 0px 2em 0em 2em;
 }
 /**************   ABOUT *******************/
 #about{
-    /*height: 180vh;*/
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
@@ -110,15 +78,14 @@ body{
     position: relative;
     top: 5%;
 }
-.about-box > p {
+.about-box h4 {
     font-family: 'Nunito', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     line-height: 2;
-    color: #2c3e50;
 }
-.about-box > p > span {
+.about-box span {
     font-family: 'Nunito', sans-serif;
-    color: darkslategrey ;
+    color: #66b9bf;
     font-weight: 900;
 }
 /**************   SKILLS  *******************/
@@ -135,7 +102,6 @@ body{
     margin-left: 1.5em;
 }
 .node{
-    /*margin-top: -1em !important;*/
     margin-bottom: 1em;
 }
 /**************   EXPERIENCE  *******************/
@@ -224,7 +190,7 @@ body{
     -webkit-transition-timing-function: ease-in-out;
 }
 .spinner {
-    width: 100% !important;
+    width: 40% !important;
     position: relative;
     margin: 350px;
     left: -50%;
@@ -332,9 +298,15 @@ body{
         position: relative;
         top: 15%;
     }
-    .logo-padding {
-        margin-top: 2px;
-        margin-right: 4em;
+    .about-box h4 {
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+    .about-box span {
+        font-family: 'Nunito', sans-serif;
+        color: #66b9bf;
+        font-weight: 900;
     }
     .navbar-custom .navbar-nav > li >a:hover{    
          color: #ffdd83 !important; 
@@ -342,7 +314,7 @@ body{
          border-top: 4px solid #ff3399;
     }
     .spinner {
-        width: 100px;
+        width: -10%;
         height: 100px;
         border-radius: 50%;
         position: relative;
@@ -355,7 +327,18 @@ body{
         margin-bottom: 1em;
     }
 }
-
+@media (min-width: 770px){ 
+    .logo-padding {
+        margin-top: 2px;
+        margin-right: 4em !important;
+    }
+}
+@media (max-width: 800px){ 
+    .logo-padding {
+        margin-top: 2px;
+        margin-right: 0em;
+    }
+}
 /* Phones */
 @media only screen 
   and (min-device-width: 320px) 

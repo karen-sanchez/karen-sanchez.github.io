@@ -31,7 +31,14 @@ $(document).ready(function(){
 	//     $('#projects').off('inview');
 	//   }
 	// });
-	$('.spinner').delay(4000).fadeOut(400);
-	$('.main-logo').delay(5000).fadeIn(500);
+	$('.spinner span:nth-child(1)').delay(4000).fadeOut(400);
+	$('.spinner span:nth-child(2)').delay(4000).fadeOut(600);
+	$('.spinner span:nth-child(3)').delay(4000).fadeOut(800);
+
+	$('.first, .second, .third').hide();
+
+	$('.first').delay(5000).fadeIn(500);
+	$('.second').delay(7000).fadeIn(500);
+	$('.third').delay(9000).fadeIn(500);
 });
 
