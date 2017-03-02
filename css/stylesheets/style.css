@@ -56,7 +56,6 @@ body{
     background-attachment: fixed;
     position: relative;
     background-repeat: no-repeat;
-    /*background-size: 100% 100%;*/
 }
 .main-logo{
     display: none;
@@ -74,7 +73,6 @@ body{
     height: 100vh;
     width: 100%;
     position: relative;
-    /*background-color: #ffdd83;*/
 }
 .circleBase {
     border-radius: 50%;
@@ -128,13 +126,13 @@ body{
 }
 /**************   SKILLS  *******************/
 #skills{
-    /*height: 135vh;*/
     position: relative;
     border-left: 1.5em solid #ff3399;
 }
 .logo-padding {
     margin-top: 2px;
     margin-bottom: 1em;
+    margin-right: 0em;
 }
 .skills-box{
     margin-left: 1.5em;
@@ -145,8 +143,6 @@ body{
 }
 /**************   EXPERIENCE  *******************/
 #experience{
-    /*height: 115vh;*/
-/*    position: relative;*/
     border-left: 1.5em solid #ff3399;
 }
 #experience h3,p{
@@ -157,25 +153,16 @@ body{
     font-family: 'Nunito', sans-serif;
     color: #2c3e50;
 }
-.exp-box{
-/*    position: relative;
-    top: 10%;*/
-}
 /**************   PERSONAL PROJECTS  *******************/
 #about, #projects, #experience{  
     padding: 2em 3em; 
 }
 #projects{
-    /*height: 140vh;*/
     border-left: 1.5em solid #ff3399;
 }
 #projects a{
     cursor: pointer; 
     text-decoration: none;
-}
-.projects-box{
-   /*position: relative;*/
-   /*top: -20%;*/
 }
 .todo-img, .css3-img{
     height: 199px !important;
@@ -405,11 +392,13 @@ and (orientation:portrait) {
         left: -39% !important;
    }
 }
+
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-    body{
-        background-color: red !important;
+and (min-device-width : 482px) 
+and (max-device-width : 766px)  { 
+    .logo-padding {
+        margin-top: 2px;
+        margin-right: 0em;
     }
 }
 
