@@ -40,7 +40,7 @@ body{
     text-shadow: none !important;
 }
 .navbar-brand>img {
-  padding: 38px;
+  padding: 39px;
   width: auto;
   margin-top: -2em;
 }
@@ -174,8 +174,8 @@ body{
     text-decoration: none;
 }
 .projects-box{
-/*   position: relative;
-   top: 20%;*/
+   /*position: relative;*/
+   /*top: -20%;*/
 }
 .todo-img, .css3-img{
     height: 199px !important;
@@ -269,26 +269,26 @@ body{
 
 #intro-section span:nth-child(1){
     left: -40px;
-    -webkit-animation: bouncey 1s ease-in-out 5;
-       -moz-animation: bouncey 1s ease-in-out 5;
-        -ms-animation: bouncey 1s ease-in-out 5;
-         -o-animation: bouncey 1s ease-in-out 5;
-    animation: bouncey 1s ease-in-out 5;
+    -webkit-animation: bouncey 1s ease-in-out 3;
+       -moz-animation: bouncey 1s ease-in-out 3;
+        -ms-animation: bouncey 1s ease-in-out 3;
+         -o-animation: bouncey 1s ease-in-out 3;
+    animation: bouncey 1s ease-in-out 3;
 }
 #intro-section span:nth-child(2){
-    -webkit-animation: bouncey 1s ease-in-out 0.33s 5;
-       -moz-animation: bouncey 1s ease-in-out 0.33s 5;
-        -ms-animation: bouncey 1s ease-in-out 0.33s 5;
-         -o-animation: bouncey 1s ease-in-out 0.33s 5;
-    animation: bouncey 1s ease-in-out 0.33s 5;
+    -webkit-animation: bouncey 1s ease-in-out 0.33s 3;
+       -moz-animation: bouncey 1s ease-in-out 0.33s 3;
+        -ms-animation: bouncey 1s ease-in-out 0.33s 3;
+         -o-animation: bouncey 1s ease-in-out 0.33s 3;
+    animation: bouncey 1s ease-in-out 0.33s 3;
 }
 #intro-section span:nth-child(3){
     left: 40px;
-    -webkit-animation: bouncey 1s ease-in-out 0.66s 5;
-       -moz-animation: bouncey 1s ease-in-out 0.66s 5;
-        -ms-animation: bouncey 1s ease-in-out 0.66s 5;
-         -o-animation: bouncey 1s ease-in-out 0.66s 5;
-    animation: bouncey 1s ease-in-out 0.66s 5;
+    -webkit-animation: bouncey 1s ease-in-out 0.66s 3;
+       -moz-animation: bouncey 1s ease-in-out 0.66s 3;
+        -ms-animation: bouncey 1s ease-in-out 0.66s 3;
+         -o-animation: bouncey 1s ease-in-out 0.66s 3;
+    animation: bouncey 1s ease-in-out 0.66s 3;
 }
 
 @keyframes bouncey {
@@ -313,7 +313,7 @@ body{
 /*  desktops, laptops  */
 @media (min-width: 600px) { 
     #skills{
-        height: 80vh;
+        /*height: 80vh;*/
         border-left: 1.5em solid #ff3399;
     }
     .skills-box{
@@ -321,7 +321,7 @@ body{
         top: 20%;
     }
     #projects{
-        height: 80vh;
+        /*height: 80vh;*/
         border-left: 1.5em solid #ff3399;
     }
     .projects-box{
@@ -329,7 +329,7 @@ body{
         top: 20%;
     }
     #experience{
-        height: 80vh;
+        /*height: 80vh;*/
         border-left: 1.5em solid #ff3399;
     }
     .exp-box{
@@ -337,7 +337,7 @@ body{
         top: 7%;
     }
     #about{
-        height: 90vh;
+        /*height: 90vh;*/
         border-left: 1.5em solid #ff3399;
     }
     .about-box{
@@ -401,6 +401,12 @@ and (orientation:portrait) {
         left: -39% !important;
    }
 }
-
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    body{
+        background-color: red !important;
+    }
+}
 
 

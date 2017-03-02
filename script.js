@@ -31,7 +31,7 @@ $(document).ready(function(){
 	//     $('#projects').off('inview');
 	//   }
 	// });
-	$('.spinner').delay(6000).fadeOut(400);
-	$('.main-logo').delay(7000).fadeIn(500);
+	$('.spinner').delay(4000).fadeOut(400);
+	$('.main-logo').delay(5000).fadeIn(500);
 });
 
