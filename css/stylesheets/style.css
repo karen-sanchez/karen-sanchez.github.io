@@ -313,7 +313,8 @@ body{
 /*  desktops, laptops  */
 @media (min-width: 600px) { 
     #skills{
-        /*height: 80vh;*/
+        padding-top: 3em;
+        padding-bottom: 5em;
         border-left: 1.5em solid #ff3399;
     }
     .skills-box{
@@ -321,7 +322,8 @@ body{
         top: 20%;
     }
     #projects{
-        /*height: 80vh;*/
+        padding-top: 3em;
+        padding-bottom: 5em;
         border-left: 1.5em solid #ff3399;
     }
     .projects-box{
@@ -329,7 +331,8 @@ body{
         top: 20%;
     }
     #experience{
-        /*height: 80vh;*/
+        padding-top: 3em;
+        padding-bottom: 3em;
         border-left: 1.5em solid #ff3399;
     }
     .exp-box{
@@ -337,7 +340,8 @@ body{
         top: 7%;
     }
     #about{
-        /*height: 90vh;*/
+        padding-top: 3em;
+        padding-bottom: 5em;
         border-left: 1.5em solid #ff3399;
     }
     .about-box{
