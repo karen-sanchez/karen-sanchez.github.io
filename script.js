@@ -17,20 +17,20 @@ $(document).ready(function(){
 	//   	$('#circles').off('inview');
 	//   }
 	// });
-	// $('#skills').on('inview', function(event, isInView) {
-	//   if (isInView) {
-	//   	$('#skills').addClass('animated fadeInUp');
-	//    } else {
-	//   	$('#skills').off('inview');
-	//   }
-	// });
-	// $('#projects').on('inview', function(event, isInView) {
-	//   if (isInView) {
-	//   	$('#projects').addClass('animated fadeInUp');
-	//   } else {
-	//     $('#projects').off('inview');
-	//   }
-	// });
+	$('#skills').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#skills').addClass('animated fadeInUp');
+	   } else {
+	  	$('#skills').off('inview');
+	  }
+	});
+	$('#projects').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#projects').addClass('animated fadeInUp');
+	  } else {
+	    $('#projects').off('inview');
+	  }
+	});
 	$('.spinner span:nth-child(1)').delay(4000).fadeOut(400);
 	$('.spinner span:nth-child(2)').delay(4000).fadeOut(600);
 	$('.spinner span:nth-child(3)').delay(4000).fadeOut(800);

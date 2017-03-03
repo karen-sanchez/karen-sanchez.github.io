@@ -120,6 +120,41 @@ body{
 .fly-in-text-3.hide-me li{
     opacity: 0;
 }
+.fly-in-text.hide-me li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
+.fly-in-text.hide-me li:nth-child(2){transform: translateX(20px) translateY(100px);}
+.fly-in-text.hide-me li:nth-child(3){transform: translateX(-150px) translateY(-80px);}
+.fly-in-text.hide-me li:nth-child(4){transform: translateX(10px) translateY(200px);}
+.fly-in-text.hide-me li:nth-child(5){transform: translateX(-300px) translateY(200px);}
+.fly-in-text.hide-me li:nth-child(6){transform: translateX(-200px) translateY(-200px);}
+.fly-in-text.hide-me li:nth-child(7){transform: translateX(-310px) translateY(-200px);}
+.fly-in-text.hide-me li:nth-child(8){transform: translateX(-255px) translateY(-130px);}
+.fly-in-text.hide-me li:nth-child(9){transform: translateX(-209px) translateY(-20px);}
+.fly-in-text.hide-me li:nth-child(10){transform: translateX(-110px) translateY(-200px);}
+.fly-in-text.hide-me li:nth-child(11){transform: translateX(90px) translateY(300px);}
+
+.fly-in-text-2.hide-me li:nth-child(1){transform: translateX(200px) translateY(-230px);}
+.fly-in-text-2.hide-me li:nth-child(2){transform: translateX(20px) translateY(50px);}
+.fly-in-text-2.hide-me li:nth-child(3){transform: translateX(-50px) translateY(-50px);}
+.fly-in-text-2.hide-me li:nth-child(4){transform: translateX(10px) translateY(20px);}
+.fly-in-text-2.hide-me li:nth-child(5){transform: translateX(-300px) translateY(200px);}
+.fly-in-text-2.hide-me li:nth-child(6){transform: translateX(-100px) translateY(-200px);}
+.fly-in-text-2.hide-me li:nth-child(7){transform: translateX(-310px) translateY(200px);}
+.fly-in-text-2.hide-me li:nth-child(8){transform: translateX(-255px) translateY(-130px);}
+.fly-in-text-2.hide-me li:nth-child(9){transform: translateX(-209px) translateY(-20px);}
+.fly-in-text-2.hide-me li:nth-child(10){transform: translateX(-110px) translateY(-200px);}
+.fly-in-text-2.hide-me li:nth-child(11){transform: translateX(90px) translateY(300px);}
+
+.fly-in-text-3.hide-me li:nth-child(1){transform: translateX(-250px) translateY(-200px);}
+.fly-in-text-3.hide-me li:nth-child(2){transform: translateX(-20px) translateY(100px);}
+.fly-in-text-3.hide-me li:nth-child(3){transform: translateX(-150px) translateY(-80px);}
+.fly-in-text-3.hide-me li:nth-child(4){transform: translateX(150px) translateY(200px);}
+.fly-in-text-3.hide-me li:nth-child(5){transform: translateX(-300px) translateY(200px);}
+.fly-in-text-3.hide-me li:nth-child(6){transform: translateX(-200px) translateY(-200px);}
+.fly-in-text-3.hide-me li:nth-child(7){transform: translateX(-310px) translateY(-400px);}
+.fly-in-text-3.hide-me li:nth-child(8){transform: translateX(-255px) translateY(-230px);}
+.fly-in-text-3.hide-me li:nth-child(9){transform: translateX(-209px) translateY(-20px);}
+.fly-in-text-3.hide-me li:nth-child(10){transform: translateX(-110px) translateY(-200px);}
+.fly-in-text-3.hide-me li:nth-child(11){transform: translateX(70px) translateY(30px);}
 /**************   ABOUT *******************/
 #about{
     position: relative;
@@ -243,7 +278,7 @@ body{
 .spinner {
     width: 40% !important;
     position: relative;
-    margin: 350px;
+    /*margin: 350px;*/
     left: -50%;
     display: inline-block;
 }
