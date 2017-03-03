@@ -37,12 +37,10 @@ $(document).ready(function(){
 
 });
 
-
-
 $(function(){
 	setTimeout(function() {
 		$('.fly-in-text, .fly-in-text-2, .fly-in-text-3').removeClass('hide-me');
-	}, 4100);
+	}, 4500);
 })();
 
 
