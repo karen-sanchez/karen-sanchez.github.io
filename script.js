@@ -35,10 +35,15 @@ $(document).ready(function(){
 	$('.spinner span:nth-child(2)').delay(4000).fadeOut(600);
 	$('.spinner span:nth-child(3)').delay(4000).fadeOut(800);
 
-	$('.first, .second, .third').hide();
-
-	$('.first').delay(5000).fadeIn(500);
-	$('.second').delay(7000).fadeIn(500);
-	$('.third').delay(9000).fadeIn(500);
 });
+
+
+
+$(function(){
+	setTimeout(function() {
+		$('.fly-in-text, .fly-in-text-2, .fly-in-text-3').removeClass('hide-me');
+	}, 4100);
+})();
+
+
 
