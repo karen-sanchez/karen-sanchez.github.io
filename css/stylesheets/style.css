@@ -277,8 +277,8 @@ body{
 }
 .spinner {
     width: 40% !important;
-    position: relative;
-    /*margin: 350px;*/
+    position: absolute;
+    margin: 345px;
     left: -50%;
     display: inline-block;
 }
