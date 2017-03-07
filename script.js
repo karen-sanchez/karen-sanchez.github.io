@@ -19,16 +19,34 @@ $(document).ready(function(){
 	// });
 	$('#skills').on('inview', function(event, isInView) {
 	  if (isInView) {
+	  	$('#skills').css('visibility', 'visible');
 	  	$('#skills').addClass('animated fadeInUp');
 	   } else {
 	  	$('#skills').off('inview');
 	  }
 	});
+	$('#experience').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#experience').css('visibility', 'visible');
+	  	$('#experience').addClass('animated fadeInUp');
+	  } else {
+	    $('#experience').off('inview');
+	  }
+	});
 	$('#projects').on('inview', function(event, isInView) {
 	  if (isInView) {
+	  	$('#projects').css('visibility', 'visible');
 	  	$('#projects').addClass('animated fadeInUp');
 	  } else {
 	    $('#projects').off('inview');
+	  }
+	});
+	$('#about').on('inview', function(event, isInView) {
+	  if (isInView) {
+	  	$('#about').css('visibility', 'visible');
+	  	$('#about').addClass('animated fadeInUp');
+	  } else {
+	    $('#about').off('inview');
 	  }
 	});
 	$('.spinner span:nth-child(1)').delay(4000).fadeOut(400);

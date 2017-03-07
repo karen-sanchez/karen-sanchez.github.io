@@ -1,33 +1,35 @@
 *{ font-family: 'Poiret One', cursive;}
 
 body{ 
-    background-color: #f7f6f1 !important;
+    background-color: white !important;
 }
 .navbar-custom .navbar-nav > li >a{    
     font-family: 'Nunito', sans-serif;
-    color:  #ffdd83 !important;
-    font-size: 0.9em;
-    letter-spacing: 4px;
+    color:  #3ba0b0 !important;
+    font-size: 0.8em;
+    letter-spacing: 3px;
     font-weight: 100;
     cursor: pointer;
     border-top: 4px solid transparent;
-    margin-right: 0.8px; 
+    margin-right: 0.5px;
+    text-transform: uppercase; 
 }
 .navbar-custom .navbar-nav > li >a:hover{    
-     color: #ff3399 !important; 
-     border-top: 4px solid #ff3399;
+     color: #3ba0b0  !important; 
+     border-top: 4px solid #3ba0b0;
 }
 .navbar-toggle{
    background-color: #66b9bf;
 }
 .navbar-toggle > span{
-    background-color: #333333 !important;
+    background-color: #3ba0b0 !important;
 }
 .navbar-custom{
-    background-color: #66b9bf;
+    background-color: #262930;
     height: 4em;
     padding-top: 1em;
     padding-bottom: 4em;
+    border-bottom: 2em solid white;
 }
 .nav>li>a:hover {
     text-decoration: none;
@@ -43,38 +45,25 @@ body{
   margin-top: -1em;
 }
 @media only screen and (max-width: 766px) {
-.collapsing, .in {background-color: #333333;}
+.collapsing, .in {background-color:  #ff3399;}
 }
 /**************   INTRO *******************/
 
 #intro-section{
     height: 100vh;
     /*background-size: cover;*/
-    background-color: #333333;
+    background-color: #262930;
     /*background-attachment: fixed;*/
     position: relative;
     /*background-repeat: no-repeat;*/
 }
-/*.slide-show{
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 10px;
-}
-.first, .second, .third{
-    color: #66b9bf;
-    display: inline-block;
-    margin: 0px 2em 0em 2em;
-}*/
 .fly-in-text{
     position: absolute;
     color: #66b9bf;
     list-style-type: none;
     left: 0%;
     top: 40%;
+    font-family: 'Monserrat', sans-serif;
 }
 .fly-in-text li{
     display: inline-block;
@@ -158,7 +147,6 @@ body{
 /**************   ABOUT *******************/
 #about{
     position: relative;
-    border-left: 1.5em solid #ff3399;
 }
 .about-box{
     position: relative;
@@ -177,23 +165,16 @@ body{
 /**************   SKILLS  *******************/
 #skills{
     position: relative;
-    border-left: 1.5em solid #ff3399;
 }
 .logo-padding {
     margin-top: 2px;
     margin-bottom: 1em;
     margin-right: 0em;
 }
-.skills-box{
-    margin-left: 1.5em;
-}
 .node{
     margin-bottom: 1em;
 }
 /**************   EXPERIENCE  *******************/
-#experience{
-    border-left: 1.5em solid #ff3399;
-}
 #experience h3,p{
     font-family: 'Nunito', sans-serif;
     color: #2c3e50;
@@ -203,23 +184,18 @@ body{
     color: #2c3e50;
 }
 /**************   PERSONAL PROJECTS  *******************/
-#about, #projects, #experience{  
+#about, #skills, #projects, #experience{  
     padding: 2em 3em; 
-}
-#projects{
-    border-left: 1.5em solid #ff3399;
+    visibility: hidden;
 }
 #projects a{
     cursor: pointer; 
     text-decoration: none;
 }
-.todo-img, .css3-img{
-    height: 199px !important;
-}
-#projects .col-md-3{
+/*#projects .col-md-3{
     padding-left:0 !important;
     padding-right: 0 !important;
-}
+}*/
 .img-container{
     position: relative;
 }
@@ -230,20 +206,20 @@ body{
     width: 100%;
     height: 100%;
     display: none;
-    color: #ff3399;
+    color: #3ba0b0;
 }
 .img-container:hover .overlay {
     display: block;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .9);
 }
 .overlay h3{
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 .overlay p{
-    font-size: 1.1em;
-    padding: 0px 10px;
-    color: #66b9bf;
+    font-weight: 900;
+    padding: 0px 5px;
+    color: #ccc;
 }
 
 /**************   FOOTER   *******************/
@@ -297,7 +273,7 @@ body{
     display: block;
     height: 20px;
     width: 20px;
-    background: #ff3399;
+    background: #ffdd83;
     border-radius: 50%;
     position: absolute;
     top: 0px;
@@ -350,26 +326,23 @@ body{
 @media (min-width: 600px) { 
     #skills{
         padding-top: 3em;
-        padding-bottom: 5em;
-        border-left: 1.5em solid #ff3399;
     }
     .skills-box{
         position: relative;
         top: 20%;
+        /*margin-left: 3em;*/
     }
     #projects{
         padding-top: 3em;
         padding-bottom: 5em;
-        border-left: 1.5em solid #ff3399;
+        /*border-left: 1.5em solid #ff3399;*/
     }
     .projects-box{
         position: relative;
         top: 20%;
     }
     #experience{
-        padding-top: 3em;
         padding-bottom: 3em;
-        border-left: 1.5em solid #ff3399;
     }
     .exp-box{
         position: relative;
@@ -378,7 +351,7 @@ body{
     #about{
         padding-top: 3em;
         padding-bottom: 5em;
-        border-left: 1.5em solid #ff3399;
+        /*border-left: 1.5em solid #ff3399;*/
     }
     .about-box{
         position: relative;
@@ -395,7 +368,7 @@ body{
         font-weight: 900;
     }
     .navbar-custom .navbar-nav > li >a:hover{    
-         color: #ffdd83 !important; 
+         color: #3ba0b0 !important; 
          transform: scale(1.4);
          border-top: 4px solid #ff3399;
     }
@@ -414,7 +387,7 @@ body{
     }
     .fly-in-text{
         position: absolute;
-        color: #66b9bf;
+        color: #3ba0b0;
         list-style-type: none;
         left: 50%;
         top: 40%;
@@ -514,7 +487,8 @@ body{
 @media (min-width: 770px){ 
     .logo-padding {
         margin-top: 2px;
-        margin-right: 4em !important;
+        margin-right: 2em !important;
+        margin-left: 2em !important
     }
 }
 @media (max-width: 800px){ 
