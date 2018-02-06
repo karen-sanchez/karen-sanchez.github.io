@@ -1,0 +1,145 @@
+* { font-family: 'Montserrat', sans-serif; }
+
+/* MAIN SECTION */
+
+.bg-image{
+    height: 90vh;
+    width: 100%;
+}
+
+.profile-image{
+    height: 80%;
+    width: 80%;
+}
+
+.main-cta{
+    background-color: #3CB371; 
+    color: white;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: 1.5px solid #fff !important;
+}
+
+.navbar-brand{ 
+    height: 50px;
+    padding: 0px !important;
+ }
+
+.navbar{ 
+    margin-bottom: -4.5em; 
+}
+
+.intro{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 !important;
+}
+
+.intro h1{
+    font-weight: 700 !important;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-bottom{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 800px){
+    .profile-image{
+            height: 30%;
+            width: 30%;
+    }
+}
+
+/* MAIN CONTAINER SECTION */
+
+.main-container h4{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #554f4f;
+}
+
+/* PROJECTS SECTION */
+
+.projects{
+    display: block;
+}
+
+.project-screenshot{
+    height: 200px;
+    width: 275px;
+}
+
+.projects-section > .btn-more{
+    background-color: #ecdea4;
+    color: #554f4f;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.projects > .jumbotron{
+    position: relative;
+    margin-top: -6em;
+    z-index: 3;
+    max-width: 15em;
+    float: right;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border-bottom: 2px solid #3CB371;
+    border-right: 2px solid #3CB371; 
+}
+
+/* EXPERIENCE SECTION */
+
+.company-logo{
+    height: 50px;
+    width: 80px;
+}
+
+/* SKILLS SECTION */
+
+.skills-section > .container {
+    display: inline;
+}
+
+.skills-section i{
+    font-size: 55px;
+    /*margin: 5px 5px;*/
+}
+
+/* FOOTER SECTION */
+
+.page-footer a{
+    color: #554f4f;
+}
+
+.page-footer a:hover{
+    color: #3CB371;
+}
+
+.page-footer h6{
+    color: #554f4f;
+    font-weight: 700;
+}
+
+svg.svg-inline--fa.fa-chevron-right.fa-w-8.fa-3x{
+    color: #3CB371;
+}
+
+svg.svg-inline--fa.fa-chevron-left.fa-w-8.fa-3x{
+    color: #3CB371;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: inline-flex !important;
+}
