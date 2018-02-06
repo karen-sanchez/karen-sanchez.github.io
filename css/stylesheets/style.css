@@ -118,10 +118,23 @@
     color: #554f4f;
 }
 
+.page-footer a:hover{
+    color: #3CB371;
+}
+
+.page-footer h6{
+    color: #554f4f;
+    font-weight: 700;
+}
+
 svg.svg-inline--fa.fa-chevron-right.fa-w-8.fa-3x{
     color: #3CB371;
 }
 
 svg.svg-inline--fa.fa-chevron-left.fa-w-8.fa-3x{
     color: #3CB371;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: inline-flex !important;
 }
