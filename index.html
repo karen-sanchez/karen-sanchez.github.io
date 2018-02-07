@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="assets/font/devicon-master/devicon.css">
+	<link rel="stylesheet" href="assets/font/devicon-master/devicon-colors.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
@@ -16,13 +17,16 @@
 	<!-- MAIN SECTION -->
 	<div class="intro">
 		<nav class="col-md-10 mx-auto navbar navbar-expand">
-			<img class="navbar-brand" src="assets/img/logo-white.png" alt="logo">
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav mr-auto"></ul>
-				<button class="btn main-cta btn-lg">Get in touch!</button>
-			</div>
+			
+				<img class="navbar-brand" src="assets/img/logo-white.png" alt="logo">
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto"></ul>
+					<button class="btn main-cta btn-lg">Get in touch!</button>
+				</div>
+			
 		</nav>
-		<img src="assets/img/1250-800.png" class="bg-image" alt="background-image">
+		<img src="assets/img/blackandyellow-test.JPG" class="bg-image" alt="background-image">
+		<!-- <img src="assets/img/1250-800.png" class="bg-image" alt="background-image"> -->
 		<div class="centered text-left">
 			<h1>Front End Web Developer</h1>
 			<p class="lead">Hello, I'm Karen, a ui/ux oriented developer based in NYC. I love building beautiful and useful websites.</p>
@@ -33,37 +37,48 @@
 	</div>
 
 	<!-- CONTENT SECTION -->
-	<div class="main-container mt-5">
+	<div class="main-container mt-8">
 
 		<!-- PROJECTS SECTION -->
 		<div class="container projects-section mb-5">
 			<h4>Projects</h4>
-			<div class="projects mt-5">
-				<img class="project-screenshot mx-auto d-block" src="assets/img/project-placeholder.png" alt="project1">
-				<div class="jumbotron">
-					<p>Find your dream home or apartment with this amazing real sate application.</p>
+
+			<div class="container">
+				<div class="row projects mt-5">
+					<img class="project-screenshot mx-auto col-10 col-sm-6 col-md-6 col-lg-4" src="assets/img/project-placeholder.png" alt="project1">
+					<div class="jumbotron mx-auto col-10 col-sm-6 col-md-6 col-lg-4">
+						<p>Find your dream home or apartment with this amazing real sate application.</p>
+					</div>
 				</div>
-			</div>
-			<div class="projects mt-5">	
-				<img class="project-screenshot mx-auto d-block" src="assets/img/project-placeholder.png" alt="project2">
-				<div class="jumbotron">
-					<p>Shop around for t-shirts and hats in this fun e-commerce site.</p>
+				<div class="row projects mt-5">	
+					<img class="project-screenshot mx-auto col-10 col-sm-6 col-md-6 col-lg-4" src="assets/img/project-placeholder.png" alt="project2">
+					<div class="jumbotron mx-auto col-10 col-sm-6 col-md-6 col-lg-4">
+						<p>Find your dream home or apartment with this amazing real sate application.</p>
+					</div>
 				</div>
+			</div> <!-- /container -->
+
+			<div class="container mt-5">
+			<button type="button" class="btn btn-more btn-lg btn-block mx-auto">More projects</button>
 			</div>
-			<button type="button" class="btn btn-more btn-lg btn-block">More projects</button>
+				
 		</div>
 
 		<!-- EXPERIENCE SECTION -->
 		<div class="container experience-section mb-5">
 			<h4>Experience</h4>
-			<div class="jumbotron mt-5">
-				<img class="company-logo mx-auto d-block" src="assets/img/metas-logo.png" alt="metas-logo">
-				<p class="container mt-3">As a freelancer I built the initial prototype for this start-up. By integrating a CMS and creating a fully responsive site I helped Metas reach an audience.</p>
-			</div>
-			<div class="jumbotron">
-				<img class="company-logo mx-auto d-block" src="assets/img/ob-logo.png" alt="ob-logo">
-				<p class="container mt-3">Work with production level code in an e-commerce site. Building responsive sites, writing clean code, and testing were all things that I had to keep in mind daily.</p>
-			</div>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-5 jumbotron mx-auto">
+						<img class="company-logo mx-auto d-block" src="assets/img/metas-logo.png" alt="metas-logo">
+						<p class="container mt-3">As a freelancer I built the initial prototype for this start-up. By integrating a CMS and creating a fully responsive site I helped Metas reach an audience.</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-5 offset-lg-1 jumbotron mx-auto">
+						<img class="company-logo mx-auto d-block" src="assets/img/ob-logo.png" alt="ob-logo">
+						<p class="container mt-3">Work with production level code in an e-commerce site. Building responsive sites, writing clean code, and testing were all things that I had to keep in mind daily.</p>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
 		</div>
 		<!-- SKILLS SECTION -->
 		<div class="container skills-section mb-5">
@@ -71,54 +86,54 @@
 
 			<!-- FIRST ROW -->
 			<div class="row mt-5">
-				<div class="col-3 col-sm-2 mb-3">				
-					<i class="devicon-html5-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">				
+					<i class="devicon-html5-plain-wordmark colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-css3-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-css3-plain-wordmark colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-javascript-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-javascript-plain colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-jquery-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-jquery-plain-wordmark colored"></i>
 				</div>
 			
 				<!-- SECOND ROW -->		
-				<div class="col-3 col-sm-2 mb-3">				
-					<i class="devicon-react-original"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">				
+					<i class="devicon-react-original-wordmark colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-rails-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-rails-plain-wordmark colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-nodejs-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-nodejs-plain colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-express-original"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-express-original colored"></i>
 				</div>
 			
 				<!-- THIRD ROW -->
-				<div class="col-3 col-sm-2 mb-3">				
-					<i class="devicon-bootstrap-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">				
+					<i class="devicon-bootstrap-plain-wordmark colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-git-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-git-plain colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-heroku-original"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-heroku-plain-wordmark colored"></i>
 				</div>
 
-				<div class="col-3 col-sm-2 mb-3">
-					<i class="devicon-photoshop-plain"></i>
+				<div class="col-3 col-sm-2 mb-3 text-center">
+					<i class="devicon-photoshop-line colored"></i>
 				</div>
 
 			</div><!-- /row -->		

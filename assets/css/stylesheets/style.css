@@ -1,10 +1,14 @@
 * { font-family: 'Montserrat', sans-serif; }
 
+.mt-8{
+    margin-top: 8rem!important;
+}
 /* MAIN SECTION */
 
 .bg-image{
     height: 90vh;
     width: 100%;
+    margin-top: -5.2em;
 }
 
 .profile-image{
@@ -13,7 +17,7 @@
 }
 
 .main-cta{
-    background-color: #3CB371; 
+    background-color: #4B43AA; 
     color: white;
     font-size: 16px !important;
     font-weight: 700 !important;
@@ -26,7 +30,7 @@
  }
 
 .navbar{ 
-    margin-bottom: -4.5em; 
+    margin-top: 1em;
 }
 
 .intro{
@@ -79,27 +83,43 @@
     width: 275px;
 }
 
-.projects-section > .btn-more{
-    background-color: #ecdea4;
+.projects-section .btn-more{
+    background-color: #B3B959;
     color: #554f4f;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
+    width: 70%;
+    clear: right;
 }
 
 .projects > .jumbotron{
-    position: relative;
-    margin-top: -6em;
-    z-index: 3;
-    max-width: 15em;
-    float: right;
+    /*position: relative;*/
+    /*margin-top: -6em;*/
+    /*z-index: 3;*/
     padding: 1rem 1rem;
     background-color: #fff;
-    border-bottom: 2px solid #3CB371;
-    border-right: 2px solid #3CB371; 
+    border-bottom: 2px solid #4B43AA;
+    border-right: 2px solid #4B43AA; 
+}
+
+@media (min-width: 800px){
+    .projects-section .btn-more{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px){
+    .projects-section .btn-more{
+        width: 30%;
+    }
 }
 
 /* EXPERIENCE SECTION */
+
+.experience-section .jumbotron{
+    border-radius: 0px;
+}
 
 .company-logo{
     height: 50px;
@@ -114,13 +134,12 @@
 
 .skills-section i{
     font-size: 55px;
-    /*margin: 5px 5px;*/
 }
 
 /* FOOTER SECTION */
 
 .page-footer a{
-    color: #554f4f;
+    color: #E9ECEF;
 }
 
 .page-footer a:hover{
@@ -128,18 +147,6 @@
 }
 
 .page-footer h6{
-    color: #554f4f;
+    color: #E9ECEF;
     font-weight: 700;
-}
-
-svg.svg-inline--fa.fa-chevron-right.fa-w-8.fa-3x{
-    color: #3CB371;
-}
-
-svg.svg-inline--fa.fa-chevron-left.fa-w-8.fa-3x{
-    color: #3CB371;
-}
-
-.carousel-item-next, .carousel-item-prev, .carousel-item.active{
-    display: inline-flex !important;
 }
