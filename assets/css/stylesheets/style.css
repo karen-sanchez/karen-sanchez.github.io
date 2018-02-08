@@ -141,6 +141,13 @@
     width: 80px;
 }
 
+/*@media (min-width: 993px){
+    .company-logo{
+        height: 80%;
+        width: 60%;
+    }
+}*/
+
 /* SKILLS SECTION */
 
 .skills-section > .container {

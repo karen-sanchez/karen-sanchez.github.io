@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	// BACK TO TOP
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 800) {
 			$('.back-to-top').fadeIn();
@@ -6,7 +8,7 @@ $(document).ready(function(){
 			$('.back-to-top').fadeOut();
 		}
 	});
-	// scroll body to 0px on click
+
 	$('.back-to-top').click(function () {
 		$('body,html').animate({
 			scrollTop: 0
@@ -14,9 +16,17 @@ $(document).ready(function(){
 		return false;
 	});
 
+	// PROJECTS
 	$('.hidden-project').hide();
+
 	$('.btn-more').click(function(){
-		$('.hidden-project').show('slow');
-		console.log('more clicked');
+		$(this).text($(this).text() == 'Less projects' ? 'More projects' : 'Less projects'); 
+		$('.hidden-project').slideToggle('slow');
 	});
+
+	// SKILLS
+	$( "i[class*='devicon']" ).each(function(){
+		$(this).wrap( "<div class='col-3 col-sm-2 mb-3 text-center'></div>" );
+	});
+
 });
