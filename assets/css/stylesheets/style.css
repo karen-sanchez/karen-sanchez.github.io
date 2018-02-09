@@ -3,6 +3,7 @@
 .mt-8{
     margin-top: 8rem!important;
 }
+
 /* MAIN SECTION */
 
 .bg-image{
@@ -87,10 +88,19 @@
     display: block;
 }
 
+.projects p{
+    padding: 0 1em;
+}
+
 .project-screenshot{
     height: 200px;
     width: 275px;
     border: 11px solid #e9ecef;
+    border-radius: 7px;
+}
+
+.hovered-border{
+    transform: scale(1.1);
 }
 
 .projects-section .btn-more{
@@ -107,15 +117,25 @@
     background-color: #d8e05f;
 }
 
-.projects > .jumbotron{
+.projects .jumbotron{
     /*position: relative;*/
     /*margin-top: -6em;*/
     /*z-index: 3;*/
     padding: 1rem 1rem;
     background-color: #fff;
-    border-bottom: 2px solid #635bbe;
-    border-right: 2px solid #635bbe;
-    box-shadow: 1px 1px 1px #635bbe;
+    border-bottom: 2px solid #e0e77e;
+    border-right: 2px solid #e0e77e;
+    box-shadow: 1px 1px 1px #e0e77e;
+}
+
+.projects-section a{
+    text-decoration: none;
+    color: black;
+}
+
+.projects-section a:hover{
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 800px){
@@ -216,15 +236,18 @@
     border-right: 4px solid #635bbe;
     border-bottom: none;
 }
+
 .about-modal > .modal-body{
     border-right: 4px solid #635bbe;
     border-bottom: 4px solid #635bbe;
 }
+
 .about-modal .modal-body > h4{
     color: #554f4f;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .about-modal > .modal-body > p{
     font-size: 20px;
 }

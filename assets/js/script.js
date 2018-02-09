@@ -26,6 +26,15 @@ $(document).ready(function(){
 		$('.hidden-project').slideToggle('slow');
 	});
 
+	$(function() {
+		$('.project-link').hover(function(){
+			$(this).find('.project-screenshot').addClass('hovered-border');
+		},
+		function(){
+			$(this).find('.project-screenshot').removeClass('hovered-border');
+		});
+	});
+
 	// SKILLS
 	$( "i[class*='devicon']" ).each(function(){
 		$(this).wrap( "<div class='col-3 col-sm-2 mb-3 text-center'></div>" );
