@@ -2,12 +2,14 @@ $(document).ready(function(){
 
 	var win = $(window);
 
-	// BACK TO TOP
+	// BACK TO TOP & STICKY ABOUT
 	win.scroll(function () {
 		if ($(this).scrollTop() > 1000) {
 			$('.back-to-top').fadeIn();
+			$('.sticky-about').fadeIn();
 		} else {
 			$('.back-to-top').fadeOut();
+			$('.sticky-about').fadeOut();
 		}
 	});
 
@@ -48,14 +50,4 @@ $(document).ready(function(){
 	$( "i[class*='devicon']" ).each(function(){
 		$(this).wrap( "<div class='col-3 col-sm-2 mb-3 text-center'></div>" );
 	});
-
-	// STICKY ABOUT
-	win.scroll(function () {
-		if ($(this).scrollTop() > 1000) {
-			$('.sticky-about').fadeIn();
-		} else {
-			$('.sticky-about').fadeOut();
-		}
-	});
-
 });
