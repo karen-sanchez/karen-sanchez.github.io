@@ -118,9 +118,6 @@
 }
 
 .projects .jumbotron{
-    /*position: relative;*/
-    /*margin-top: -6em;*/
-    /*z-index: 3;*/
     padding: 1rem 1rem;
     background-color: #fff;
     border-bottom: 2px solid #e0e77e;
