@@ -199,3 +199,32 @@
         right: 1em;
     }
 }
+
+/* STICKY ABOUT */
+
+.sticky-about{
+    cursor: pointer;
+    position: fixed;
+    bottom:1.5em;
+    left: 0px;
+    z-index: 3;
+    color: #e0e77e;
+    display: none;
+}
+
+.about-modal > .modal-header{
+    border-right: 4px solid #635bbe;
+    border-bottom: none;
+}
+.about-modal > .modal-body{
+    border-right: 4px solid #635bbe;
+    border-bottom: 4px solid #635bbe;
+}
+.about-modal .modal-body > h4{
+    color: #554f4f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-modal > .modal-body > p{
+    font-size: 20px;
+}

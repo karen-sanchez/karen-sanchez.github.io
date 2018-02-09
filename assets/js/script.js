@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
+	var win = $(window);
+
 	// BACK TO TOP
-	$(window).scroll(function () {
+	win.scroll(function () {
 		if ($(this).scrollTop() > 800) {
 			$('.back-to-top').fadeIn();
 		} else {
@@ -27,6 +29,15 @@ $(document).ready(function(){
 	// SKILLS
 	$( "i[class*='devicon']" ).each(function(){
 		$(this).wrap( "<div class='col-3 col-sm-2 mb-3 text-center'></div>" );
+	});
+
+	// STICKY ABOUT
+	win.scroll(function () {
+		if ($(this).scrollTop() > 1800) {
+			$('.sticky-about').fadeIn();
+		} else {
+			$('.sticky-about').fadeOut();
+		}
 	});
 
 });
