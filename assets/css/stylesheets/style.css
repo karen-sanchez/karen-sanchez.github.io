@@ -156,17 +156,28 @@
     border-radius: 0px;
 }
 
-.company-logo{
-    height: 50px;
+.experience-section img.company-logo {
+    height: 80px;
+    width: 130px;
+}
+
+.experience-section img.company-logo.expanded {
+    height: 45px;
     width: 80px;
 }
 
-/*@media (min-width: 993px){
-    .company-logo{
-        height: 80%;
-        width: 60%;
-    }
-}*/
+.experience-section img.company-logo {
+    height: auto;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.experience-section img.ob{
+    height: 67.4px;
+}
 
 /* SKILLS SECTION */
 
