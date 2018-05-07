@@ -23,7 +23,7 @@
 				<a href="MAILTO:karensanchez0891@gmail.com"><button class="btn main-cta btn-lg">Get in touch!</button></a>
 			</div>			
 		</nav>
-		<img src="assets/img/keyboardandpen.jpg" class="bg-image" alt="background-image">
+		<img src="assets/img/keyboardandpen-small.jpg" id="small-img" class="bg-image blur" alt="background-image">
 		<div class="centered text-left">
 			<h1>Front End Web Developer</h1>
 			<p class="lead d-none d-sm-block">Hello, I'm Karen, a ui/ux oriented developer based in NYC. I enjoy everything from sketching to deployment, and I love building equally beautiful and useful websites.</p>
@@ -32,6 +32,21 @@
 			<img src="assets/img/profile-pic.png" class="profile-image" alt="profile-image">
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		// IMG PRE-LOAD
+		var img = document.images[1],
+			bigImg = document.createElement('img');
+
+			bigImg.onload = function() {				
+				img.src = this.src
+				img.className = 'bg-image no-blur';
+			}
+
+			setTimeout(function(){
+				bigImg.src = 'assets/img/keyboardandpen.jpg';
+			}, 1000);
+	</script>
 
 	<!-- CONTENT SECTION -->
 	<div class="main-container mt-8">
