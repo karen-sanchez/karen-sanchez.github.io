@@ -2,8 +2,28 @@ $(document).ready(function(){
 
 	var win = $(window);
 
+	// CHECK IF ELEMENT IS IN VIEW PORT
+	$.fn.isInViewport = function() {
+	var elementTop = $(this).offset().top,
+		elementBottom = elementTop + $(this).outerHeight(),
+		viewportTop = $(win).scrollTop(),
+		viewportBottom = viewportTop + $(win).height();
+	
+		return elementBottom > viewportTop && elementTop < viewportBottom;	
+	};
+
+	$(win).on('resize scroll', function() {
+		$('.animate-div').each(function() {
+			if ($(this).isInViewport()) {
+				$(this).fadeIn(1000);
+			} else {
+				$(this).fadeOut();
+			}
+		});
+	});
+
 	// BACK TO TOP & STICKY ABOUT
-	win.scroll(function () {
+	$(win).scroll(function () {
 		if ($(this).scrollTop() > 1000) {
 			$('.back-to-top').fadeIn();
 			$('.sticky-about').fadeIn();
@@ -38,13 +58,13 @@ $(document).ready(function(){
 	});
 
 	// EXPERIENCE
-	$('.experience-section .mobile p').hide();
+	// $('.experience-section .mobile p').hide();
 
-	$('.mobile .company-logo').click(function(){
-		$(this).parent().find('p').toggle('slow', function(){
-			$(this).prev().toggleClass('expanded');
-		});
-	});
+	// $('.mobile .company-logo').click(function(){
+	// 	$(this).parent().find('p').toggle('slow', function(){
+	// 		$(this).prev().toggleClass('expanded');
+	// 	});
+	// });
 
 	// SKILLS
 	$( "i[class*='devicon']" ).each(function(){
