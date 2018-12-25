@@ -59,7 +59,6 @@ $(document).ready(function(){
 
 	// EXPERIENCE
 	// $('.experience-section .mobile p').hide();
-
 	// $('.mobile .company-logo').click(function(){
 	// 	$(this).parent().find('p').toggle('slow', function(){
 	// 		$(this).prev().toggleClass('expanded');
