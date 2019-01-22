@@ -1,208 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123979370-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-123979370-1');
-	</script>
-
+  <head>
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<title>Karen Sanchez</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="assets/css/stylesheets/style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="assets/font/devicon-master/devicon.css">
-	<link rel="stylesheet" href="assets/font/devicon-master/devicon-colors.css">
-</head>
-<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="./assets/css/stylesheets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cutive|Goudy+Bookletter+1911|Work+Sans:400,700" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-	<!-- MAIN SECTION -->
-	<div class="intro">
-		<nav class="col-md-10 mx-auto navbar navbar-expand">			
-			<img class="navbar-brand" src="assets/img/logo-white.png" alt="logo">
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav mr-auto"></ul>
-				<a href="MAILTO:karensanchez0891@gmail.com"><button class="btn main-cta btn-lg">Get in touch!</button></a>
-			</div>			
-		</nav>
-		<img src="assets/img/keyboardandpen-small.jpg" id="small-img" class="bg-image blur" alt="background-image">
-		<div class="centered text-left">
-			<h1>Front End Web Developer</h1>
-			<p class="lead d-none d-sm-block">Hello, I'm Karen, a ui/ux oriented developer based in NYC. I enjoy everything from sketching to deployment, and I love building equally beautiful and useful websites.</p>
-		</div>
-		<div class="centered-bottom">
-			<img src="assets/img/profile-pic.png" class="profile-image" alt="profile-image">
-		</div>
-	</div>
+	<title>Hello, world!</title>
+  </head>
+  <body>
+  	<div class="intro container-fluid h-100">
+  	    <div class="row h-100">
+  	        <div class="col-12 p-0 h-100">
+  	            <div class="jumbotron h-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+  	                <h1 class="display-4">Redesign</h1>
+  	                <p class="lead">in progress</p>
+  	            </div>
+  	        </div>
+  	    </div>
+  	</div>
 
-	<script type="text/javascript">
-		// IMG PRE-LOAD
-		var img = document.images[1],
-			bigImg = document.createElement('img');
+  	<div class="about container-fluid h-100">
+  	    <div class="row h-100">
+  	        <div class="col-12 p-0 h-100">
+  	            <div class="jumbotron h-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+  	                <div class="container">
+  	                  <div class="row">
+  	                    <div class="col-sm text-right">
+  	                    	<img src="./assets/img/placeholder.jpg" style="width:300px;height:300px;">
+  	                    </div>
+  	                    <div class="col-sm text-left">
+  	                    <h2>Hi, I’m Karen</h2>
+  	                    <p>I am a ux/ui designer and front-end developer based in NYC.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+  	                    </div>
+  	                  </div>
+  	                </div>
+  	            </div>
+  	        </div>
+  	    </div>
+  	</div>
 
-			bigImg.onload = function() {				
-				img.src = this.src
-				img.className = 'bg-image no-blur';
-			}
 
-			setTimeout(function(){
-				bigImg.src = 'assets/img/keyboardandpen.jpg';
-			}, 1000);
-	</script>
 
-	<!-- CONTENT SECTION -->
-	<div class="main-container mt-8">
-		<!-- PROJECTS SECTION -->
-		<div class="container projects-section mb-5">
-			<h4>Projects</h4>
-			<div class="container">
-				<a href="http://expensestrackerapp.herokuapp.com/" target="_blank" class="project-link">
-					<div class="row no-gutters projects mt-5">	
-						<img class="project-screenshot mx-auto col-10 col-sm-8 col-md-5 col-lg-4" src="assets/img/tracker.jpg" alt="project1">
-						<div class="jumbotron mx-auto col-10 col-sm-8 col-md-5 col-lg-4">
-							<p>React app to track your expenses. Easily add categories and assign items that you need to purchase for that category. Track you spending by category, items, or by date.</p>
-						</div>
-					</div>
-				</a>
-				<a href="https://happy-puppy.herokuapp.com/" target="_blank" class="project-link">
-					<div class="row no-gutters projects mt-5">	
-						<img class="project-screenshot mx-auto col-10 col-sm-8 col-md-5 col-lg-4" src="assets/img/happypuppy.JPG" alt="project2">
-						<div class="jumbotron mx-auto col-10 col-sm-8 col-md-5 col-lg-4">
-							<p>E-commerce website that shows how data from an API can be manipulated in various ways with JS. It also includes a cart that uses LocalStorage to add, view, and remove products to the "cart".</p>
-						</div>
-					</div>
-				</a>
-				<a href="https://cinch-app.herokuapp.com/" target="_blank" class="project-link">
-					<div class="row no-gutters projects mt-5 hidden-project">	
-						<img class="project-screenshot mx-auto col-10 col-sm-8 col-md-5 col-lg-4" src="assets/img/cinch.jpg" alt="project3">
-						<div class="jumbotron mx-auto col-10 col-sm-8 col-md-5 col-lg-4">
-							<p>Find your ideal meals from breakfast to dessert with Cinch. By integrating Yelp and HTML5 geolocation your next perfect meal is just a click away.</p>
-						</div>
-					</div>
-				</a>
-				<a href="https://backpackeradventures.herokuapp.com/" target="_blank" class="project-link">
-					<div class="row no-gutters projects mt-5 hidden-project">
-						<img class="project-screenshot mx-auto col-10 col-sm-8 col-md-5 col-lg-4" src="assets/img/backpacker.png" alt="project4">
-						<div class="jumbotron mx-auto col-10 col-sm-8 col-md-5 col-lg-4">
-							<p>This is for all those who love to travel. Share your experiences, along with ratings, tips, and great pictures. Built with the nomad community in mind.</p>
-						</div>					
-					</div>
-				</a>
-			</div> <!-- /container -->
-
-			<div class="container mt-5">
-				<button type="button" class="btn btn-more btn-lg btn-block mx-auto">More projects</button>
-			</div>				
-		</div>
-		<!-- EXPERIENCE SECTION -->
-		<div class="container experience-section mb-5">
-			<h4>Experience</h4>
-			<div class="container mt-5">
-				<!-- MOBILE -->
-				<div class="row mobile d-block d-md-none">
-					<div class="col-12 col-sm-12 col-md-6 col-lg-5 jumbotron mx-auto metas-exp">
-						<img class="company-logo mx-auto d-block" src="assets/img/metas-logo.png" alt="metas-logo">
-						<p class="container mt-3">As a freelancer I worked closely with the CEO and ui/ux designer to build the initial prototype for this start-up company. My contributions included creating a responsive website, CMS integration, and building a craigslist style job board.</p>
-					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-5 offset-lg-1 jumbotron mx-auto ob-exp">
-						<img class="company-logo mx-auto d-block" src="assets/img/ob-logo.png" alt="ob-logo">
-						<p class="container mt-3">As a front end developer I worked with developers, designers, and the marketing team to create HTML emails, update content, refactor existing code, and build the front end for current and new company websites.</p>
-					</div>
-				</div><!-- /row -->
-				<!-- DESKTOP -->
-				<div class="row desktop">
-					<div class="col-12 col-sm-12 col-md-6 col-lg-5 d-none d-md-block jumbotron mx-auto metas-exp animate-div">
-						<img class="company-logo mx-auto d-block mb-5" src="assets/img/metas-logo.png" alt="metas-logo">
-						<p class="container mt-3">As a freelancer I worked closely with the CEO and ui/ux designer to build the initial prototype for this start-up company. My contributions included creating a responsive website, CMS integration, and building a craigslist style job board.</p>
-					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-5 d-none d-md-block offset-lg-1 jumbotron mx-auto ob-exp animate-div">
-						<img class="company-logo mx-auto d-block mb-5 ob" src="assets/img/ob-logo.png" alt="ob-logo">
-						<p class="container mt-3">As a front end developer I worked with developers, designers, and the marketing team to create HTML emails, update content, refactor existing code, and build the front end for current and new company websites.</p>
-					</div>
-				</div><!-- /row -->
-			</div><!-- /container -->
-		</div>
-		<!-- SKILLS SECTION -->
-		<div class="container skills-section mb-5">
-			<h4>Skills</h4>
-			<div class="row mt-5 tech-logos">
-				<!-- FIRST ROW -->
-				<i class="devicon-html5-plain-wordmark colored"></i>
-				<i class="devicon-css3-plain-wordmark colored"></i>
-				<i class="devicon-javascript-plain colored"></i>
-				<i class="devicon-jquery-plain-wordmark colored"></i>
-				<!-- SECOND ROW -->		
-				<i class="devicon-react-original-wordmark colored"></i>
-				<i class="devicon-rails-plain-wordmark colored"></i>
-				<i class="devicon-nodejs-plain colored"></i>
-				<i class="devicon-express-original colored"></i>
-				<!-- THIRD ROW -->
-				<i class="devicon-bootstrap-plain-wordmark colored"></i>
-				<i class="devicon-git-plain colored"></i>
-				<i class="devicon-heroku-plain-wordmark colored"></i>
-				<i class="devicon-photoshop-line colored"></i>
-			</div><!-- /row -->		
-		</div><!-- /container -->
-	</div><!-- /main-container -->
-
-	<!-- BACK TO TOP -->
-	<a href="#" class="back-to-top"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
-
-	<!-- MOBILE STICKY ABOUT -->
-	<div class="d-block d-sm-none">
-		<div class="sticky-about">
-			<i class="fas fa-user-circle fa-3x" data-toggle="modal" data-target="#aboutModal"></i>	
-		</div>
-	</div>
-
-	<!-- MODAL -->
-	<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content about-modal">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"><i class="far fa-times-circle fa-2x"></i></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<h4 class="modal-title mb-3" id="aboutModalLabel">About</h4>
-					<p>Hello, I'm Karen, a ui/ux oriented developer based in NYC. I enjoy everything from sketching to deployment, and I love building equally beautiful and useful websites.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- FOOTER SECTION -->
-	<div class="container">
-		<footer class="page-footer">
-		<hr>
-			<div class="container">
-				<div class="row py-4 d-flex align-items-center">
-					<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-						<h6 class="mb-0">KAREN //</h6>
-					</div>
-					<div class="col-md-6 col-lg-7 text-center text-md-right">
-						<a href="https://github.com/karen-sanchez" target="_blank"><i class="fab fa-github-square fa-2x mr-lg-4"></i></a>
-						<a href="https://www.linkedin.com/in/karensanchez08" target="_blank"><i class="fab fa-linkedin fa-2x mr-lg-4"></i></a>
-						<a href="MAILTO:karensanchez0891@gmail.com"><i class="fas fa-envelope-square fa-2x mr-lg-4"></i></a>
-					</div>
-				</div>
-			</div>		
-		</footer>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
-</body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
 </html>
