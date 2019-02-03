@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="./assets/css/stylesheets/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cutive|Goudy+Bookletter+1911|Work+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/7f1b68a957/UntitledProject/style-svg.css">
+  <script defer src="https://i.icomoon.io/public/temp/7f1b68a957/UntitledProject/svgxuse.js"></script>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -15,9 +17,15 @@
   	<div class="intro container-fluid h-100">
   	    <div class="row h-100">
   	        <div class="col-12 p-0 h-100">
-  	            <div class="jumbotron h-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+  	            <div class="jumbotron h-100 text-center m-0 bg-info d-flex flex-column justify-content-center" id="chevsId">
   	                <h1 class="display-4">Redesign</h1>
   	                <p class="lead">in progress</p>
+  	                <ul>
+  	                	<li id="li1"><svg class="icon icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg></li>
+  	                	<li id="li2"><svg class="icon icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg></li>
+  	                	<li id="li3"><svg class="icon icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg></li>
+  	                	<li id="li4"><svg class="icon icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg></li>
+  	                </ul>
   	            </div>
   	        </div>
   	    </div>
@@ -29,12 +37,18 @@
   	            <div class="jumbotron h-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
   	                <div class="container">
   	                  <div class="row">
-  	                    <div class="col-sm text-right">
-  	                    	<img src="./assets/img/placeholder.jpg" style="width:300px;height:300px;">
+  	                    <div class="col-sm-12 col-md-6 img-container">
+  	                    	<img src="./assets/img/placeholder.jpg" class="img-fluid">
   	                    </div>
-  	                    <div class="col-sm text-left">
-  	                    <h2>Hi, I’m Karen</h2>
-  	                    <p>I am a ux/ui designer and front-end developer based in NYC.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+  	                    <div class="col-sm-12 col-md-6 col-lg-4 text-left">
+	  	                    <h2>Hi, I’m Karen</h2>
+	  	                    <p>I am a ux/ui designer and front-end developer based in NYC.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. but also typesetting. In the meantime read my latest web development blogs on Medium.</p>
+	  	                    <ul>
+	  	                    	<li><svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg></li>
+	  	                    	<li><svg class="icon icon-linkedin2"><use xlink:href="#icon-linkedin2"></use></svg></li>
+	  	                    	<li><svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg></li>
+	  	                    	<li><svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg></li>
+	  	                    </ul>
   	                    </div>
   	                  </div>
   	                </div>
@@ -46,6 +60,7 @@
 
 
 	<!-- Optional JavaScript -->
+	<script src="./assets/js/script.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
