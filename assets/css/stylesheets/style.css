@@ -136,7 +136,6 @@
   }
 }
 
-
 .intro .jumbotron {
     height: 98vh !important;
     border-radius: 0px;
@@ -149,9 +148,9 @@
     border: 5px solid pink;
 }
 
-.intro .jumbotron:hover {
-  color: #333;
-  transition: color 4s ease-in-out;
+.colorTrans {
+  color: #333 !important;
+  transition: color 0.75s ease-in-out !important;
 }
 
 .intro .jumbotron:after {
@@ -180,12 +179,12 @@
   visibility: hidden;
 }
 
-.intro .jumbotron:hover:before {
+.intro .jumbotron:before {
   animation: topleft 2s ease-in-out forwards;
   animation-delay: 1s;
 }
 
-.intro .jumbotron:hover:after {
+.intro .jumbotron:after {
   animation: bottomright 2s ease-in-out forwards;
   animation-delay: 1s;
 }
