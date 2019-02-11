@@ -142,7 +142,7 @@
     border-radius: 0px;
     background-color: white !important;
     color: #aaa;
-    transition: color 0.75s ease-in-out;
+    transition: color 4s ease-in-out;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
@@ -151,7 +151,7 @@
 
 .intro .jumbotron:hover {
   color: #333;
-  transition: color 0.75s ease-in-out;
+  transition: color 4s ease-in-out;
 }
 
 .intro .jumbotron:after {
@@ -181,11 +181,13 @@
 }
 
 .intro .jumbotron:hover:before {
-  animation: topleft 0.5s ease-in-out forwards;
+  animation: topleft 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 .intro .jumbotron:hover:after {
-  animation: bottomright 0.5s ease-in-out forwards;
+  animation: bottomright 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 /*Override Bootstrap box-sizing */
