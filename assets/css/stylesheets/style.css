@@ -30,7 +30,7 @@
     list-style-type: none;
 }
 .about .jumbotron {
-    border: 2em solid #fff;
+    border: 1em solid #fff;
     height: 100vh !important;
     border-radius: 0px;
     background-color: #333232 !important;
@@ -140,17 +140,17 @@
     height: 98vh !important;
     border-radius: 0px;
     background-color: white !important;
-    color: #aaa;
+    color: #bbb;
     transition: color 4s ease-in-out;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-    border: 5px solid pink;
+    border: 5px solid white;
 }
 
 .colorTrans {
   color: #333 !important;
-  transition: color 0.75s ease-in-out !important;
+  transition: color 4s ease-in-out !important;
 }
 
 .intro .jumbotron:after {
@@ -180,12 +180,12 @@
 }
 
 .intro .jumbotron:before {
-  animation: topleft 2s ease-in-out forwards;
+  animation: topleft 3s ease-in-out forwards;
   animation-delay: 1s;
 }
 
 .intro .jumbotron:after {
-  animation: bottomright 2s ease-in-out forwards;
+  animation: bottomright 3s ease-in-out forwards;
   animation-delay: 1s;
 }
 

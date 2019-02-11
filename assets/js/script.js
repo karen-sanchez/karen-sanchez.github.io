@@ -33,7 +33,7 @@ function addClass(elements, myClass) {
 // color transition
 setTimeout(function(){ 
   addClass(document.querySelector('.jumbotron'),'colorTrans');
-}, 2000); 
+}, 1000); 
 
 // chevron colors transition
 setTimeout(function(){ 
@@ -47,4 +47,4 @@ setTimeout(function(){
   }
 
   setInterval(changeColor, 1000)
-}, 3000); 
+}, 4000); 
