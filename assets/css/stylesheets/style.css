@@ -12,13 +12,13 @@
 .intro .lead {
     font-size: 1rem;
 }
-.intro span {
+/*.intro span {
     position: absolute;
     bottom: 45px;
     width: 95%;
     display: inline-grid;
     left: 50%;
-}
+}*/
 .intro ul {
     position: absolute;
     padding: 0;
@@ -189,13 +189,8 @@
   animation-delay: 1s;
 }
 
-/*Override Bootstrap box-sizing */
+/*override Bootstrap box-sizing */
 
-/*.intro .jumbotron {
-  -webkit-box-sizing: content-box !important;
-     -moz-box-sizing: content-box !important;
-          box-sizing: content-box !important;
-}*/
 .intro .jumbotron:before,
 .intro .jumbotron:after {
   -webkit-box-sizing: content-box !important;
