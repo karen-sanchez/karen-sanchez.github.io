@@ -1,5 +1,5 @@
 // chevrons
-let colors = ["blue", "green", "red", "pink"]
+let colors = ["#00FFC5", "#ADFFEB", "#00A37D", "#55D6B8"]
 let currentColor = 0
 let lis = document.querySelectorAll("#chevsId li")
 
