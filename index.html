@@ -3,16 +3,13 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123979370-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-123979370-1');
-    </script>
     <script type="text/javascript">
         //GA Event Tracker Script. Licensed under MIT. Free for any use by all. Written by Paul Seal from codeshare.co.uk
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-123979370-1');
         // Get the category, action and label from the element and send it to GA. The action is optional, because mostly it will be a click event.
         var trackClickEvent = function () {
             var eventCategory = this.getAttribute("data-event-category");
@@ -68,6 +65,7 @@
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-success ga-event" data-event-category="Cta click" data-event-label="success button">Success</button>
+      <a href="/about/" class="ga-event" data-event-category="Footer Links" data-event-label="About">About</a>
     </div>
   	<div class="about container-fluid h-100">
   	    <div class="row h-100">
