@@ -230,3 +230,16 @@ img {
 }
 
 
+
+/* Coming soon */
+.wrapper {
+  background-color: #0740f8;
+  min-height: 100vh;
+  text-align: center; 
+  margin: auto;
+}
+
+.container {
+  /* margin-top: 50%; */
+}
+
