@@ -22,11 +22,11 @@
 }
 .parallel-elements {
     text-align: center;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     max-width: 50px;
 }
 .center-element {
-    background-color: #86cccc;
+    /* background-color: #86cccc; */
 }
 /* //edit here */
 .section {
@@ -40,7 +40,7 @@
 .section img {
     width: 150px;
 }
-#workPro img, #workComm img {
+#workPro img, #workPractice img, #workComm img  {
     width: 100%;
 }
 /* //edit here */
