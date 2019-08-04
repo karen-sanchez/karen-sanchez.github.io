@@ -63,6 +63,14 @@
 .bottom-buffer{
     margin-bottom: 30px;
 }
+.back-to-top img {
+    width: 50px;
+    transform: rotate(90deg);
+    float: right;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
