@@ -1,7 +1,7 @@
 //if user scrolled to bottom do something
 window.onscroll = function() {
     if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100){
-        console.log('bottom');
+        // console.log('bottom');
         //get back to top element
         document.querySelector('.back-to-top img').style.transform = "rotate(-90deg)";
     } else {
@@ -31,11 +31,14 @@ document.querySelector('.back-to-top').addEventListener('click', function() {
     var workCommSection = document.querySelector('.workComm-title');
 
     var sectionArr = [whoSection, whatSection, howSection, workProSection, workPracticeSection, workCommSection];
-    console.log(isInViewport(sectionArr[0]));
 
-    for (var i = 0; i < sectionArr.length; i ++) {
+    for (var i = 0; i < sectionArr.length - 1; i ++) {
         if ( isInViewport(sectionArr[i]) ) {
             sectionArr[i + 1].scrollIntoView({behavior: "smooth", block: "center"});
+        } 
+        else if ( isInViewport(sectionArr[sectionArr.length - 1]) ) {
+            sectionArr[0].scrollIntoView({behavior: "smooth", block: "end"});
         }
     }
 });
+
