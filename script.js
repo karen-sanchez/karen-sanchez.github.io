@@ -1,7 +1,6 @@
 //if user scrolled to bottom do something
 window.onscroll = function() {
-    if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100){
-        //get next-section element
+    if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300){
         document.querySelector('.next-section img').style.transform = "rotate(-90deg)";
     } else {
         document.querySelector('.next-section img').style.transform = "rotate(90deg)";
@@ -22,12 +21,21 @@ document.querySelector('.next-section').addEventListener('click', function() {
 
     for (var i = 0; i < sectionArr.length - 1; i ++) {
         if ( isInViewport(sectionArr[i]) ) {
-            sectionArr[i + 1].scrollIntoView({behavior: "smooth", block: "center"});
+            sectionArr[i + 1].scrollIntoView({behavior: 'smooth', block: 'center'});
         } 
         else if ( isInViewport(sectionArr[sectionArr.length - 1]) ) {
-            sectionArr[0].scrollIntoView({behavior: "smooth", block: "end"});
+            sectionArr[0].scrollIntoView({behavior: 'smooth', block: 'end'});
         }
     }
+});
+
+//Open popup
+document.querySelector('.open-popup').addEventListener('click', function() {
+    document.querySelector('.popup').style.display = 'block';
+});
+//Close popup
+document.querySelector('.close-popup').addEventListener('click', function() {
+    document.querySelector('.popup').style.display = 'none';
 });
 
 //Resusable

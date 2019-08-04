@@ -28,7 +28,6 @@
 .center-element {
     /* background-color: #86cccc; */
 }
-/* //edit here */
 .section {
     position: relative;
     min-height: 100vh;
@@ -43,7 +42,6 @@
 #workPro img, #workPractice img, #workComm img  {
     width: 100%;
 }
-/* //edit here */
 .content-container {
     position: absolute;
     top: 50%;
@@ -70,6 +68,32 @@
     position: fixed;
     bottom: 5px;
     right: 5px;
+}
+.footer img {
+    width: 15px;
+    margin-bottom: 4px;
+}
+.footer .container .col-xs {
+    padding: 50px 0px;
+}
+section.popup {
+    background-color: #fff;
+    width: 98vw;
+    height: 98vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: 2px solid #ddd;
+    display: none;
+}
+section.popup .close-popup {
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    cursor: pointer;
 }
 
 /* Small devices (landscape phones, 576px and up) */
