@@ -81,7 +81,12 @@ section#workComm {
 .section img {
     width: 350px;
 }
-
+.center-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 /**********************
  **NAV
  **********************/
@@ -117,15 +122,14 @@ section#workComm {
  **POPUP
  **********************/
  section.popup {
-    background-color: #fff;
-    width: 98vw;
-    height: 98vh;
+    background-color: #202121;
+    width: 95vw;
+    height: 95vh;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1;
-    border: 2px solid #ddd;
+    z-index: 100;
     display: none;
 }
 section.popup .close-popup {
@@ -134,17 +138,28 @@ section.popup .close-popup {
     top: 0;
     right: 50px;
     cursor: pointer;
+    color: #dcdcdc;
+}
+section.popup .container {
+    height: 65vh;
+}
+section.popup h2, .popup p, .popup .fab {
+    color: #dcdcdc !important;
+}
+section.popup h2 {
+    letter-spacing: 1.25px;
+    line-height: 40px;
 }
 /**********************
  **NEXT / BACK TO TOP
  **********************/
 .next-section img {
-    width: 50px;
+    width: 65px;
     transform: rotate(90deg);
     float: right;
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 20px;
+    right: 10px;
 }
 /**********************
  **SECTIONS
