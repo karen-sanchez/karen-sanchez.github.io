@@ -1,32 +1,50 @@
 /**********************
  **GLOBAL
  **********************/
+section#who {
+    background-color: #6AAFD4;
+}
+section#what {
+    background-color: #F0C627;
+}
+section#how {
+    background-color: #86CCCC;
+}
+section#workPro {
+    background-color: #FAC472;
+}
+section#workPractice {
+    background-color: #C9EAD6;
+}
+section#workComm {
+    background-color: #ffce53;
+}
 #main-container h1 {
-     font-family: 'Nobile', sans-serif;
-     font-weight: 700;
-     font-size: 3rem;
-     color: #000;
-     transform: rotate(-90deg);
-     position: relative;
-     top: 50%;
+    font-family: 'Nobile', sans-serif;
+    font-weight: 700;
+    font-size: 7rem;
+    color: rgba(255,255,255, 0.3);
+    transform: rotate(-56deg);
+    position: relative;
+    z-index: 0;
 }
 #main-container h2 {
     font-family: 'Nobile', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.9rem;
     color: #000;
 }
 #main-container h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #000;
 }
 #main-container p {
      font-family: 'Lato', sans-serif;
      font-weight: 400;
      line-height: 25px;
-     font-size: 0.9rem;
+     font-size: 1.1rem;
      color: #161515;
      letter-spacing: 0.22px;
 }
@@ -37,16 +55,18 @@
     color: #161515;
 }
 #main-container .content-container {
-    max-width: 900px;
-    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 #main-container .intro-para {
     font-family: 'Lato', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 25px;
     color: #161515;
-    letter-spacing: 0.22px;
+    letter-spacing: 0.50px;
 }
 .bottom-buffer {
     margin-bottom: 30px;
@@ -54,14 +74,25 @@
 .top-buffer {
     margin-bottom: 30px;
 }
-.section img {
-    width: 100%;
+.padding-tb {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+.section img {
+    width: 350px;
+}
+
 /**********************
  **NAV
  **********************/
+ #main-container .navbar {
+     position: absolute;
+     background-color: transparent;
+     width: 100%;
+     z-index: 100;
+ }
 #main-container .navbar a img {
-    width: 50px;
+    width: 65px;
     height: auto;
 }
 #main-container .main-navbar__list ul {
@@ -77,6 +108,10 @@
     font-weight: 400;
     font-size: 1.1rem;
     color: #161515;
+}
+#main-container .navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
 }
 /**********************
  **POPUP
@@ -112,6 +147,18 @@ section.popup .close-popup {
     right: 5px;
 }
 /**********************
+ **SECTIONS
+ **********************/
+ #how img {
+    width: 85px;
+}
+.how__icon {
+    padding-bottom: 30px;
+}
+.who-intro {
+    padding-bottom: 30px;
+}
+/**********************
  **FOOTER
  **********************/
 .footer img {
@@ -122,136 +169,59 @@ section.popup .close-popup {
     padding: 50px 0px;
 }
 /**********************
- **HOW SECTION
+ **MEDIA QUERIES
  **********************/
- #how img {
-    width: 85px;
-}
-/**********************
- **WORK PROFESSIONAL SECTION
- **********************/
- #workPro img {
-    width: 85%;
-    height: 180px;
-}
-/**********************
- **WORK PRACTICE SECTION
- **********************/
- #workPractice img {
-    width: 100%;
-    height: 180px;
-}
-/**********************
- **END
- **********************/
- .parallel-header {
-    max-width: 80px;
-    background-color: #ddd;
-}
-/* prevents header from stacking on mobile */
-.content-container .row.content-row {
-    flex-wrap: nowrap;
-} 
-
-
-
-
-/* .content-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-.center-element {
-    /* background-color: #86cccc; */
-}
-.section {
-    /* position: relative; */
-    height: 100vh;
-}
-/* .section.reset-position {
-    position: static;
-    min-height: auto;
-}
-
-.reset-position .content-container {
-    position: static;
-    top: 0;
-    left: 0;
-    transform: none;
-    margin: 100px 0 100px 0;
-}
-}  */
-
-
-
-
-
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { ... } */
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
+@media (min-width: 576px) {
+    #main-container .content-container {
+        max-width: 900px;
+    }
     #main-container h1 {
-        font-family: 'Nobile', sans-serif;
-        font-weight: 700;
-        font-size: 8rem;
-        color: #000;
-        transform: rotate(-90deg);
+        font-size: 6rem;
+        color: #323232;
         position: relative;
+        transform: rotate(-90deg);
         top: 50%;
    }
-   #main-container h2 {
-       font-family: 'Nobile', sans-serif;
-       font-weight: 700;
-       font-size: 1.7rem;
-       color: #000;
-   }
    #main-container h3 {
-       font-family: 'Lato', sans-serif;
-       font-weight: 900;
-       font-size: 1.1rem;
-       color: #000;
+       font-size: 1.3rem;
    }
    #main-container p {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        color: #161515;
-        letter-spacing: 0.26px;
-   }
-   #main-container span {
-       font-family: 'Lato', sans-serif;
-       font-weight: 400;
-       font-size: 1.1rem;
-       color: #161515;
-   }
-   #main-container .content-container {
-       max-width: 900px;
-       margin-top: 50px;
+        font-size: 1.1rem;
+        letter-spacing: 0.50px;
    }
    #main-container .intro-para {
-       font-size: 1.3rem;
-       line-height: 35px;
-       letter-spacing: 0.22px;
-   } 
+    font-size: 1.3rem;
+    line-height: 35px;
+    letter-spacing: 0.50px;
+   }
     .parallel-header {
         max-width: 150px;
-        background-color: #ddd;
     }
-    #main-container .intro-para {
-        font-size: 1.3rem;
-        line-height: 35px;
-        letter-spacing: 0.22px;
+    .content-container .row.content-row {
+        flex-wrap: nowrap;
+    } 
+    .section img {
+        width: 200px;
+    }
+    #workComm img {
+        width: 500px;
     }
 
 }
-
-
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .section img {
+        width: 250px;
+    }
+}
 /* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */
+@media (min-width: 992px) { 
+    #main-container h1 {
+        font-size: 8rem;
+    }
+    .section img {
+        width: 300px;
+    }
+ }
 
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { ... } */

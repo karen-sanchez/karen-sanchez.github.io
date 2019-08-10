@@ -14,11 +14,11 @@
     <title>Hello, world!</title>
   </head>
   <body id="main-container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="navbar-toggler" data-toggle="collapse">
+                  <span>Contact</span>
+                </div>
               
                 <div class="collapse navbar-collapse main-navbar__list" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
@@ -44,9 +44,12 @@
                         <div class="col-xs parallel-header">
                             <h1 class="who-title">Who.</h1>
                         </div>
-                        <div class="col-lg center-element">
-                            <div class="who-intro">
-                                <p class="intro-para">Hi, I’m Karen, a web developer with over three years of experience based in NYC. When I’m not working on a project,  into this field by mistake a few years ago and haven’t stopped doing it ever since. I truly enjoy what I do, because it allows me to explore creativity as well as logic. </p>
+                        <div class="container">
+                            <div class="col-lg center-element">
+                                <div class="who-intro">
+                                    <h2>Nice to meet you.</h2>
+                                    <p class="intro-para">Hi, I’m Karen, a web developer with over three years of experience based in NYC. When I’m not working on a project,  into this field by mistake a few years ago and haven’t stopped doing it ever since. I truly enjoy what I do, because it allows me to explore creativity as well as logic. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,9 +62,12 @@
                     <div class="col-xs parallel-header">
                         <h1 class="what-title">What.</h1>
                     </div>
-                    <div class="col-lg center-element">
-                        <div class="what-intro">
-                            <p class="intro-para">My interest lies mainly on user experience, user interface, and front-end development. I enjoy building based on research and developing based on good design.  I truly enjoy what I do, because it allows me to explore creativity as well as logic. </p>
+                    <div class="container">
+                        <div class="col-lg center-element">
+                            <div class="what-intro">
+                                <h2>What I do.</h2>
+                                <p class="intro-para">My interest lies mainly on user experience, user interface, and front-end development. I enjoy building based on research and developing based on good design.  I truly enjoy what I do, because it allows me to explore creativity as well as logic. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +75,7 @@
         </section>
 
         <section id="how" class="section reset-position">
-            <div class="container content-container">
+            <div class="container content-container padding-tb">
                     <div class="row content-row">
                         <div class="col-xs parallel-header">
                             <h1 class="how-title">How.</h1>
@@ -78,33 +84,33 @@
                             <div class="container">
                                 <div class="who-intro">
                                     <h2>Web development with design in mind.</h2>
-                                    <p>Web development is only part of it, the truth is that every great website starts with a great idea. Eventually that idea reaches the point where it needs UX, UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p>
+                                    <p class="intro-para">Web development is only part of it, the truth is that every great website starts with a great idea. Eventually that idea reaches the point where it needs UX, UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p>
                                 </div>
                                 <div class="row bottom-buffer">
-                                    <div class="col-sm-6 text-center">
+                                    <div class="col-sm-12 col-md-6 text-center how__icon">
                                         <img src="./images/ux.png">
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12 col-md-6">
                                         <h3>User Experience</h3>
                                         <p>Even a small sample of test users can give us insights that we never considered before.</p>
                                     </div>
                                     <div class="w-100"></div>
                                 </div>
                                 <div class="row bottom-buffer">
-                                    <div class="col-sm-6 text-center">
+                                    <div class="col-sm-12 col-md-6 text-center how__icon">
                                         <img src="./images/ui.png">
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12 col-md-6">
                                         <h3>User Interface</h3>
                                         <p>Proximity, alignment, repetition, contrast, colors and typeface. All of these must come together to make a nice website. </p>
                                     </div>
                                     <div class="w-100"></div>
                                 </div>
                                 <div class="row bottom-buffer">
-                                    <div class="col-sm-6 text-center">
+                                    <div class="col-sm-12 col-md-6 text-center how__icon">
                                         <img src="./images/dev.png">
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12 col-md-6">
                                         <h3>Front-end Development</h3>
                                         <p>A combination of HTML, CSS, and JS are what will make the website come alive and ready to interact with users.</p>
                                     </div>
@@ -117,31 +123,68 @@
         </section>
 
         <section id="workPro" class="section reset-position">
-            <div class="container content-container">
+            <div class="container content-container padding-tb">
                 <div class="row content-row">
                     <div class="col-xs parallel-header">
                         <h1 class="workPro-title">Work.</h1>
                     </div>
-                    <div class="col-lg center-element">
-                        <div class="workPro-intro">
-                            <h2>Professional.</h2>
-                            <p>In my career I’ve been fortunate enough to get to experiment with different technologies ranging from databases to wordpress development, and UI design.</p>
-                        </div>
-                        <div class="container">
-                            <div class="row bottom-buffer">
-                                <div class="col-sm-6 text-center">
-                                    <img src="./images/metas-homepage.png">
+                    <div class="container">
+                        <div class="col-lg center-element">
+                            <div class="workPro-intro">
+                                <h2>Professional.</h2>
+                                <p class="intro-para">In my career I’ve been fortunate enough to get to experiment with different technologies ranging from databases to wordpress development, and UI design.</p>
+                            </div>
+                        
+                                <div class="row">
+                                    <div class="col-sm-6 text-center bottom-buffer">
+                                        <img src="./images/holder.png">
+                                    </div>
+                                    <div class="col-sm-6 text-center bottom-buffer">
+                                        <img src="./images/holder.png">
+                                    </div>
+                                    <div class="w-100"></div>
                                 </div>
-                                <div class="col-sm-6 text-center">
-                                    <img src="./images/studioblack-homepage.png">
+                                <div class="row">
+                                    <div class="col-sm-6 text-center bottom-buffer">
+                                        <img src="./images/holder.png">
+                                    </div>
+                                    <div class="col-sm-6 text-center bottom-buffer">
+                                        <img src="./images/holder.png">
+                                    </div>
+                                    <div class="w-100"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="workPractice" class="section reset-position">
+            <div class="container content-container padding-tb">
+                <div class="row content-row">
+                    <div class="col-xs parallel-header">
+                    <h1 class="workPractice-title">Work.</h1>
+                    </div>
+                    <div class="container">
+                        <div class="col-lg center-element">
+                            <div class="who-intro">
+                                <h2>Practice.</h2>
+                                <p class="intro-para">When I’m not working I like to learn new technologies and practice my basics.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 text-center bottom-buffer">
+                                    <img src="./images/holder.png">
+                                </div>
+                                <div class="col-sm-6 text-center bottom-buffer">
+                                    <img src="./images/holder.png">
                                 </div>
                                 <div class="w-100"></div>
                             </div>
-                            <div class="row bottom-buffer">
-                                <div class="col-sm-6 text-center">
-                                    <img src="./images/divino-homepage.png">
+                            <div class="row">
+                                <div class="col-sm-6 text-center bottom-buffer">
+                                    <img src="./images/holder.png">
                                 </div>
-                                <div class="col-sm-6 text-center">
+                                <div class="col-sm-6 text-center bottom-buffer">
                                     <img src="./images/holder.png">
                                 </div>
                                 <div class="w-100"></div>
@@ -150,59 +193,25 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-    <section id="workPractice" class="section reset-position">
-            <div class="container content-container">
-                <div class="row content-row">
-                    <div class="col-xs parallel-header">
-                    <h1 class="workPractice-title">Work.</h1>
-                    </div>
-                    <div class="col-lg center-element">
-                        <div class="who-intro">
-                            <h2>Practice.</h2>
-                            <p>When I’m not working I like to learn new technologies and practice my basics.</p>
-                        </div>
-                        <div class="container">
-                                <div class="row bottom-buffer">
-                                    <div class="col-sm-6 text-center">
-                                        <img src="./images/travel.png">
-                                    </div>
-                                    <div class="col-sm-6 text-center">
-                                        <img src="./images/tracker.png">
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
-                                <div class="row bottom-buffer">
-                                    <div class="col-sm-6 text-center">
-                                        <img src="./images/puppy-store.png">
-                                    </div>
-                                    <div class="col-sm-6 text-center">
-                                        <img src="./images/holder.png">
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
     </section> 
 
     <section id="workComm" class="section">
-            <div class="container content-container">
+            <div class="container content-container padding-tb">
                     <div class="row content-row">
                         <div class="col-xs parallel-header">
                             <h1 class="workComm-title">Work.</h1>
                         </div>
-                        <div class="col-lg center-element">
-                            <div class="workComm-intro">
-                                <h2>Community.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            </div>
-                            <div class="container">
-                                <div class="row bottom-buffer">
-                                    <div class="col-xs mx-auto">
-                                        <img src="./images/holder.png">
+                        <div class="container">
+                            <div class="col-lg center-element">
+                                <div class="workComm-intro">
+                                    <h2>Community.</h2>
+                                    <p class="intro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                </div>
+                                <div class="container">
+                                    <div class="row bottom-buffer">
+                                        <div class="col-xs mx-auto">
+                                            <img src="./images/holder.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
