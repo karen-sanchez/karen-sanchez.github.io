@@ -97,7 +97,7 @@ section#workComm {
      z-index: 100;
  }
 #main-container .navbar a img {
-    width: 65px;
+    width: 50px;
     height: auto;
 }
 #main-container .main-navbar__list ul {
@@ -155,7 +155,7 @@ section.popup h2 {
  **********************/
 .next-section img {
     width: 65px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     float: right;
     position: fixed;
     bottom: 20px;

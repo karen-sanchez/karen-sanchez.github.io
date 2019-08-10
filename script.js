@@ -1,9 +1,9 @@
 //if user scrolled to bottom do something
 window.onscroll = function() {
     if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300){
-        document.querySelector('.next-section img').style.transform = "rotate(-90deg)";
+        document.querySelector('.next-section img').style.transform = "rotate(180deg)";
     } else {
-        document.querySelector('.next-section img').style.transform = "rotate(90deg)";
+        document.querySelector('.next-section img').style.transform = "rotate(0deg)";
     }
 };
 
