@@ -10,22 +10,24 @@ window.onscroll = function() {
 //Arrow scrolls user to next section
 document.querySelector('.next-section').addEventListener('click', function() {
 
-    var whoSection = document.querySelector('.who-title');
-    var whatSection = document.querySelector('.what-title');
-    var howSection = document.querySelector('.how-title');
-    var workProSection = document.querySelector('.workPro-title');
-    var workPracticeSection = document.querySelector('.workPractice-title');
-    var workCommSection = document.querySelector('.workComm-title');
+    var whoSection = document.querySelector('#who');
+    var whatSection = document.querySelector('#what');
+    var howSection = document.querySelector('#how');
+    var workProSection = document.querySelector('#workPro');
+    var workPracticeSection = document.querySelector('#workPractice');
+    var workCommSection = document.querySelector('#workComm');
 
     var sectionArr = [whoSection, whatSection, howSection, workProSection, workPracticeSection, workCommSection];
+    console.log(sectionArr);
 
     for (var i = 0; i < sectionArr.length - 1; i ++) {
         if ( isInViewport(sectionArr[i]) ) {
-            sectionArr[i + 1].scrollIntoView({behavior: 'smooth', block: 'center'});
+            sectionArr[i + 1].scrollIntoView({behavior: 'smooth', block: 'start'});
+            console.log(sectionArr[i]);
         } 
-        else if ( isInViewport(sectionArr[sectionArr.length - 1]) ) {
-            sectionArr[0].scrollIntoView({behavior: 'smooth', block: 'end'});
-        }
+        // else if ( isInViewport(sectionArr[sectionArr.length - 1]) ) {
+        //     sectionArr[0].scrollIntoView({behavior: 'smooth', block: 'end'});
+        // }
     }
 });
 
