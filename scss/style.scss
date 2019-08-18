@@ -3,7 +3,20 @@ $highlight: #ffffbf;
 $black: #353535;
 $grey: #f2f2f2;
 
+// index
+.index-section {
+    background-color: $primary;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+section {
+    min-height: 100vh;
+    background-color: $primary;
+}
 .main-nav {
+    background-color: $primary;
     img {
         height: 4.5rem;
         vertical-align: middle;
@@ -37,10 +50,4 @@ $grey: #f2f2f2;
     
 }
 
-section {
-    background-color: #bfbfff;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; 
-}
+
