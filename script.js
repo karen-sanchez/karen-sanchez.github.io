@@ -1,73 +1,54 @@
 feather.replace()
 
-//if user scrolled to bottom do something
-// window.onscroll = function() {
-//     if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300){
-//         document.querySelector('.next-section img').style.transform = "rotate(180deg)";
-//     } else {
-//         document.querySelector('.next-section img').style.transform = "rotate(0deg)";
-//     }
-// };
-//Arrow scrolls user to next section
+// mobile nav
+document.querySelector('.open-mobile-nav').addEventListener('click', function() {
+    document.querySelector('.slide-nav-container').classList.remove("hidden");
+});
+
+document.querySelector('.close-mobile-nav').addEventListener('click', function() {
+    document.querySelector('.slide-nav-container').classList.add("hidden");
+});
+
+// when user scrolls to bottom rotate arrow
+window.onscroll = function() {
+    if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300){
+        document.querySelector('.next-section .feather.feather-arrow-down').classList.add("rotate-elem");
+    } else {
+        document.querySelector('.next-section .feather.feather-arrow-down').classList.remove("rotate-elem");
+    }
+};
+// arrow scrolls user to next section
 document.querySelector('.next-section').addEventListener('click', function() {
+    var top = document.querySelector('.main-nav');
+    var who = document.getElementById('who');
+    var what = document.getElementById('what');
+    var how = document.getElementById('how');
+    var workPro = document.getElementById('workPro');
+    var workComm= document.getElementById('workComm');
+    var contact = document.getElementById('contact');
 
-    var whoSection = document.querySelector('#who');
-    var whatSection = document.querySelector('#what');
-    var howSection = document.querySelector('#how');
-    var workProSection = document.querySelector('#workPro');
-    var workPracticeSection = document.querySelector('#workPractice');
-    var workCommSection = document.querySelector('#workComm');
-
-    var sectionArr = [whoSection, whatSection, howSection, workProSection, workPracticeSection, workCommSection];
+    var sectionArr = [who, what, how, workPro, workComm, contact];
 
     for (var i = 0; i < sectionArr.length - 1; i ++) {
         if ( isInViewport(sectionArr[i]) ) {
-            sectionArr[i + 1].scrollIntoView({behavior: 'smooth', block: 'start'});
-            // console.log(sectionArr[i]);
+            sectionArr[i + 1].scrollIntoView({behavior: 'smooth', block: 'center'});
         } 
-        // else if ( isInViewport(sectionArr[sectionArr.length - 1]) ) {
-        //     sectionArr[0].scrollIntoView({behavior: 'smooth', block: 'end'});
-        // }
+        else if ( isInViewport(sectionArr[sectionArr.length - 1]) ) {
+            top.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
     }
 });
 
-var whoSection = document.querySelector('#who');
-var whatSection = document.querySelector('#what');
-var howSection = document.querySelector('#how');
-var workProSection = document.querySelector('#workPro');
-var workPracticeSection = document.querySelector('#workPractice');
-var workCommSection = document.querySelector('#workComm');
-
-var one = whoSection.getBoundingClientRect();
-var two = whatSection.getBoundingClientRect();
-var three = howSection.getBoundingClientRect();
-var four = workProSection.getBoundingClientRect();
-var five = workPracticeSection.getBoundingClientRect();
-var six = workCommSection.getBoundingClientRect();
-console.log(one);
-console.log(two);
-console.log(three);
-console.log(four);
-console.log(five);
-console.log(six);
-console.log(window.innerHeight);
-
-// //Open popup
-// document.querySelector('.open-popup').addEventListener('click', function() {
-//     document.querySelector('.popup').style.display = 'block';
-// });
-// //Close popup
-// document.querySelector('.close-popup').addEventListener('click', function() {
-//     document.querySelector('.popup').style.display = 'none';
-// });
-
-//Resusable
 function isInViewport(elem) {
     var bounding = elem.getBoundingClientRect();
     return (
         bounding.top >= 0 &&
         bounding.left >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 200 &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 };
+
+// var whoSection = document.querySelector('#who');
+// var one = whoSection.getBoundingClientRect();
+// console.log(one);

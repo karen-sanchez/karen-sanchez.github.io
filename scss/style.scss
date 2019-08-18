@@ -1,9 +1,11 @@
+$header-font: 'Nobile', sans-serif;
+$body-font: 'Lato', sans-serif;
 $primary: #bfbfff;
 $highlight: #ffffbf;
 $black: #353535;
 $grey: #f2f2f2;
 
-// index
+// index.html
 .index-section {
     background-color: $primary;
     display: flex !important;
@@ -11,9 +13,14 @@ $grey: #f2f2f2;
     justify-content: center;
     min-height: 100vh; 
 }
-section {
-    min-height: 100vh;
-    background-color: $primary;
+body#main {
+    background-color: $grey;
+}
+.hidden {
+    display: none;
+}
+.rotate-elem {
+    transform: rotate(180deg);
 }
 .main-nav {
     background-color: $primary;
@@ -44,10 +51,131 @@ section {
         right: 0;
     }
     .feather.feather-align-center {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        stroke-width: 1;
+        color: $black;
     }
-    
+}
+.section {
+    min-height: 100vh;
+    h1 {
+        font-family: $header-font;
+        color: $black;
+        font-size: 60px;
+    }
+    h2 {
+        font-family: $body-font;
+        color: $black;
+        font-size: 	1.125rem;
+        font-weight: 900;
+    }
+    h3 {
+        font-family: $body-font;
+        color: $black;
+        font-size: 	1rem;
+        font-weight: 700;
+    }
+    h4 {
+        font-family: $header-font;
+        color: $black;
+        font-size: 1.1875rem;
+        line-height: 30px;
+    }
+    p {
+        font-family: $body-font;
+        color: $black;
+        margin-bottom: 0;
+    }
+}
+.section#who {
+    background-color: $primary;
+}
+.section#how {
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    .how-inner {
+        margin-top: 30px;
+    }
+    .inner-row {
+        margin-bottom: 20px;
+    }
+    .inner-row p {
+        font-size: 13px;
+    }
+}
+.section#what, .section#workPro, .section#how, .section#workComm, .section#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-
+.slide-nav {
+    font-family: $body-font;
+    height: 100vh;
+    background-color: $black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    opacity: 1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $grey;
+    button.close-mobile-nav {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 50px;
+        padding-left: 15px;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    li a {
+        color: $grey;
+        font-size: 1.5625rem;
+        font-weight: 700;
+    }
+    li a:hover {
+        color: $highlight;
+    }
+    li.sublink a {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .feather.feather-chevrons-right {
+        width: 40px;
+        height: 40px;
+        stroke-width: 1;
+        color: $grey;
+    }
+}
+.next-section {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    .feather.feather-arrow-down {
+        height: 50px;
+        width: auto;
+        stroke-width: 1;
+        color: $black;
+    }
+}
+.footer {
+    p {
+        font-size: 0.75rem;
+    }
+    .feather {
+        color: $primary;
+    }
+}

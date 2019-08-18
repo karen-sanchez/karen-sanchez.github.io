@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Nobile:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nobile:700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body id="main">
         <header class="main-nav">
             <div class="inner-header">
                 <div class="triangle"></div>
@@ -23,6 +23,43 @@
                 <button class="open-mobile-nav">
                     <i data-feather="align-center"></i>
                 </button>
+            </div>
+            <div class="slide-nav-container hidden">
+                <div class="slide-nav">
+                        <button class="close-mobile-nav">
+                            <i data-feather="chevrons-right"></i>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#">Who</a>
+                            </li>
+                            <li>
+                                <a href="#">What</a>
+                            </li>
+                            <li>
+                                <a href="#">How</a>
+                            </li>
+                            <li>
+                                <a href="#">Work</a>
+                            </li>
+                            <li class="sublink">
+                                <a href="#">Projects</a>
+                            </li>
+                            <li class="sublink">
+                                <a href="#">Community</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="footer">
+                            <div class="text-center">
+                                <p>Want to learn more about my work?</br>Check it out below.</p>
+                                <i data-feather="github"></i>
+                                <i data-feather="linkedin"></i>
+                            </div>
+                        </div>
+                    </div>     
             </div>
             <!-- <nav>
                 <ul>
@@ -45,165 +82,115 @@
             </nav> -->
         </header>
         <section id="who" class="section">
-            <div class="container content-container">
-                    <div class="row content-row">
-                        <div class="col-xs parallel-header">
-                            <h1 class="who-title">Who.</h1>
-                        </div>
-                        <div class="container">
-                            <div class="col-lg">
-                                <div class="who-intro">
-                                    <h2>Nice to meet you.</h2>
-                                    <p class="intro-para">Hi, I’m Karen, a web developer living in NYC. To be honest, I didn’t know what I was getting myself into when I began teaching myself how to program, but I found it to be so fascinating that I never stopped doing it. I love what I do. I also love puppies, and coffee shops with strong wi-fi.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container">
+                <div>
+                    <h1>Who.</h1>
                 </div>
+                <div>
+                    <p>Hi, I’m Karen, a web developer living in NYC. To be honest, I didn’t know what I was getting myself into when I began teaching myself how to program, but I found it to be so fascinating that I never stopped doing it. I love what I do.</p>
+                </div>
+            </div>
         </section>
 
         <section id="what" class="section">
-            <div class="container content-container">
-                <div class="row content-row">
-                    <div class="col-xs parallel-header">
-                        <h1 class="what-title">What.</h1>
-                    </div>
-                    <div class="container">
-                        <div class="col-lg">
-                            <div class="what-intro">
-                                <h2>What I do.</h2>
-                                <p class="intro-para">My interest lies mainly on user experience, user interface, and front-end development. I enjoy building based on research and developing based on good design.  I truly enjoy what I do, because it allows me to explore creativity as well as logic. </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container">
+                <div>
+                    <h1>What.</h1>
                 </div>
+                <div>
+                    <p>My interest lies mainly on user experience, user interface, and front-end development. I enjoy building based on research and developing based on good design.  I truly enjoy what I do, because it allows me to explore creativity as well as logic.</p>
                 </div>
+            </div>
         </section>
 
-        <!-- <section id="how" class="section">
-            <div class="container content-container">
-                    <div class="row content-row">
-                        <div class="col-xs parallel-header">
-                            <h1 class="how-title">How.</h1>
-                        </div>
-                        <div class="col-lg">
-                            <div class="container">
-                                <div class="who-intro">
-                                    <h2>Web development with design in mind.</h2>
-                                    <p class="intro-para">Web development is only , UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p> -->
-                                    <!-- <p class="intro-para">Web development is only part of it, the truth is that every great website starts with a great idea. Eventually that idea reaches the point where it needs UX, UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p> -->
-                                <!-- </div>
-                                <div class="row bottom-buffer">
-                                    <div class="col-3 col-sm-4 text-center how__icon">
-                                        <img src="./images/ux.png">
-                                    </div>
-                                    <div class="col-9 col-sm-8">
-                                        <h3>User Experience</h3>
-                                        <p>Even a small sample of test users can give us insights that we never considered before.</p>
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
-                                <div class="row bottom-buffer">
-                                    <div class="col-3 col-sm-4 text-center how__icon">
-                                        <img src="./images/ui.png">
-                                    </div>
-                                    <div class="col-9 col-sm-8">
-                                        <h3>User Interface</h3>
-                                        <p>Proximity, alignment, repetition, contrast, colors and typeface. All of these must come together to make a nice website. </p>
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
-                                <div class="row bottom-buffer">
-                                    <div class="col-3 col-sm-4 text-center how__icon">
-                                        <img src="./images/dev.png">
-                                    </div>
-                                    <div class="col-9 col-sm-8">
-                                        <h3>Front-end Development</h3>
-                                        <p>A combination of HTML, CSS, and JS are what will make the website come alive and ready to interact with users.</p>
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section id="how" class="section">
+            <div class="container">
+                <div>
+                    <h1>How.</h1>
                 </div>
-        </section> -->
-
-        <!-- <section id="workPro" class="section">
-            <div class="container content-container">
-                <div class="row content-row">
-                    <div class="col-xs parallel-header">
-                        <h1 class="workPro-title">Work.</h1>
+                <div>
+                    <h2>Development with design in mind.</h2>
+                    <p>Great websites start with a great ideas. I believe that together, these three diciplines can  turn great ideas into great websites.</p>
+                </div> 
+                <div class="how-inner">
+                    <div class="row inner-row">
+                        <div class="col-3">
+                            <img src="images/ux.png">
+                        </div>
+                        <div class="col-9">
+                            <h3>User Experience</h3>
+                            <p>Even a small sample of test users can give us insights that we never considered before.</p>
+                        </div>
                     </div>
-                    <div class="container">
-                        <div class="col-lg">
-                            <div class="workPro-intro">
-                                <h2>Professional.</h2>
-                                <p class="intro-para">In my career I’ve been fortunate enough to get to experiment with different technologies ranging from databases to wordpress development, and UI design.</p>
-                            </div>
-                        
-                                <div class="row">
-                                    <div class="col-sm-6 text-center bottom-buffer">
-                                        <img src="./images/holder.png">
-                                    </div>
-                                    <div class="col-sm-6 text-center bottom-buffer">
-                                        <img src="./images/holder.png">
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
+                    <div class="row inner-row">
+                        <div class="col-3">
+                            <img src="images/ui.png">
+                        </div>
+                        <div class="col-9">
+                            <h3>User Interface</h3>
+                            <p>Even a small sample of test users can give us insights that we never considered before.</p>
+                        </div>
+                    </div>
+                    <div class="row inner-row">
+                        <div class="col-3">
+                            <img src="images/dev.png">
+                        </div>
+                        <div class="col-9">
+                            <h3>Front-end Development</h3>
+                            <p>Even a small sample of test users can give us insights that we never considered before.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="workComm" class="section">
-            <div class="container content-container">
-                    <div class="row content-row">
-                        <div class="col-xs parallel-header">
-                            <h1 class="workComm-title">Work.</h1>
-                        </div>
-                        <div class="container">
-                            <div class="col-lg">
-                                <div class="workComm-intro">
-                                    <h2>Community.</h2>
-                                    <p class="intro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                </div>
-                                <div class="container">
-                                    <div class="row bottom-buffer">
-                                        <div class="col-xs mx-auto">
-                                            <img src="./images/holder.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section id="workPro" class="section">
+            <div class="container">
+                <div>
+                    <h1>Work.</h1>
                 </div>
-        </section> -->
+                <div>
+                    <h2>Projects.</h2>
+                    <p>In my career I’ve been fortunate enough to get to experiment with different technologies ranging from databases to wordpress development, and UI design.</p>
+                    <img src="images/holder.png" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="workComm" class="section">
+            <div class="container">
+                <div>
+                    <h1>Work.</h1>
+                </div>
+                <div>
+                    <h2>Community.</h2>
+                    <p>The New York Salsa Calendar. When I have free time I like to practice by making up designing and building random ideas that come to my mind.</p>
+                    <img src="images/holder.png" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div>
+                    <h4>You love awesome websites, I love building awesome websites.</h4>
+                    <h4>Let's talk! <br/>ksanchez.dev@gmail.com</h4>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="text-center">
+                    <p>Want to learn more about my work?</br>Check it out below.</p>
+                    <i data-feather="github"></i>
+                    <i data-feather="linkedin"></i>
+                </div>
+            </div>
+        </section>
         
-    <!-- <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs mx-auto text-center">
-                    <p>Want to learn more about my work?<br/>Check out my code snippets,<br/>files, and articles!</p>
-                    <a href="https://medium.com/@karensanchez0891"><i class="fab fa-medium-m"></i></a>
-                    <a href="https://repl.it/@KarenSanchez1"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://repl.it/@KarenSanchez1"><img src="images/replt-icon.png"></a>
-                </div>
-            </div>
+        <div class="next-section">
+            <i data-feather="arrow-down"></i>
         </div>
-    </section> -->
     
-    <!-- <section id="popup" class="popup text-center">
-        <div class="container center-elements">
-            <div class="row mx-auto">
-                <div class="col">
-                    <h2>You love awesome websites,<br/>I love building awesome websites.<br/>Let’s talk! </h2>
-                    <h2>karensanchez.dev@gmail.com</h2>
-                </div>
-            </div>
-        </div>
+    <!-- 
         <section class="footer">
             <div class="container center">
                 <div class="row mx-auto">
@@ -220,10 +207,6 @@
             X
         </div>
     </section> -->
-
-    <!-- <div class="next-section">
-        <img src="./images/arrow.png">
-    </div> -->
 
 
 
