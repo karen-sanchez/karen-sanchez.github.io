@@ -22,7 +22,12 @@
   right: 0; }
 .main-nav .feather.feather-align-center {
   width: 30px;
-  height: 30px; }
+  height: 30px; 
+}
+
+#who {
+  background-color: #bfbfff; 
+}
 
 section {
   background-color: #bfbfff;
