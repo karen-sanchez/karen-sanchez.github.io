@@ -4,40 +4,46 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Nobile:700&display=swap" rel="stylesheet">
-
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello, world!</title>
   </head>
-  <body id="main-container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
-                <div class="navbar-toggler" data-toggle="collapse">
-                  <span>Contact</span>
-                </div>
-              
-                <div class="collapse navbar-collapse main-navbar__list" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#who">Who</a>
+  <body>
+        <header class="main-nav">
+            <div class="inner-header">
+                <div class="triangle"></div>
+                <a href="#" class="logo-link">
+                    <img src="./images/logo-grey.png" alt="Karen Sanchez Logo">
+                </a>
+                <button class="open-mobile-nav">
+                    <i data-feather="align-center"></i>
+                </button>
+            </div>
+            <!-- <nav>
+                <ul>
+                    <li>
+                        <a href="#">Who</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#what">What</a>
+                    <li>
+                        <a href="#">What</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#how">How</a>
+                    <li>
+                        <a href="#">How</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#workPro">Work</a>
+                    <li>
+                        <a href="#">Work</a>
                     </li>
-                  </ul>
-                  <a class="nav-link open-popup" href="#">Contact</a>
-                </div>
-        </nav>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav> -->
+        </header>
         <section id="who" class="section">
             <div class="container content-container">
                     <div class="row content-row">
@@ -74,8 +80,8 @@
                 </div>
         </section>
 
-        <section id="how" class="section">
-            <div class="container content-container padding-tb">
+        <!-- <section id="how" class="section">
+            <div class="container content-container">
                     <div class="row content-row">
                         <div class="col-xs parallel-header">
                             <h1 class="how-title">How.</h1>
@@ -84,33 +90,34 @@
                             <div class="container">
                                 <div class="who-intro">
                                     <h2>Web development with design in mind.</h2>
-                                    <p class="intro-para">Web development is only part of it, the truth is that every great website starts with a great idea. Eventually that idea reaches the point where it needs UX, UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p>
-                                </div>
+                                    <p class="intro-para">Web development is only , UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p> -->
+                                    <!-- <p class="intro-para">Web development is only part of it, the truth is that every great website starts with a great idea. Eventually that idea reaches the point where it needs UX, UI, and development — this is where I like to jump in. I believe that together, these three diciplines can  turn great ideas into great websites.</p> -->
+                                <!-- </div>
                                 <div class="row bottom-buffer">
-                                    <div class="col-sm-12 col-md-6 text-center how__icon">
+                                    <div class="col-3 col-sm-4 text-center how__icon">
                                         <img src="./images/ux.png">
                                     </div>
-                                    <div class="col-sm-12 col-md-6">
+                                    <div class="col-9 col-sm-8">
                                         <h3>User Experience</h3>
                                         <p>Even a small sample of test users can give us insights that we never considered before.</p>
                                     </div>
                                     <div class="w-100"></div>
                                 </div>
                                 <div class="row bottom-buffer">
-                                    <div class="col-sm-12 col-md-6 text-center how__icon">
+                                    <div class="col-3 col-sm-4 text-center how__icon">
                                         <img src="./images/ui.png">
                                     </div>
-                                    <div class="col-sm-12 col-md-6">
+                                    <div class="col-9 col-sm-8">
                                         <h3>User Interface</h3>
                                         <p>Proximity, alignment, repetition, contrast, colors and typeface. All of these must come together to make a nice website. </p>
                                     </div>
                                     <div class="w-100"></div>
                                 </div>
                                 <div class="row bottom-buffer">
-                                    <div class="col-sm-12 col-md-6 text-center how__icon">
+                                    <div class="col-3 col-sm-4 text-center how__icon">
                                         <img src="./images/dev.png">
                                     </div>
-                                    <div class="col-sm-12 col-md-6">
+                                    <div class="col-9 col-sm-8">
                                         <h3>Front-end Development</h3>
                                         <p>A combination of HTML, CSS, and JS are what will make the website come alive and ready to interact with users.</p>
                                     </div>
@@ -120,10 +127,10 @@
                         </div>
                     </div>
                 </div>
-        </section>
+        </section> -->
 
-        <section id="workPro" class="section">
-            <div class="container content-container padding-tb">
+        <!-- <section id="workPro" class="section">
+            <div class="container content-container">
                 <div class="row content-row">
                     <div class="col-xs parallel-header">
                         <h1 class="workPro-title">Work.</h1>
@@ -144,59 +151,14 @@
                                     </div>
                                     <div class="w-100"></div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-6 text-center bottom-buffer">
-                                        <img src="./images/holder.png">
-                                    </div>
-                                    <div class="col-sm-6 text-center bottom-buffer">
-                                        <img src="./images/holder.png">
-                                    </div>
-                                    <div class="w-100"></div>
-                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-    <section id="workPractice" class="section">
-            <div class="container content-container padding-tb">
-                <div class="row content-row">
-                    <div class="col-xs parallel-header">
-                    <h1 class="workPractice-title">Work.</h1>
-                    </div>
-                    <div class="container">
-                        <div class="col-lg">
-                            <div class="who-intro">
-                                <h2>Practice.</h2>
-                                <p class="intro-para">When I’m not working I like to learn new technologies and practice my basics.</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 text-center bottom-buffer">
-                                    <img src="./images/holder.png">
-                                </div>
-                                <div class="col-sm-6 text-center bottom-buffer">
-                                    <img src="./images/holder.png">
-                                </div>
-                                <div class="w-100"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 text-center bottom-buffer">
-                                    <img src="./images/holder.png">
-                                </div>
-                                <div class="col-sm-6 text-center bottom-buffer">
-                                    <img src="./images/holder.png">
-                                </div>
-                                <div class="w-100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section> 
-
-    <section id="workComm" class="section">
-            <div class="container content-container padding-tb">
+        <!-- <section id="workComm" class="section">
+            <div class="container content-container">
                     <div class="row content-row">
                         <div class="col-xs parallel-header">
                             <h1 class="workComm-title">Work.</h1>
@@ -218,9 +180,9 @@
                         </div>
                     </div>
                 </div>
-        </section>
+        </section> -->
         
-    <section class="footer">
+    <!-- <section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-xs mx-auto text-center">
@@ -231,9 +193,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
-    <section id="popup" class="popup text-center">
+    <!-- <section id="popup" class="popup text-center">
         <div class="container center-elements">
             <div class="row mx-auto">
                 <div class="col">
@@ -257,11 +219,11 @@
         <div class="close-popup">
             X
         </div>
-    </section>
+    </section> -->
 
-    <div class="next-section">
+    <!-- <div class="next-section">
         <img src="./images/arrow.png">
-    </div>
+    </div> -->
 
 
 
