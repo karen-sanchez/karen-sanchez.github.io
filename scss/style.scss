@@ -13,9 +13,6 @@ $grey: #f2f2f2;
     justify-content: center;
     min-height: 100vh; 
 }
-body#main {
-    background-color: $grey;
-}
 .hidden {
     display: none;
 }
@@ -23,19 +20,14 @@ body#main {
     transform: rotate(180deg);
 }
 .main-nav {
-    background-color: $primary;
+    // background-color: $primary;
+    position: absolute;
     img {
         height: 4.5rem;
         vertical-align: middle;
         position: absolute;
         top: 0;
         left: 0;
-    }
-    .inner-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
     }
     .triangle {
         width: 0;
@@ -46,7 +38,7 @@ body#main {
         position: relative;
     }
     button.open-mobile-nav {
-        position: absolute;
+        position: fixed;
         top: 10px;
         right: 0;
     }
@@ -59,6 +51,7 @@ body#main {
 }
 .section {
     min-height: 100vh;
+    background-color: $grey;
     h1 {
         font-family: $header-font;
         color: $black;
@@ -106,17 +99,20 @@ body#main {
         font-size: 13px;
     }
 }
-.section#what, .section#workPro, .section#how, .section#workComm, .section#contact {
+.section#who, .section#what, .section#workPro, .section#how, .section#workComm, .section#contact {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.section#workPro img, .section#workComm img {
+    margin-top: 20px;
 }
 
 .slide-nav {
     font-family: $body-font;
     height: 100vh;
     background-color: $black;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 70%;
@@ -158,6 +154,23 @@ body#main {
         height: 40px;
         stroke-width: 1;
         color: $grey;
+    }
+}
+.desktop-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+    }
+    li a {
+        color: $grey;
+        font-family: $body-font;
+        padding: 20px;
+        font-weight: 700;
+        font-size: 1.25rem;
     }
 }
 .next-section {
@@ -210,3 +223,82 @@ button:active {
         color: $primary;
     }
 }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .main-nav {
+        // background-color: green;
+    }
+    .slide-nav li a {
+        font-size: 2.5rem;
+    }
+    .slide-nav li.sublink a {
+        font-size: 25px;
+    }
+    .section#how .inner-row {
+        margin-bottom: 30px;
+    }
+    .section#who {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .section#how img {
+        width: 90px;
+        height: 85px;
+    }
+    .section#how .inner-row p {
+        font-size: 16px;
+    }
+    .section {
+        h1 {
+            font-size: 90px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+        }
+        h4 {
+            font-size: 2.1rem;
+            line-height: 50px;
+        }
+        p {
+            font-size: 1.275rem;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .main-nav {
+        // background-color: red;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .main-nav {
+        // background-color: blue;
+    }
+    .main-nav .triangle {
+        border-width: 200px 200px 0 0;
+    }
+    .main-nav img {
+        height: 5.5rem;
+        top: 7%;
+    }
+    .desktop-nav {
+        display: block;
+    }
+    .open-mobile-nav {
+        display: none;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .main-nav {
+        // background-color: yellow;
+    }
+ }
