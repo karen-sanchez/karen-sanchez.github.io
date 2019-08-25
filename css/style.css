@@ -76,7 +76,6 @@
     font-family: "Lato", sans-serif;
     color: #333;
     margin-bottom: 0;
-    margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 18px;
     letter-spacing: 0.5px; }
@@ -92,7 +91,7 @@
     z-index: 3; }
   .section .top-inner-cont {
     position: absolute;
-    bottom: 37%; }
+    bottom: 48%; }
   .section .main-img {
     background-image: url("../images/code.jpg");
     width: 100%;
