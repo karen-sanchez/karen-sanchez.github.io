@@ -1,6 +1,7 @@
 feather.replace();
 
 var what = document.getElementById('what');
+var who = document.getElementById('who');
 
 // mobile nav
 document.querySelector('.open-mobile-nav').addEventListener('click', function() {
@@ -21,20 +22,21 @@ function arrowRotate() {
 function updateDesktopNav(e) {
     // when "what" section is at top:0 add class to section "what"
     var sections = document.getElementsByClassName('section');
+    var nav = document.querySelector('.desktop-nav');
+    var mob = document.querySelector('.open-mobile-nav');
     // var desktNav = document.querySelector('.desktop-nav li a');
 
-    if ( isInViewport(e) ) {
-        for ( var i = 0; i < sections.length; i++ ) {
-            sections[i].classList.add("unicorn");
-        }
+    if ( !isInViewport(e) ) {
+        nav.classList.add('test');
+        mob.classList.add('test');
+        // for ( var i = 0; i < sections.length; i++ ) {
+        //     sections[i].classList.add("unicorn");
+        // }
     } else {
-        console.log('gone');
+        nav.classList.remove('test');
+        mob.classList.remove('test');
     }
 }
-
-
-
-
 // arrow scrolls user to next section
 document.querySelector('.next-section').addEventListener('click', function() {
     var who = document.getElementById('who');
@@ -60,7 +62,7 @@ window.onscroll = function() {
     // var what = document.querySelector('#what');
 
     arrowRotate();
-    updateDesktopNav(what);
+    updateDesktopNav(who);
 };
 // reusable
 function isInViewport(elem) {
