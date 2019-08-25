@@ -56,6 +56,12 @@ $link: #00B0A8;
         // color: $black;
     }
 }
+
+
+
+
+
+
 .section {
     min-height: 100vh;
     display: flex;
@@ -79,7 +85,7 @@ $link: #00B0A8;
         font-family: $subheader-font;
         color: $black-lt;
         font-size: 	15px;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
     h3 {
         font-family: $subheader-font;
@@ -100,6 +106,7 @@ $link: #00B0A8;
         color: $black-lt;
         margin-bottom: 0;
         margin-top: 2rem;
+        margin-bottom: 2rem;
         font-size: 18px;
         letter-spacing: 0.5px;
     }
@@ -141,6 +148,16 @@ $link: #00B0A8;
         transform: rotate(-180deg);
     }
 }
+
+// this moves the content up on mobile
+.section#two {
+    position: relative;
+}
+.section#two .container {
+    position: absolute;
+    top: 0;
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
@@ -207,6 +224,14 @@ $link: #00B0A8;
     }
     .main-nav .triangle {
         border-width: 200px 200px 0 0;
+    }
+    // this moves the content up on mobile
+    .section#two {
+        position: static;
+    }
+    .section#two .container {
+        position: static;
+        // top: 0;
     }
     .desktop-nav {
         display: block;
@@ -381,7 +406,7 @@ button:active {
 
 .tools-cont {
     position: absolute;
-    bottom: -75%;
+    bottom: -65%;
     svg {
         stroke-width: 1;
         position: absolute;
@@ -407,7 +432,7 @@ button:active {
     margin-left: 5px;
 }
 .icon-align-inner {
-    max-width: 350px;
+    max-width: 250px;
     margin-top: 10px;
 }
 .icon-align-flexbox {
