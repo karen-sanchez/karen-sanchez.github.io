@@ -99,6 +99,7 @@ $link: #00B0A8;
         font-family: $text;
         color: $black-lt;
         margin-bottom: 0;
+        margin-top: 2rem;
         font-size: 18px;
         letter-spacing: 0.5px;
     }
@@ -185,6 +186,11 @@ $link: #00B0A8;
 @media (min-width: 992px) { 
     .main-nav {
         background-color: blue;
+    }
+    .tools-cont {
+        position: static !important;
+        bottom: 0 !important;
+        width: 1000px;
     }
     .parent {
         position: relative;
