@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Lato:400,400i,700,700i,900,900i|Oswald:400,500,600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Karen</title>
   </head>
   <body id="main">
         <header class="main-nav">
@@ -19,9 +18,14 @@
             <a href="#" class="logo-link">
                 <img src="./images/logo-white.png" alt="Karen Sanchez Logo">
             </a>
-            <button class="open-mobile-nav">
-                <i data-feather="align-right"></i>
-            </button>
+            <div class="mobile-sticky-nav">
+                <a href="#" class="logo-link">
+                    <img src="./images/logo-white.png" alt="Karen Sanchez Logo">
+                </a>
+                <button class="open-mobile-nav">
+                    <i data-feather="align-right"></i>
+                </button>
+            </div>
             <div class="slide-nav-container hidden">
                 <div class="slide-nav">
                         <button class="close-mobile-nav">
@@ -29,19 +33,19 @@
                         </button>
                         <ul>
                             <li>
-                                <a href="#who">Hello</a>
+                                <a href="#one"><span>01</span>Hello world</a>
                             </li>
                             <li>
-                                <a href="#what">How</a>
+                                <a href="#two"><span>02</span>How I build</a>
                             </li>
                             <li>
-                                <a href="#how">Projects</a>
+                                <a href="#three"><span>03</span>Projects</a>
                             </li>
                             <li>
-                                <a href="#workPro">Community</a>
+                                <a href="#four"><span>04</span>Community</a>
                             </li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#five"><span>05</span>Contact</a>
                             </li>
                         </ul>
                     </div>     
@@ -49,36 +53,36 @@
             <nav class="desktop-nav hidden">
                 <ul>
                     <li>
-                        <a href="#who">Hello</a>
+                        <a href="#one">Hello</a>
                     </li>
                     <li>
-                        <a href="#what">How</a>
+                        <a href="#two">How</a>
                     </li>
                     <li>
-                        <a href="#how">Projects</a>
+                        <a href="#three">Projects</a>
                     </li>
                     <li>
-                        <a href="#workPro">Community</a>
+                        <a href="#four">Community</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#five">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section class="section" id="one">
-            <div class="container">  
-                <span class="num">01</span>
-                <div class="top-inner-cont">
-                    <h1>Hello world</h1>
-                    <h2>Nice to meet you</h2>
-                    <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
+                <div class="container">  
+                    <span class="num">01</span>
+                    <div class="top-inner-cont">
+                        <h1>Hello world</h1>
+                        <h2>Nice to meet you</h2>
+                        <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
+                    </div>
+                    <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
+                    <div class="absolute-container">
+                    </div>
                 </div>
-                <div class="visible-xl main-img"></div>
-                <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-            </div>
-            <div class="triangle"></div>
-        </section>
+            </section>
 
         <section class="section" id="two">
             <div class="container">  
@@ -88,8 +92,7 @@
                     <h2>Development with design in mind</h2>
                     <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
                 </div>
-                <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                <div class="tools-cont">
+                <div class="relative-container">
                     <div class="icon-align-flexbox">
                         <div class="icon-align-inner">
                             <h4>User Experience</h4>
@@ -121,7 +124,6 @@
             </div>
         </section>
 
-
         <section class="section" id="three">
             <div class="container">  
                 <span class="num">03</span>
@@ -130,11 +132,19 @@
                     <h2>Latest projects showcase</h2>
                     <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
                 </div>
-                <div class="visible-xl main-img"></div>
                 <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
+                <div class="absolute-container">
+                    <div class="projects">
+                        <div class="project-img project-one"></div>
+                        <div class="project-img project-two"></div>
+                    </div>
+                    <div class="projects">
+                        <div class="project-img project-three"></div>
+                        <div class="project-img project-four"></div>
+                    </div>
+                </div>
             </div>
         </section>
-
         <section class="section" id="four">
             <div class="container">  
                 <span class="num">04</span>
@@ -143,136 +153,32 @@
                     <h2>The New York salsa calendar</h2>
                     <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
                 </div>
-                <div class="visible-xl main-img"></div>
                 <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
+                <div class="absolute-container">
+                        <div class="placeholder-img"></div>
+                </div>
             </div>
-            <div class="triangle"></div>
         </section>
-
         <section class="section" id="five">
             <div class="container">  
                 <span class="num">05</span>
                 <div class="top-inner-cont">
                     <h1>Contact</h1>
-                    <h2>Let's build awesome stuff together</h2>
+                    <h2>Let's build stuff together</h2>
                     <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
                 </div>
-                <div class="visible-xl main-img"></div>
-                <p class="hidden-xl">Websites are made with more than just code. I believe that user experience and user interface are as important as development. </br> karensanchez.dev@gmail.com</p>
-            </div>
-        </section>
-        <!-- <section id="how" class="section">
-            <div class="container parent">
-                <div class="elem-left">
-                    <h1>How.</h1>
-                </div>
-                <div class="elem-right">
-                    <h2>Development with design in mind.</h2>
-                    <p>Great websites start with a great ideas. I believe that together, these three diciplines can  turn great ideas into great websites.</p>
-                    <div class="how-inner">
-                            <div class="row inner-row">
-                                <div class="col-3 text-center">
-                                    <img src="images/ux.png">
-                                </div>
-                                <div class="col-9">
-                                    <h3>User Experience</h3>
-                                    <p>Even a small sample of test users can give us insights that we never considered before.</p>
-                                </div>
-                            </div>
-                            <div class="row inner-row">
-                                <div class="col-3 text-center">
-                                    <img src="images/ui.png">
-                                </div>
-                                <div class="col-9">
-                                    <h3>User Interface</h3>
-                                    <p>Even a small sample of test users can give us insights that we never considered before.</p>
-                                </div>
-                            </div>
-                            <div class="row inner-row">
-                                <div class="col-3 text-center">
-                                    <img src="images/dev.png">
-                                </div>
-                                <div class="col-9">
-                                    <h3>Front-end Development</h3>
-                                    <p>Even a small sample of test users can give us insights that we never considered before.</p>
-                                </div>
-                            </div>
+                <div class="absolute-container">
+                    <div class="business-card">
+                        <div class="social-media">
+                            <span><i data-feather="github"></i></span>
+                            <span><i data-feather="linkedin"></i></span>
                         </div>
-                </div> 
-            </div>
-        </section> -->
-<!-- 
-        <section id="workPro" class="section">
-            <div class="container parent">
-                <div class="elem-left">
-                    <h1>Who.</h1>
-                </div>
-                <div class="elem-right">
-                        <h2>Projects.</h2>
-                        <p>In my career I’ve been fortunate enough to get to experiment with different technologies ranging from databases to wordpress development, and UI design.</p>
-                        <img src="images/holder.png" class="img-fluid">
-                </div>
-            </div>
-        </section> -->
-<!-- 
-        <section id="workComm" class="section">
-            <div class="container parent">
-                <div class="elem-left">
-                    <h1>Who.</h1>
-                </div>
-                <div class="elem-right">
-                        <h2>Community.</h2>
-                        <p>In my career I’ve been fortunate enough to get to experiment with different technologies ranging from databases to wordpress development, and UI design.</p>
-                        <img src="images/holder.png" class="img-fluid">
-                </div>
-            </div>
-        </section> -->
-
-        <!-- <section id="contact" class="section">
-            <div class="container">
-                <div>
-                    <h4>You love awesome websites, <br/>I love building awesome websites.</h4>
-                    <h4>Let's talk! <br/>ksanchez.dev@gmail.com</h4>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="text-center">
-                    <p>Want to learn more about my work?</br>Check it out below.</p>
-                    <i data-feather="github"></i>
-                    <i data-feather="linkedin"></i>
-                </div>
-            </div>
-        </section> -->
-        
-        <!-- <div class="next-section">
-            <i data-feather="arrow-down"></i>
-        </div> -->
-    
-    <!-- 
-        <section class="footer">
-            <div class="container center">
-                <div class="row mx-auto">
-                    <div class="col-xs mx-auto text-center">
-                        <p>Want to learn more about my work?<br/>Check out my code snippets,<br/>files, and articles!</p>
-                        <i class="fab fa-medium-m"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <img src="images/replt-icon.png">
+                        <h3>karensanchez.dev@gmail.com</h3>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="close-popup">
-            X
-        </div>
-    </section> -->
 
-
-
-    <!-- Optional JavaScript -->
     <script src="script.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   </body>
 </html>
