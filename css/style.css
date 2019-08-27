@@ -1,5 +1,5 @@
 .index-section {
-  background-color: #333;
+  background-color: #fff;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -107,7 +107,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       width: 130px;
-      height: 135px;
+      height: 95px;
       margin: 5px; }
   .section .placeholder-img {
     background-image: url("../images/sny.jpg");
@@ -164,7 +164,7 @@
 
 .section#three .absolute-container {
   position: absolute;
-  bottom: -80%; }
+  bottom: -50%; }
 
 .section#five .absolute-container {
   position: absolute;
