@@ -26,7 +26,7 @@
 #main h3 {
   font-family: "Lato", sans-serif;
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700; }
 #main h4 {
   font-family: "Lato", sans-serif;
@@ -104,17 +104,14 @@
   .section .projects {
     display: flex; }
     .section .projects .project-img {
-      width: 200px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 130px;
       height: 135px;
       margin: 5px; }
-  .section .project-img {
-    width: 400px;
-    height: 300px;
-    background-size: contain;
-    background-repeat: no-repeat; }
   .section .placeholder-img {
     background-image: url("../images/sny.jpg");
-    width: 400px;
+    width: 270px;
     height: 300px;
     background-size: contain;
     background-repeat: no-repeat; }
@@ -203,8 +200,7 @@
 
 .business-card {
   background-color: #333;
-  width: 280px;
-  /* height: 200px; */
+  width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,6 +272,9 @@
     padding-right: 0;
     padding-left: 0; }
 
+  #main h3 {
+    font-size: 1.7rem; }
+
   .section .top-inner-cont {
     position: initial;
     padding: 80px; }
@@ -292,6 +291,15 @@
 
   #main span.num {
     color: #ccc; }
+
+  .business-card {
+    width: 400px; }
+
+  .section .placeholder-img {
+    width: 400px; }
+
+  .section .projects .project-img {
+    width: 200px; }
 
   .hidden-xl {
     display: none; }

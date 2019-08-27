@@ -47,7 +47,7 @@ $orange: #FFBC6D;
     h3 {
         font-family: $subheader-font;
         color: $black-lt;
-        font-size: 	1.3rem;
+        font-size: 	1rem;
         font-weight: 700;
     }
     h4 {
@@ -136,20 +136,16 @@ $orange: #FFBC6D;
     .projects {
         display: flex;
         .project-img {
-            width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 130px;
             height: 135px;
             margin: 5px;
         }
     }    
-    .project-img {
-        width: 400px;
-        height: 300px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
     .placeholder-img {
         background-image: url('../images/sny.jpg');
-        width: 400px;
+        width: 270px;
         height: 300px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -248,8 +244,7 @@ $orange: #FFBC6D;
 
 .business-card {
     background-color: #333;
-    width: 280px;
-    /* height: 200px; */
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,6 +331,9 @@ $orange: #FFBC6D;
         padding-right: 0;
         padding-left: 0;
     }
+    #main h3 {
+        font-size: 	1.7rem;
+    }
     .section .top-inner-cont {
         position: initial;
         padding: 80px;
@@ -354,6 +352,15 @@ $orange: #FFBC6D;
         span.num {
             color: #ccc;
         }
+    }
+    .business-card {
+        width: 400px;
+    }
+    .section .placeholder-img {
+        width: 400px;
+    }
+    .section .projects .project-img {
+        width: 200px;
     }
     .hidden-xl {
         display: none;
