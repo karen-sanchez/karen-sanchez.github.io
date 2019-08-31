@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Lato:400,400i,700,700i,900,900i|Oswald:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,172 +14,154 @@
     <title>Karen</title>
   </head>
   <body id="main">
-        <header class="main-nav">
-            <div class="triangle"></div>
-            <a href="#" class="logo-link">
-                <img src="./images/logo-white.png" alt="Karen Sanchez Logo">
-            </a>
-            <div class="mobile-sticky-nav">
-                <a href="#" class="logo-link">
-                    <img src="./images/logo-white.png" alt="Karen Sanchez Logo">
-                </a>
-                <button class="open-mobile-nav">
-                    <i data-feather="align-right"></i>
-                </button>
+        <header>
+            <div class="container">
+                    <a href="#" class="logo-link">
+                            <img src="./images/logo-grey.png" alt="Karen Sanchez Logo">
+                        </a>
+                        <div class="mobile-sticky-nav">
+                            <!-- <button class="open-mobile-nav">
+                                <i data-feather="align-center"></i>
+                            </button> -->
+                        </div>
+                        <!-- <div class="slide-nav-container">
+                            <div class="slide-nav">
+                                    <button class="close-mobile-nav">
+                                        <i data-feather="chevrons-right"></i>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="#one">Intro</a>
+                                        </li>
+                                        <li>
+                                            <a href="#two">Process</a>
+                                        </li>
+                                        <li>
+                                            <a href="#three">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#four">Community</a>
+                                        </li>
+                                        <li>
+                                            <a href="#five">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>     
+                        </div> -->
+                        <nav class="desktop-nav">
+                            <ul>
+                                <li>
+                                    <a href="#intro">Intro</a>
+                                </li>
+                                <li>
+                                    <a href="#process-section">Process</a>
+                                </li>
+                                <li>
+                                    <a href="#projects-section">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#community-section">Community</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-section">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
             </div>
-            <div class="slide-nav-container hidden">
-                <div class="slide-nav">
-                        <button class="close-mobile-nav">
-                            <i data-feather="chevrons-right"></i>
-                        </button>
-                        <ul>
-                            <li>
-                                <a href="#one"><span>01</span>Hello world</a>
-                            </li>
-                            <li>
-                                <a href="#two"><span>02</span>How I build</a>
-                            </li>
-                            <li>
-                                <a href="#three"><span>03</span>Projects</a>
-                            </li>
-                            <li>
-                                <a href="#four"><span>04</span>Community</a>
-                            </li>
-                            <li>
-                                <a href="#five"><span>05</span>Contact</a>
-                            </li>
-                        </ul>
-                    </div>     
-            </div>
-            <nav class="desktop-nav hidden">
-                <ul>
-                    <li>
-                        <a href="#one">Hello</a>
-                    </li>
-                    <li>
-                        <a href="#two">How</a>
-                    </li>
-                    <li>
-                        <a href="#three">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#four">Community</a>
-                    </li>
-                    <li>
-                        <a href="#five">Contact</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
-        <section class="section" id="one">
+        <section class="section" id="intro">
                 <div class="container">  
-                    <span class="num">01</span>
-                    <div class="top-inner-cont">
-                        <h1>Hello world</h1>
-                        <h2>Nice to meet you</h2>
-                        <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                    </div>
-                    <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                    <div class="absolute-container">
+                    <div class="row">
+                        <div class="col col-md-8">
+                            <h1>Web <span>development</span> <br/> with <span>design</span> in mind.</h1>
+                        </div>
                     </div>
                 </div>
             </section>
 
-        <section class="section" id="two">
-            <div class="container">  
-                <span class="num">02</span>
-                <div class="top-inner-cont">
-                    <h1>How I build</h1>
-                    <h2>Development with design in mind</h2>
-                    <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
+        <section class="section dark" id="process-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1>The process</h1>
+                        <h2>My approach</h2>
+                        <p>Good websites start with good user experience and user interface design. After the design process is done we can start developing the site.</p>
+                    </div>
+                    <div class="col-12 col-md-6 bottom-side-content">
+                        <h3>User Experience</h3>
+                        <p>Even a small sample of users can give us insights we never considered.</p>
+                        <h3>User Interface</h3>
+                        <p>Following the principles of design is essential to delivering a great product.</p>
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, and JavaScript will make the designs a reality.</p>
+                    </div>
                 </div>
-                <div class="relative-container">
-                    <div class="icon-align-flexbox">
-                        <div class="icon-align-inner">
-                            <h4>User Experience</h4>
-                            <span>Even a small sample can give us insights we never considered.</span>
-                        </div>
-                        <div class="circle-icon">
-                            <i data-feather="search"></i>
-                        </div>
+            </div>
+        </section>
+        <section class="section" id="projects-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1>My projects</h1>
+                        <h2>My approach</h2>
+                        <p>I have projects ranging from landing page design, wordpress customizations, and full-stack development.</p>
                     </div>
-                    <div class="icon-align-flexbox">
-                        <div class="icon-align-inner">
-                            <h4>User Interface</h4>
-                            <span>Principles of design are essential to delivering a great product.</span>
+                    <div class="col-12 col-md-6 bottom-side-content">
+                        <div class="row">
+                            <div class="col mini-box">
+                                <a target="_blank" href ="https://www.studioblack.org/"><div class="project-img project-one"></div></a>
+                            </div>
+                            <div class="col mini-box">
+                                <a target="_blank" href="https://happy-puppy.herokuapp.com/"><div class="project-img project-two"></div></a>
+                            </div>
                         </div>
-                        <div class="circle-icon">
-                            <i data-feather="edit-2"></i>
-                        </div>
-                    </div>
-                    <div class="icon-align-flexbox">
-                        <div class="icon-align-inner">
-                            <h4>Front-end Development</h4>
-                            <span>HTML, CSS, and JS are the technologies that will bring the site to life.</span>
-                        </div>
-                        <div class="circle-icon">
-                            <i data-feather="code"></i>
+                        <div class="row">
+                            <div class="col mini-box">
+                                <a target="_blank" href="https://divinonyc.com/blog/"><div class="project-img project-three"></div></a>
+                            </div>
+                            <div class="col mini-box">
+                                <a target="_blank" href="https://expensestrackerapp.herokuapp.com/"><div class="project-img project-four"></div></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="section" id="three">
-            <div class="container">  
-                <span class="num">03</span>
-                <div class="top-inner-cont">
-                    <h1>Projects</h1>
-                    <h2>Latest projects showcase</h2>
-                    <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                </div>
-                <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                <div class="absolute-container">
-                    <div class="projects">
-                        <a target="_blank" href ="https://www.studioblack.org/"><div class="project-img project-one"></div></a>
-                        <a target="_blank" href="https://happy-puppy.herokuapp.com/"><div class="project-img project-two"></div></a>
+        <section class="section dark" id="community-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1>Community</h1>
+                        <h2>The NY salsa calendar</h2>
+                        <p>One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills.</p>
                     </div>
-                    <div class="projects">
-                        <a target="_blank" href="https://divinonyc.com/blog/"><div class="project-img project-three"></div></a>
-                        <a target="_blank" href="https://expensestrackerapp.herokuapp.com/"><div class="project-img project-four"></div></a>
+                    <div class="col-12 col-md-6 bottom-side-content">
+                        <a target="_blank" href="https://salsanewyork.com/calendar"><div class="sny-img"></div></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section" id="four">
-            <div class="container">  
-                <span class="num">04</span>
-                <div class="top-inner-cont">
-                    <h1>Community</h1>
-                    <h2>The New York salsa calendar</h2>
-                    <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                </div>
-                <p class="hidden-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                <div class="absolute-container">
-                        <a target="_blank" href="https://salsanewyork.com/calendar"><div class="placeholder-img"></div></a>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="five">
-            <div class="container">  
-                <span class="num">05</span>
-                <div class="top-inner-cont">
-                    <h1>Contact</h1>
-                    <h2>Let's build stuff together</h2>
-                    <p class="visible-xl">I’m Karen, a web developer living in NYC. I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web.</p>
-                </div>
-                <div class="absolute-container">
-                    <div class="business-card">
+        <section class="section" id="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1>Contact</h1>
+                        <h2>Let's work together</h2>
+                        <p>I love building awesome websites. You love awesome websites. Let’s talk!</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-center bottom-side-content">
                         <div class="social-media">
-                            <span><i data-feather="github"></i></span>
-                            <span><i data-feather="linkedin"></i></span>
+                            <a href="https://github.com/karen-sanchez"><span><i data-feather="github"></i></span></a>
+                            <a href="https://medium.com/@karensanchez0891"><span><i class="fab fa-medium-m"></i></i></span></a>
+                            <a href="https://dribbble.com/ksanchez1"><span><i class="fab fa-dribbble"></i></i></span></a>
+                            <a href="https://www.linkedin.com/in/karensanchez08/"><span><i data-feather="linkedin"></i></span></a>
                         </div>
                         <h3>karensanchez.dev@gmail.com</h3>
                     </div>
                 </div>
             </div>
         </section>
-
+        <footer><span>Designed and developed by Karen Sanchez 2019</span></footer>
     <script src="script.js"></script>
   </body>
 </html>

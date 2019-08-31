@@ -1,15 +1,17 @@
 feather.replace();
 
+/*
+
 var what = document.getElementById('what');
 var who = document.getElementById('one');
 
 // mobile nav
 document.querySelector('.open-mobile-nav').addEventListener('click', function() {
-    document.querySelector('.slide-nav-container').classList.remove("hidden");
+    document.querySelector('.slide-nav').classList.toggle('open');
 });
-document.querySelector('.close-mobile-nav').addEventListener('click', function() {
-    document.querySelector('.slide-nav-container').classList.add("hidden");
-});
+// document.querySelector('.close-mobile-nav').addEventListener('click', function() {
+//     document.querySelector('.slide-nav').classList.remove('open');
+// });
 // when user scrolls to bottom rotate arrow
 // function arrowRotate() {
 //     if( (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300){
@@ -76,3 +78,5 @@ function isInViewport(elem) {
 // var whoSection = document.querySelector('#who');
 // var one = whoSection.getBoundingClientRect();
 // console.log(one);
+
+*/

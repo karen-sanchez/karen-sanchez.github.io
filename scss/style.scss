@@ -1,13 +1,11 @@
-$numbers: 'Oswald', sans-serif;
 $header-font: 'Archivo Black', sans-serif;
-$subheader-font: 'Lato', sans-serif;
 $text: 'Lato', sans-serif;
-$black-lt: #333;
-$black-dk: #191919;
-// $white: #ccc;
-$yellow: #eee;
-$link: #00B0A8;
-$orange: #FFBC6D;
+$black: #383838;
+$black-lt: rgba(56, 56, 56, 0.5);
+$green: #27AE61;
+$offwhite: #F8F8F8;
+$white: #ffffff;
+$grey: #8C8C8C;
 
 
 
@@ -19,135 +17,94 @@ $orange: #FFBC6D;
     justify-content: center;
     min-height: 100vh; 
 }
-// Global styles begin here
+// Styles begin here
 #main {
+    position: relative;
     h1 {
         font-family: $header-font;
-        color: #fff;
-        font-size: 43px;
-        margin-bottom: 0;
-        border-bottom: 3px solid #fff;
-        padding-bottom: 2px;
-    }
-    .section#one h1, .section#one p, .section#one h2 {
-        color: white;
-    }
-    .section#one h1 {
-        border-bottom: 3px solid white;
-    }
-    .section#one span.num {
-        color: $orange;
+        font-size: 30px;
+        color: $black;
+        border-bottom: 2px solid $green;
     }
     h2 {
-        font-family: $subheader-font;
-        color: #fff;
-        font-size: 	15px;
-        letter-spacing: 3px;
+        font-family: $text;
+        font-size: 14px;
+        letter-spacing: 5px;
+        color: $green;
+        margin-bottom: 2em;
     }
     h3 {
-        font-family: $subheader-font;
-        color: $black-lt;
-        font-size: 	1rem;
-        font-weight: 700;
-    }
-    h4 {
         font-family: $text;
-        color: #fff;
         font-size: 17px;
-        font-weight: 900;
-        margin-top: 1em;
+        font-weight: 700;
+        color: $black;
     }
     p {
         font-family: $text;
-        color: #fff;
-        margin-bottom: 0;
-        margin-bottom: 2rem;
-        font-size: 18px;
-        letter-spacing: 0.5px;
-    }
-    span {
-        font-family: $text;
-        color: #fff;
-    }
-    span.num {
-        font-family: $numbers;
-        font-size: 170px;
-        font-weight: 900;
-        color: #191919;
-    }
-    a.logo-link {
-        position: absolute;
-        z-index: 4;
+        color: $grey;
+        font-size: 20px;
     }
 }
-.hidden {
+header {
+    position: absolute;
+    width: 100%;
+    .container {
+        display: flex !important;
+        align-items: center;
+    }
+    .logo-link {
+        margin-right: auto;
+    }
+    .logo-link img {
+        height: 70px;
+    }
+    .open-mobile-nav{
+        margin-left: auto;
+    }
+    svg {
+        width: 70px;
+        height: 40px;
+        stroke-width: 1;
+    }
+}
+#intro {
+    background-image: url('../images/dots-bg.png');
+    background-size: contain;
+    h1 {
+        font-family: $header-font;
+        font-size: 45px;
+        color: $black;
+        border-bottom: none;
+    }
+    span {
+        color: $green;
+    }
+}
+.desktop-nav {
     display: none;
 }
 .visible-xl {
     display: none;
 }
-.rotate-elem {
-    transform: rotate(180deg);
-}
-.main-nav {
-    position: absolute;
-    img {
-        height: 4rem;
-        vertical-align: middle;
-        position: absolute;
-        top: 8px;
-        left: 5px;
-    }
-    .triangle {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 150px 150px 0 0;
-        border-color: $black-lt transparent transparent;
-        z-index: 4;
-        position: absolute;
-    }
-    button.open-mobile-nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 4;
-    }
-    .feather.feather-align-right {
-        width: 40px;
-        height: 40px;
-        stroke-width: 1;
-    }
-}
 .section {
-    background-color: #333;
+    background-color: $offwhite;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    .container {
-        padding-right: 40px;
-        padding-left: 40px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 3;
+
+    .project-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 1.5em;
     }  
-    .projects {
-        display: flex;
-        .project-img {
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 130px;
-            height: 95px;
-            margin: 5px;
-        }
-    }    
-    .placeholder-img {
+    .sny-img {
         background-image: url('../images/sny.jpg');
-        width: 270px;
-        height: 300px;
-        background-size: contain;
+        width: 100%;
+        height: 200px;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .project-one {
@@ -163,306 +120,107 @@ $orange: #FFBC6D;
         background-image: url('../images/tracker.jpg');
     }
 }
-
-#two .top-inner-cont {
-    position: absolute;
-    bottom: 65%;
+.section.dark {
+    background-color: $black;
+    h1 {
+        color: #fff !important;
+    }
+    h3 {
+        font-family: $text;
+        font-size: 20px;
+        color: #d0d0d0 !important;
+    }
 }
-.top-inner-cont {
-    position: absolute;
-    bottom: 45%;
-}
-#five .top-inner-cont {
-    position: absolute;
-    bottom: 10%;
-}
-// this moves the content up on mobile
-.section#two, .section#three, .section#four, .section#five {
-    position: relative;
-}
-.section#one {
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-}
-.section#one .absolute-container {
-    position: absolute;
-    bottom: -75%;
-}
-.section#two .relative-container {
-    position: relative;
+.section#contact-section {
     svg {
-        stroke-width: 2;
-        position: absolute;
-        top: 24%;
-        left: 23%;
-        color: white;
         width: 20px;
         height: 20px;
+        stroke-width: 2;
+        color: $green;
     }
-}
-.section#four .absolute-container
- {
-    position: absolute;
-    bottom: -75%;
-}
-.section#three .absolute-container {
-    position: absolute;
-    bottom: -50%;
-}
-.section#five .absolute-container {
-    position: absolute;
-    bottom: -45%;
-}
-.circle-icon {
-    background: $black-lt;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    padding: 18px;
-    position: absolute;
-    -webkit-box-shadow: 2px 2px 2px 2px #191919; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    2px 2px 2px 2px #191919; /* Firefox 3.5 - 3.6 */
-    box-shadow:         2px 2px 2px 2px #191919;
-    top: 30%;
-    right: 0%;
-}
-.icon-align-inner {
-    max-width: 80%;
-    margin-top: 10px;
-}
-.icon-align-flexbox {
-    display: flex;
-    align-items: center;
-    position: relative;
-    
     i {
-      margin: 10px;
-      padding: 10px;
-      transition: margin 300ms;
+        color: $green;
     }
-}
-
-.business-card {
-    background-color: #333;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    word-break: break-word;
     h3 {
-        color: $link !important;
-    }
-    svg {
-        color: $link;
-        stroke-width: 1;
+        font-size: 20px;
     }
 }
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    .main-nav {
-        background-color: green;
-    }
-    #main {
-        h1 {
-            font-size: 55px;
-        }
-        h2 {
-            font-size: 	18px;
-            letter-spacing: 5px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 1rem;
-        }
-        span.num {
-            font-size: 200px;
-        }
-    }
-    .section#one .container, .section#two .container, .section#four .container, .section#five .container {
-        position: relative;
-    }
-    .section .top-inner-cont {
-        bottom: 30%;
-    }
+.bottom-side-content {
+    padding-top: 1em;
 }
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .main-nav {
-        background-color: red;
-    }
-    .section .top-inner-cont {
-        bottom: 28%;
-    }
+.section#process-section .bottom-side-content p  {
+    font-size: 16px;
 }
- // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .main-nav {
-        background-color: blue;
-    }
-    .section#one .absolute-container, .section#two .relative-container, .section#three .absolute-container, .section#four .absolute-container, .section#five .absolute-container {
-        position: static !important;
-        bottom: 0 !important;
-        width: 100%;
-    }
-    .circle-icon {
-        right: 0%;
-    }
-    .main-nav .triangle {
-        border-width: 200px 200px 0 0;
-    }
-    // this moves the content up on mobile
-    .section#two {
-        position: static;
-    }
-    .desktop-nav {
-        display: block;
-    }
-    .mobile-sticky-nav {
-        display: none;
-    }
-    .section span.num {
-        word-break: break-all;
-    }
-    .section .container {
-        flex-direction: row;
-        position: initial;
-        align-items: center;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    #main h3 {
-        font-size: 	1.7rem;
-    }
-    .section .top-inner-cont {
-        position: initial;
-        padding: 80px;
-    }
-    #two .top-inner-cont {
-        position: static;
-    }
-    #five .top-inner-cont {
-        position: static;
-    }
-    .main-nav img {
-        height: 5rem;
-        top: 18px;
-    }
-    #main {
-        span.num {
-            color: #ccc;
-        }
-    }
-    .business-card {
-        width: 400px;
-    }
-    .section .placeholder-img {
-        width: 400px;
-    }
-    .section .projects .project-img {
-        width: 200px;
-    }
-    .hidden-xl {
-        display: none;
-    }
-    .visible-xl {
-        display: block;
-    }
- }
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .main-nav {
-        background-color: transparent;
-    }
-    .section .top-inner-cont {
-        bottom: 35%;
-    }
-}
-.slide-nav {
-    // font-family: $body-font;
-    height: 100vh;
-    background-color: $black-lt;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 70%;
-    opacity: 1;
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    // color: $grey;
-    button.close-mobile-nav {
-        position: absolute;
-        top: 10px;
-        right: 0;
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        margin-top: 50px;
-        padding-left: 15px;
-    }
-    li {
-        padding: 20px 20px 20px 0px;
-    }
-    li a {
-        font-family: $header-font;
-        color: white;
-        font-size: 35px;
-    }
-    li a span {
-        color: $yellow !important;
-        font-family: $numbers !important;
-        font-size: 35px;
-        font-weight: 900;
-        margin: 5px;
-    }
-    li a:hover {
-        color: $link;
-    }
-    .feather.feather-chevrons-right {
-        width: 40px;
-        height: 40px;
-        stroke-width: 1;
-        // color: $grey;
-    }
-}
+// .open {
+//     transform: translateY(0) !important;
+// }
+// .slide-nav {
+//     position: absolute;
+//     right: 0;
+//     transition: 1s;
+//     height: 100vh;
+//     // background-color: $black-lt;
+//     width: 70%;
+//     opacity: 1;
+//     z-index: 4;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     transform: translateX(100%);
+//     ul {
+//         display: flex;
+//         flex-direction: column;
+//         list-style: none;
+//         margin-top: 50px;
+//         padding-left: 15px;
+//     }
+//     li {
+//         padding: 20px 20px 20px 0px;
+//     }
+//     li a {
+//         font-family: $header-font;
+//         color: white;
+//         font-size: 35px;
+//     }
+// }
+// .desktop-nav.test {
+//     background-color: #ccc;
+//     z-index: 5;
+// }
+// .mobile-sticky-nav.stick {
+//     min-width: 100%;
+//     background-color: #ccc;
+//     /* width: 100%; */
+//     height: 80px;
+//     /* width: 100px; */
+//     position: fixed;
+//     z-index: 4;
+// }
 .desktop-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 25px;
-    // z-index: 1000;
     ul {
         display: flex;
         list-style: none;
         margin: 0;
-        padding: 5px;
+        padding: 0;
+        border-bottom: 1px solid $black-lt;
+        padding-bottom: 15px;
     }
     li a {
-        color: #191919;
+        color: $black;
         font-family: $text;
-        padding: 0 20px;
-        font-size: 18px;
-    }
-    li a:hover {
-        color: white;
-        text-decoration: none;
+        font-size: 14px;
+        margin: 0 15px;
+        font-weight: 700;
     }
 }
-.next-section {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    .feather.feather-arrow-down {
-        height: 50px;
-        width: auto;
-        stroke-width: 1;
-        // color: $black;
-    }
+footer {
+    background-color: $black;
+    color: $grey;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
 }
+// reset button styles 
 button {
     display: inline-block;
     border: none;
@@ -494,18 +252,55 @@ button:focus {
 button:active {
     transform: scale(0.99);
 }
-.desktop-nav.test {
-    background-color: #ccc;
-    z-index: 5;
-}
 
-.mobile-sticky-nav.stick {
-    min-width: 100%;
-    background-color: #00B0A8;
-    /* width: 100%; */
-    height: 80px;
-    /* width: 100px; */
-    position: fixed;
-    z-index: 4;
-}
-
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) { 
+    .desktop-nav {
+        display: block;
+    }
+    .mobile-sticky-nav {
+        display: none;
+    }
+    .hidden-xl {
+        display: none;
+    }
+    .visible-xl {
+        display: block;
+    }
+    .bottom-side-content {
+        padding-top: 0;
+    }
+    #main {
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            font-size: 16px;
+            color: $green;
+            margin-bottom: 2em;
+        }
+        h3 {
+            font-family: $text;
+            font-size: 17px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    #intro h1 {
+        font-size: 67px;
+    }
+    .bottom-side-content {
+        padding-top: 2em;
+    }
+    .section .project-img {
+        width: 100%;
+        height: 150px;
+    }
+    .section .sny-img {
+        height: 300px;
+    }
+    .section#contact-section h3 {
+        font-size: 30px;
+    }
+ }
