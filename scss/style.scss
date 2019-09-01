@@ -33,14 +33,14 @@ $grey: #8C8C8C;
     }
     h3 {
         font-family: $text;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 700;
         color: $black;
     }
     p {
         font-family: $text;
         color: $grey;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 header {
@@ -167,7 +167,7 @@ header {
     padding-top: 1em;
 }
 .section#process-section .bottom-side-content p  {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .mini-box, .big-box {
@@ -336,6 +336,9 @@ footer {
     }
     #intro h1 {
         font-size: 67px;
+    }
+    .section#process-section .bottom-side-content p  {
+        font-size: 16px;
     }
     .bottom-side-content {
         padding-top: 2em;

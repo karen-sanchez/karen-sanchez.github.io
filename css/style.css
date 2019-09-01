@@ -20,13 +20,13 @@
     margin-bottom: 2em; }
   #main h3 {
     font-family: "Lato", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
     color: #383838; }
   #main p {
     font-family: "Lato", sans-serif;
     color: #8C8C8C;
-    font-size: 20px; }
+    font-size: 15px; }
 
 header {
   position: absolute;
@@ -126,7 +126,7 @@ header {
   padding-top: 1em; }
 
 .section#process-section .bottom-side-content p {
-  font-size: 16px; }
+  font-size: 14px; }
 
 .mini-box, .big-box {
   text-align: center;
@@ -277,6 +277,9 @@ footer {
 
   #intro h1 {
     font-size: 67px; }
+
+  .section#process-section .bottom-side-content p {
+    font-size: 16px; }
 
   .bottom-side-content {
     padding-top: 2em; }
