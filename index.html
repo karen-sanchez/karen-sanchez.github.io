@@ -9,7 +9,8 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Web Developer</title>
   </head>
   <body id="main">
@@ -69,21 +70,22 @@
             </div>
         </header>
         <section class="section" id="intro">
-                <div class="container">  
-                    <div class="row">
-                        <div class="col col-md-8">
-                            <h1>Web <span>development</span> <br/> with <span>design</span> in mind.</h1>
-                        </div>
+            <div class="container">  
+                <div class="row">
+                    <div class="col col-md-8" data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <h1>Web <span>development</span> <br/> with <span>design</span> in mind.</h1>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
         <section class="section dark" id="process-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h1>The process</h1>
-                        <h2>My approach</h2>
+                        <h1 data-aos="fade-right">The process</h1>
+                        <h2 data-aos="fade-in">My approach</h2>
                         <p>Good websites begin with great ideas. These ideas eventually need research, UX, and UI design. Only after a clear design direction has been established, we can start developing the site. I believe this is the best approach for web development.</p>
                     </div>
                     <div class="col-12 col-md-6 bottom-side-content">
@@ -116,27 +118,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h1>Projects</h1>
-                        <h2>Latest projects</h2>
+                        <h1 data-aos="fade-right">Projects</h1>
+                        <h2 data-aos="fade-in">Latest projects</h2>
                         <p>I have worked on full-stack, front-end, wordpress, and design projects. This range of experiences are what have solidified my knowledge of development, and encouraged me to learn about tech beyond programming. Exploring the field of design has made me a better developer.</p>
                     </div>
                     <div class="col-12 col-md-6 bottom-side-content">
                         <div class="row">
-                            <div class="col mini-box">
+                            <div class="col mini-box" data-aos="zoom-in">
                                 <a target="_blank" href ="https://www.studioblack.org/"><div class="project-img project-one"></div></a>
                                 <div class="bottom-right">Studio Black</div>
                             </div>
-                            <div class="col mini-box">
+                            <div class="col mini-box" data-aos="zoom-in">
                                 <a target="_blank" href="https://github.com/karen-sanchez/puppy-store"><div class="project-img project-two"></div></a>
                                 <div class="bottom-right">Pet Store</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col mini-box">
+                            <div class="col mini-box" data-aos="zoom-in">
                                 <a target="_blank" href="https://divinonyc.com/blog/"><div class="project-img project-three"></div></a>
                                 <div class="bottom-right">DiVino Blog</div>
                             </div>
-                            <div class="col mini-box">
+                            <div class="col mini-box" data-aos="zoom-in"> 
                                 <a target="_blank" href="https://github.com/karen-sanchez/money-tracker"><div class="project-img project-four"></div></a>
                                 <div class="bottom-right">Expenses Tracker</div>
                             </div>
@@ -149,11 +151,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h1>Community</h1>
-                        <h2>The NY salsa calendar</h2>
+                        <h1 data-aos="fade-right">Community</h1>
+                        <h2 data-aos="fade-in">The NY salsa calendar</h2>
                         <p>One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills.</p>
                     </div>
-                    <div class="col-12 col-md-6 bottom-side-content big-box">
+                    <div class="col-12 col-md-6 bottom-side-content big-box" data-aos="zoom-in">
                         <a target="_blank" href="https://salsanewyork.com/calendar">
                             <div class="sny-img"></div>
                         </a>
@@ -166,8 +168,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h1>Contact</h1>
-                        <h2>Let's work together</h2>
+                        <h1 data-aos="fade-right">Contact</h1>
+                        <h2 data-aos="fade-in">Let's work together</h2>
                         <p>I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web. If you have an idea for an awesome website, let’s talk!</p>
                     </div>
                     <div class="col-12 col-md-6 text-center bottom-side-content">
@@ -184,5 +186,9 @@
         </section>
         <footer><span>Designed and developed by Karen Sanchez 2019</span></footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
