@@ -4,9 +4,9 @@
 #wave {
   position: absolute;
   bottom: 0;
-  width: 110%;
+  width: 100%;
   height: auto;
-  min-width: 100vw; }
+  min-width: 100%; }
 
 .index-section {
   background-color: #fff;
