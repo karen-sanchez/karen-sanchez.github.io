@@ -14,62 +14,69 @@
     <title>Web Developer</title>
   </head>
   <body id="main">
-        <header>
-            <div class="container">
-                    <a href="#" class="logo-link">
-                            <img src="./images/logo-grey.png" alt="Karen Sanchez Logo">
-                        </a>
-                        <div class="mobile-sticky-nav">
-                            <button type="button" class="btn btn-link open-mobile-nav">
-                                <i data-feather="align-center"></i>
-                            </button>
-                        </div>
-                        <div class="slide-nav-container">
-                            <div class="slide-nav">
-                                    <button type="button" class="btn btn-link close-mobile-nav">
-                                        <i data-feather="chevrons-right"></i>
-                                    </button>
-                                    <ul>
-                                        <li>
-                                            <a href="#intro">Intro</a>
-                                        </li>
-                                        <li>
-                                            <a href="#process-section">Process</a>
-                                        </li>
-                                        <li>
-                                            <a href="#projects-section">Projects</a>
-                                        </li>
-                                        <li>
-                                            <a href="#community-section">Community</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact-section">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>     
-                        </div>
-                        <nav class="desktop-nav">
-                            <ul>
-                                <li>
-                                    <a href="#intro">Intro</a>
-                                </li>
-                                <li>
-                                    <a href="#process-section">Process</a>
-                                </li>
-                                <li>
-                                    <a href="#projects-section">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#community-section">Community</a>
-                                </li>
-                                <li>
-                                    <a href="#contact-section">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-            </div>
-        </header>
+
         <section class="section" id="intro">
+                <header>
+                        <div class="container">
+                                <a href="#" class="logo-link">
+                                        <img src="./images/logo-grey.png" alt="Karen Sanchez Logo">
+                                    </a>
+                                    <div class="mobile-sticky-nav">
+                                        <button type="button" class="btn btn-link open-mobile-nav">
+                                            <i data-feather="align-center"></i>
+                                        </button>
+                                    </div>
+                                    <div class="slide-nav-container">
+                                        <div class="slide-nav">
+                                                <button type="button" class="btn btn-link close-mobile-nav">
+                                                    <i data-feather="chevrons-right"></i>
+                                                </button>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#intro">Intro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#process-section">Process</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#projects-section">Projects</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#community-section">Community</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#community-section">About</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#contact-section">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>     
+                                    </div>
+                                    <nav class="desktop-nav">
+                                        <ul>
+                                            <li>
+                                                <a href="#intro">Intro</a>
+                                            </li>
+                                            <li>
+                                                <a href="#process-section">Process</a>
+                                            </li>
+                                            <li>
+                                                <a href="#projects-section">Projects</a>
+                                            </li>
+                                            <li>
+                                                <a href="#community-section">Community</a>
+                                            </li>
+                                            <li>
+                                                <a href="#community-section">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact-section">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                        </div>
+                    </header>
             <div class="container">  
                 <div class="row">
                     <div class="col col-md-8" data-aos="fade-up"
@@ -77,9 +84,11 @@
                         <h1>Web <span>development</span> <br/> with <span>design</span> in mind.</h1>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <svg id="wave" width="1440" height="108" viewBox="0 0 1440 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 27L80.4 24.75C159.6 22.5 320.4 18 480 31.5C639.6 45 800.4 76.5 960 74.25C1119.6 72 1280.4 36 1359.6 18L1440 0V108H1359.6C1280.4 108 1119.6 108 960 108C800.4 108 639.6 108 480 108C320.4 108 159.6 108 80.4 108H0V27Z" fill="#383838"/>
+            </svg>  
         </section>
-
         <section class="section dark" id="process-section">
             <div class="container">
                 <div class="row">
@@ -147,8 +156,8 @@
                 </div>
             </div>
         </section>
-        <section class="section dark" id="community-section">
-            <div class="container">
+        <section class="section" id="community-section">
+            <div class="container hidden-xl">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <h1 data-aos="fade-right">Community</h1>
@@ -163,14 +172,47 @@
                     </div>
                 </div>
             </div>
+            <div class="container-fluid visible-xl">
+                <div class="row">
+                    <div class="col-lg-6 comm-left">
+                        <div class="row">
+                            <div class="col-12 dskt-comm-padding">      
+                                <h1 data-aos="fade-right">Community</h1>
+                                <h2 data-aos="fade-in">The NY salsa calendar</h2>
+                                <p>One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills.</p>
+                            </div>
+                            <div class="col-12 dskt-sny">
+                                <div class="big-box">
+                                    <a target="_blank" href="https://salsanewyork.com/calendar">
+                                        <div class="sny-img"></div>
+                                    </a>
+                                    <div class="bottom-right">The New York Salsa Calendar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 comm-right">
+                            <p>One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills. One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills. One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills. One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills. One of the projects I have enjoyed working on the most is the NYSC. This 100% pro-bono project has allowed me to perfect my responsive development skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about-section">
+            <div class="container about-container">
+                <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h1 data-aos="fade-right">About</h1>
+                            <h2 data-aos="fade-in">Web developer</h2>
+                            <p>I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web. If you have an idea for an awesome website, let’s talk!</p>
+                        </div>
+                </div>
+            </div>
         </section>
         <section class="section" id="contact-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h1 data-aos="fade-right">Contact</h1>
                         <h2 data-aos="fade-in">Let's work together</h2>
-                        <p>I enjoy building beautiful & elegant experiences for users through the use of the latest technology available for the web. If you have an idea for an awesome website, let’s talk!</p>
                     </div>
                     <div class="col-12 col-md-6 text-center bottom-side-content">
                         <div class="social-media">
@@ -179,7 +221,7 @@
                             <a href="https://dribbble.com/ksanchez1"><span><i class="fab fa-dribbble"></i></i></span></a>
                             <a href="https://www.linkedin.com/in/karensanchez08/"><span><i class="fab fa-linkedin-in"></i></span></a>
                         </div>
-                        <h3>karensanchez.dev@gmail.com</h3>
+                        <!-- <h3>karensanchez.dev@gmail.com</h3> -->
                     </div>
                 </div>
             </div>

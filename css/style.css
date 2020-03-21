@@ -1,3 +1,12 @@
+#intro {
+  position: relative; }
+
+#wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto; }
+
 .index-section {
   background-color: #fff;
   display: flex !important;
@@ -30,6 +39,7 @@
 
 header {
   position: absolute;
+  top: 0%;
   width: 100%; }
   header .container {
     display: flex !important;
@@ -50,7 +60,7 @@ header {
 
 #intro {
   background-image: url("../images/dots-bg.png");
-  background-size: contain; }
+  background-repeat: repeat; }
   #intro h1 {
     font-family: "Archivo Black", sans-serif;
     font-size: 45px;
@@ -84,16 +94,12 @@ header {
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px); }
   .section .sny-img {
-    background: linear-gradient(to right, rgba(39, 174, 97, 0.9), rgba(39, 174, 97, 0.9)), url("../images/sny.jpg");
+    background: linear-gradient(to right, rgba(0, 153, 255, 0.9), rgba(0, 153, 255, 0.9)), url("../images/sny.jpg");
     width: 100%;
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all .2s ease-in-out; }
-  .section .sny-img:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
   .section .project-one {
     background: linear-gradient(to right, rgba(39, 174, 97, 0.9), rgba(39, 174, 97, 0.9)), url("../images/studioblack.jpg"); }
   .section .project-two {
@@ -111,6 +117,20 @@ header {
     font-family: "Lato", sans-serif;
     font-size: 20px;
     color: #d0d0d0 !important; }
+
+.section#community-section {
+  background-color: #EAEAEA; }
+
+.section#about-section {
+  background-color: #ffffff;
+  min-height: 25vh;
+  position: relative; }
+  .section#about-section .about-container {
+    background-color: #2E2E2E;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .section#about-section h1 {
+    color: #fff; }
 
 .section#contact-section svg {
   width: 20px;
@@ -208,9 +228,7 @@ button.close-mobile-nav {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
-  border-bottom: 1px solid rgba(56, 56, 56, 0.5);
-  padding-bottom: 15px; }
+  padding: 0; }
 .desktop-nav li a {
   color: #383838;
   font-family: "Lato", sans-serif;
@@ -238,7 +256,7 @@ button.close-mobile-nav {
     color: #27AE61; }
 
 .item-description {
-  padding-left: 15px; }
+  padding-left: 10px; }
 
 footer {
   background-color: #383838;
@@ -271,15 +289,15 @@ footer {
     margin-bottom: 2em; }
   #main h3 {
     font-family: "Lato", sans-serif;
-    font-size: 17px; }
+    font-size: 18px; }
   #main p {
-    font-size: 20px; }
+    font-size: 18px; }
 
   #intro h1 {
     font-size: 75px; }
 
   .section#process-section .bottom-side-content p {
-    font-size: 16px; }
+    font-size: 18px; }
 
   .bottom-side-content {
     padding-top: 2em; }
@@ -292,6 +310,37 @@ footer {
     height: 300px; }
 
   .section#contact-section h3 {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  section#process-section {
+    min-height: 75vh; }
+
+  #community-section .comm-left {
+    background-color: #EAEAEA;
+    height: 100vh;
+    position: relative; }
+
+  #community-section .comm-right {
+    background-color: #383838;
+    height: 100vh;
+    padding: 100px; }
+
+  .comm-left .dskt-sny {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    left: 0; }
+
+  #community-section .comm-left .dskt-comm-padding h1 {
+    color: #383838 !important; }
+
+  .dskt-comm-padding {
+    padding-top: 100px;
+    max-width: 475px !important;
+    position: absolute !important;
+    right: 3px !important; } }
+@media (min-width: 1200px) {
+  .dskt-comm-padding {
+    max-width: 568px !important; } }
 
 /*# sourceMappingURL=style.css.map */
