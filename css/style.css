@@ -1,12 +1,19 @@
 #intro {
   position: relative; }
 
-#wave {
+.wave {
+  display: block;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: auto;
-  min-width: 100%; }
+  height: 80px; }
+
+.wave svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
 
 .index-section {
   background-color: #fff;
